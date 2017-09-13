@@ -1804,7 +1804,7 @@ pre .javascript .function {
   color: #fff;
 }
 .links-of-author {
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1826,7 +1826,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #37ff53;
+  background: #bdb6ff;
 }
 .links-of-blogroll {
   font-size: 13px;
