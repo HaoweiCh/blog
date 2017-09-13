@@ -89,7 +89,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Python,Chang" />
+  <meta name="keywords" content="python,time,datetime,timestamp," />
 
 
 
@@ -105,16 +105,20 @@
 
 
 
-<meta name="description" content="记录想法和技术经历">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Chang&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="python时间相关的库和转换关系  string 类型(time)1234567import time# 创建文本时间s = time.ctime() # 以当前系统地区来决定输出的时间文本格式s = &quot;2008-11-10 17:53:59&quot;# 转换为时间对象t = time.strptime(s, &quot;%Y-%m-%d %H:%M:%S&quot;) datetime 对象1234567891011im">
+<meta name="keywords" content="python,time,datetime,timestamp">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python时间相关的类型转化">
+<meta property="og:url" content="http://yoursite.com/2017/06/13/20170002/index.html">
 <meta property="og:site_name" content="Chang&#39;s Blog">
-<meta property="og:description" content="记录想法和技术经历">
+<meta property="og:description" content="python时间相关的库和转换关系  string 类型(time)1234567import time# 创建文本时间s = time.ctime() # 以当前系统地区来决定输出的时间文本格式s = &quot;2008-11-10 17:53:59&quot;# 转换为时间对象t = time.strptime(s, &quot;%Y-%m-%d %H:%M:%S&quot;) datetime 对象1234567891011im">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/media/15052943518472.jpg">
+<meta property="og:updated_time" content="2017-09-13T10:08:47.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chang&#39;s Blog">
-<meta name="twitter:description" content="记录想法和技术经历">
+<meta name="twitter:title" content="Python时间相关的类型转化">
+<meta name="twitter:description" content="python时间相关的库和转换关系  string 类型(time)1234567import time# 创建文本时间s = time.ctime() # 以当前系统地区来决定输出的时间文本格式s = &quot;2008-11-10 17:53:59&quot;# 转换为时间对象t = time.strptime(s, &quot;%Y-%m-%d %H:%M:%S&quot;) datetime 对象1234567891011im">
+<meta name="twitter:image" content="http://yoursite.com/media/15052943518472.jpg">
 
 
 
@@ -143,13 +147,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/06/13/20170002/"/>
 
 
 
 
 
-  <title>Chang's Blog</title>
+  <title>Python时间相关的类型转化 | Chang's Blog</title>
   
 
 
@@ -174,9 +178,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -293,9 +295,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -325,9 +327,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/13/20170002/" itemprop="url">Python时间相关的类型转化</a></h1>
+          <h1 class="post-title" itemprop="name headline">Python时间相关的类型转化</h1>
         
 
         <div class="post-meta">
@@ -388,9 +388,7 @@
       
 
       
-        
-          
-            <p>python时间相关的库和转换关系</p>
+        <p>python时间相关的库和转换关系</p>
 <p><img src="/media/15052943518472.jpg" alt=""></p>
 <h2 id="string-类型-time"><a href="#string-类型-time" class="headerlink" title="string 类型(time)"></a>string 类型(time)</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> time</div><div class="line"></div><div class="line"><span class="comment"># 创建文本时间</span></div><div class="line">s = time.ctime() <span class="comment"># 以当前系统地区来决定输出的时间文本格式</span></div><div class="line">s = <span class="string">"2008-11-10 17:53:59"</span></div><div class="line"><span class="comment"># 转换为时间对象</span></div><div class="line">t = time.strptime(s, <span class="string">"%Y-%m-%d %H:%M:%S"</span>)</div></pre></td></tr></table></figure>
 <h2 id="datetime-对象"><a href="#datetime-对象" class="headerlink" title="datetime 对象"></a>datetime 对象</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> datetime</div><div class="line"></div><div class="line"><span class="comment"># 创建datetime对象</span></div><div class="line"><span class="comment"># dt_obj = datetime.datetime.now()</span></div><div class="line">dt_obj = datetime.datetime(<span class="number">2008</span>, <span class="number">11</span>, <span class="number">10</span>, <span class="number">17</span>, <span class="number">53</span>, <span class="number">59</span>) </div><div class="line"><span class="comment"># 转换为文本型时间</span></div><div class="line">print(dt_obj.strftime(<span class="string">"%Y-%m-%d %H:%M:%S"</span>)) </div><div class="line"><span class="comment"># 转换为时间对象</span></div><div class="line">time_tuple = dt_obj.timetuple()</div><div class="line"><span class="comment"># 转化哪位时间戳</span></div><div class="line">time_stamp = dt_obj.timestamp()</div></pre></td></tr></table></figure>
@@ -399,8 +397,6 @@
 <h2 id="带时区的处理"><a href="#带时区的处理" class="headerlink" title="带时区的处理"></a>带时区的处理</h2><h3 id="转换为-datetime对象"><a href="#转换为-datetime对象" class="headerlink" title="转换为 datetime对象"></a>转换为 datetime对象</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> time, datetime</div><div class="line"></div><div class="line"><span class="comment"># 本地时区时间</span></div><div class="line">datetime.datetime.fromtimestamp(timestamp)</div><div class="line"><span class="comment"># 标准时区时间</span></div><div class="line">datetime.datetime.utcfromtimestamp(timestamp)</div></pre></td></tr></table></figure>
 <h3 id="转换为-time对象"><a href="#转换为-time对象" class="headerlink" title="转换为 time对象"></a>转换为 time对象</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 本地时区</span></div><div class="line">time.localtime(timestamp)</div><div class="line"><span class="comment"># 标准时区</span></div><div class="line">time.gmtime(timestamp)</div></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
     
@@ -415,205 +411,42 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/18/20170001/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Chang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chang's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/05/18/20170001/" itemprop="url">Python的观察者模式，PyQt signal&slot 机制的理解和应用</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-18T07:06:03+08:00">
-                2017-05-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/python/" rel="tag"># python</a>
           
-            
+            <a href="/tags/time/" rel="tag"># time</a>
           
-
+            <a href="/tags/datetime/" rel="tag"># datetime</a>
           
+            <a href="/tags/timestamp/" rel="tag"># timestamp</a>
           
-             <span id="/2017/05/18/20170001/" class="leancloud_visitors" data-flag-title="Python的观察者模式，PyQt signal&slot 机制的理解和应用">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数 </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body han-init-context" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Python的观察者模式，PyQt signal&amp;slot 机制的理解和应用</p>
-<h2 id="内容介绍"><a href="#内容介绍" class="headerlink" title="内容介绍"></a>内容介绍</h2><ul>
-<li style="list-style: none"><input type="checkbox" checked> 提供signal&amp;slot的python实现方式（更大的灵活性，效率相比PyQt自带更低）</li>
-<li style="list-style: none"><input type="checkbox"> PyQt 和 Python 两种实现方式的特色对比</li>
-</ul>
-<ul>
-<li style="list-style: none"><input type="checkbox"> PyQt版 功能加强 使slot可以接受到关键字参数</li>
-</ul>
-<h2 id="相关资源"><a href="#相关资源" class="headerlink" title="相关资源"></a>相关资源</h2><ul>
-<li><a href="http://blog.abstractfactory.io/dynamic-signals-in-pyqt/" target="_blank" rel="external">来源: 英文 多样化信号</a></li>
-<li><a href="http://pyqt.sourceforge.net/Docs/PyQt5/signals_slots.html" target="_blank" rel="external">资料: PyQt5 官方文档</a></li>
-<li><a href="https://www.amazon.co.uk/Design-patterns-elements-reusable-object-oriented/dp/0201633612" target="_blank" rel="external">书籍: Design Patterns</a><br>Is an excellent summary and reference of many very useful patterns.</li>
-<li><a href="https://www.amazon.co.uk/Head-First-Design-Patterns-Freeman/dp/0596007124" target="_blank" rel="external">书籍: Head First Design Patterns</a><br>Provides a more gentle and explanatory view of many of the same patterns.</li>
-<li><a href="http://stackoverflow.com/questions/21101500/custom-pyqtsignal-implementation" target="_blank" rel="external">讨论: SOF Custom pyqtSignal implementation</a></li>
-</ul>
-<h2 id="Python-signal-amp-slot-信号-amp-槽的-Python-实现"><a href="#Python-signal-amp-slot-信号-amp-槽的-Python-实现" class="headerlink" title="Python signal&amp;slot 信号&amp;槽的 Python 实现"></a>Python signal&amp;slot 信号&amp;槽的 Python 实现</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><ul>
-<li>因为实现机制的是Python代码不是PyQt的c++，效率会更低</li>
-<li>更贴合Python的风格，more pythonic，限制更少</li>
-</ul>
-<h4 id="1-不能用实例属性替换pyqtSignal的类属性"><a href="#1-不能用实例属性替换pyqtSignal的类属性" class="headerlink" title="1. 不能用实例属性替换pyqtSignal的类属性"></a>1. <strong>不能用实例属性替换<code>pyqtSignal</code>的类属性</strong></h4><p>..<br>虽然 <code>pySignal</code> 起源于 <code>pyqtSignal</code> 而且直接实例化 <code>pySignal</code> 类的各种使用方式和 <code>pyqtSignal</code>相同（毕竟设计的时候就接口相同），但是有个容易让人困惑的点是</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># 代码示例，pySignal 在实例化后的类中替换 pyqtSignal</div><div class="line">class Window(QWidget):</div><div class="line">	same_signal = pyqtSignal()</div><div class="line">	def __init__(self, parent=None):</div><div class="line">		super(Window, self).__init__(parent)</div><div class="line">		self.same_signal = Signal()</div></pre></td></tr></table></figure>
-<p>常理来说 <code>pyqtSignal()</code> 应该被 <code>pySignal</code> 替换掉了，但如早先提到的 <code>pyqtSignal</code> 在所在类实例化后摇身一变成实例化的<code>PyQt5.QtCore.pyqtBoundSignal</code>对象。</p>
-<p>这代表我们先赋值的类属性已经变成了实例化类的属性了</p>
-<p>这样造成的影响是，如果我们给某类多个实例，它们将有自己的signal而且互不干扰（emit 也不干扰）</p>
-<p>我们实现的类没有这样的特性，类属性一直是类属性</p>
-<p>这意味着给某类赋值类属性，其实例也会遗传相同的类属性（不独立）</p>
-<p>解决方案是，pySignal在最开始就应该是实例属性而不是类属性（这样能保证独立）</p>
-<h3 id="pySignal"><a href="#pySignal" class="headerlink" title="pySignal"></a>pySignal</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Signal</span>:</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></div><div class="line">        self.__subscribers = []</div><div class="line">      </div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">emit</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">        <span class="keyword">for</span> subs <span class="keyword">in</span> self.__subscribers:</div><div class="line">            subs(*args, **kwargs)</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">connect</span><span class="params">(self, func)</span>:</span></div><div class="line">        self.__subscribers.append(func)  </div><div class="line">      </div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">disconnect</span><span class="params">(self, func)</span>:</span>  </div><div class="line">        <span class="keyword">try</span>:  </div><div class="line">            self.__subscribers.remove(func)  </div><div class="line">        <span class="keyword">except</span> ValueError:  </div><div class="line">            print(<span class="string">'Warning: function %s not removed '</span></div><div class="line">                  <span class="string">'from signal %s'</span>%(func,self))</div></pre></td></tr></table></figure>
-<h2 id="PyQt-signal-amp-slot"><a href="#PyQt-signal-amp-slot" class="headerlink" title="PyQt signal&amp;slot"></a>PyQt signal&amp;slot</h2><h3 id="介绍-1"><a href="#介绍-1" class="headerlink" title="介绍"></a>介绍</h3><h4 id="1-signal只能作为类属性-Only-works-with-class-attributes"><a href="#1-signal只能作为类属性-Only-works-with-class-attributes" class="headerlink" title="1. signal只能作为类属性 Only works with class attributes"></a>1. signal只能作为类属性 Only works with class attributes</h4><p>Signals are not class attributes. <code>PyQt5.QtCore.pyqtSignal()</code> is merely a vessel for a future instance variable containing a PyQt*.QtCore.pyqtBoundSignal instance. When you instantiate your class, pyqtSignal goes to work and injects itself as an instance variable and adds itself to the QMetaObject of the class.</p>
-<p>QMetaObject? It comes with useful methods such as .className(), superClass(), methodCount() which returns the name of the class, its superclasses and number of methods respectively.</p>
-<p>In C++ these are probably very useful, however a Python programmer might not be very impressed. It’s something we’ve had access to all along via any instances’ <strong>class</strong>, <strong>bases</strong> and <strong>dict</strong>attributes.</p>
-<h4 id="2-不能在已经实例化的类中声明-Cannot-be-used-in-an-already-instantiated-class"><a href="#2-不能在已经实例化的类中声明-Cannot-be-used-in-an-already-instantiated-class" class="headerlink" title="2.不能在已经实例化的类中声明 Cannot be used in an already instantiated class"></a>2.不能在已经实例化的类中声明 Cannot be used in an already instantiated class</h4><p>这是最让人头痛的特性 Now here’s the kicker. </p>
-<p>If you’re doing any sort of base- or abstract class work with Qt widgets, you’ll quickly realise that you can’t inherit signals.</p>
-<p>Other than that, if try and bypass inheritance and have a builder spit out widgets for you, you’ll also notice how Dependency Injection isn’t going to work with signals. They have to be created as class attributes and they can only be created using pyqtSignal(). Please correct me if I’m wrong.</p>
-<h4 id="3-必须在声明signal时指明传输参数的类型-Must-be-pre-specified-with-any-data-types-you-wish-to-emit"><a href="#3-必须在声明signal时指明传输参数的类型-Must-be-pre-specified-with-any-data-types-you-wish-to-emit" class="headerlink" title="3.必须在声明signal时指明传输参数的类型 Must be pre-specified with any data-types you wish to emit"></a>3.必须在声明signal时指明传输参数的类型 Must be pre-specified with any data-types you wish to emit</h4><p>类似于强类型语言的类型声明，这完全不是Python的风格嘛。<br>In other languages, this is referred to as static typing. Python however doesn’t do any of that.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 这是演示代码（伪代码），实际上得作为类属性声明</span></div><div class="line"><span class="comment"># normally have to be run via a class' class attribute.</span></div><div class="line">signal = pyqtSignal(int, str)</div><div class="line">signal.emit(my_number, my_string)</div><div class="line"></div><div class="line">signal.emit(my_string, my_number)</div><div class="line"><span class="comment"># 报错 TypeError</span></div><div class="line">signal.emit(not_enough_args)</div><div class="line"><span class="comment"># 报错 TypeError</span></div></pre></td></tr></table></figure>
-<h4 id="4-不支持关键字参数-Does-not-support-keyword-arguments"><a href="#4-不支持关键字参数-Does-not-support-keyword-arguments" class="headerlink" title="4. 不支持关键字参数 Does not support keyword arguments"></a>4. 不支持关键字参数 Does not support keyword arguments</h4><blockquote>
-<p>TypeError: emit() takes no keyword arguments</p>
-</blockquote>
-<p>Keyword arguments are quite useful as a means of self-documenting code.</p>
-<p><code>signal.emit(5)</code><br>本应该写做<br><code>signal.emit(velocity=5)</code><br>这样不仅增强可读性，还可以加强机制使其可以携带相同关键字参数 it can also be used to enforce signals and slots to carry an identical argument signature.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">callback</span><span class="params">(name, address)</span>:</span></div><div class="line">	print(<span class="string">"Name=%s and address=%s"</span> % (name, address))</div><div class="line"></div><div class="line">signal = Signal()</div><div class="line">signal.connect(callback)</div><div class="line"></div><div class="line"><span class="comment"># Mistake the first argument for a tuple.</span></div><div class="line">signal.emit(names=(<span class="string">'marcus'</span>, <span class="string">'ottosson'</span>), address=<span class="string">'earth'</span>)</div><div class="line"><span class="comment"># TypeError: callback() got an unexpected keyword argument 'names'</span></div><div class="line"></div><div class="line"><span class="comment"># When actually, its a single string value.</span></div><div class="line">signal.emit(name=<span class="string">'marcus ottosson'</span>, address=<span class="string">'earth'</span>)</div><div class="line"><span class="comment"># Name=marcus ottosson and address=earth</span></div><div class="line"></div><div class="line"><span class="comment"># Of course, non-keyword arguments works too.</span></div><div class="line">signal.emit(<span class="string">'marcus ottosson'</span>, <span class="string">'earth'</span>)</div></pre></td></tr></table></figure>
-<h4 id="5-Cannot-be-modified-after-instantiation"><a href="#5-Cannot-be-modified-after-instantiation" class="headerlink" title="5. Cannot be modified after instantiation"></a>5. Cannot be modified after instantiation</h4><p>Python对象，很自然的支持 代码动态修改（monkey-patch）,但<code>pyqtSignals</code>非常特别的不支持<br>As a Python object, you would expect the ability to monkey-patch, but pyqtSignals are special enough to not let you do any of that.</p>
-<p>I’ll provide an example of monkey-patching for you below.</p>
-<h2 id="理解-Understanding-Signals-and-Slots"><a href="#理解-Understanding-Signals-and-Slots" class="headerlink" title="理解 Understanding Signals and Slots"></a>理解 Understanding Signals and Slots</h2><p>Qt 提供的 信号和槽 机制基于一个(行为型)设计模式 -&gt;观察者模式 (<a href="http://en.wikipedia.org/wiki/Observer_pattern" target="_blank" rel="external">Observer pattern</a>) (TODO 另开一文详细分析 Python的观察者模式)</p>
-<h3 id="跨线程"><a href="#跨线程" class="headerlink" title="跨线程"></a>跨线程</h3><p>上述实现很直接的介绍了基本原理但缺少了很多应该考虑到的应用场景比如跨线程。</p>
-<p>在使用pySignal时你可能已经遇到slot所在的线程<strong>很容易</strong>崩溃（无论是在 <code>QThread</code> 或者 Python的多线程模块），这“怪罪于”多线程之美，两个线程可能<em>同时</em>尝试或访问同一资源.</p>
-<h3 id="QObject-sender"><a href="#QObject-sender" class="headerlink" title="QObject.sender()"></a><code>QObject.sender()</code></h3><p>简而言之, <a href="http://doc.qt.io/qt-5/qobject.html#sender" target="_blank" rel="external"><code>QObject.sender()</code></a> 可以让接收端可以获得发送端资源。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">callback</span><span class="params">(self, message)</span>:</span></div><div class="line">	<span class="comment"># 在 pySignal 和 pyqtSignal 中都支持slot中查询来源signal</span></div><div class="line">	source_of_signal = self.sender()</div><div class="line">	<span class="comment"># 这在当slot可能收到多个来源的signal且需要区分他们的时候非常有用</span></div></pre></td></tr></table></figure>
-<p><strong>API参考资料中警告说这种方式可能会破坏面向对象程序的模块性，建议尽量避免</strong></p>
-<p>在这里我不准备提供全方位的测评, 但py版相比qt版 <code>pyqtSignal()</code>, 如果是obj1 -&gt; obj2 -&gt; obj3 这种链式调用的话，在obj3的slot中查询sender的话会返回obj1</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="comment"># 在 obj3.listen 中调用sender()会返回 obj1而不是obj2，虽然obj2是调用obj3的signal</span></div><div class="line">obj1.signal.connect(obj2.emit)</div><div class="line">obj2.signal.connect(obj3.listen)</div><div class="line">obj1.signal.emit()</div><div class="line"><span class="comment"># 而在 pyqtSignal, 将会返回 obj2.</span></div></pre></td></tr></table></figure>
-<h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><h3 id="Example-–-监视类属性的状态"><a href="#Example-–-监视类属性的状态" class="headerlink" title="Example – 监视类属性的状态"></a>Example – 监视类属性的状态</h3><p>It can sometimes be useful to monitor an attribute of a class.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Listener</span><span class="params">(object)</span>:</span></div><div class="line">	<span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></div><div class="line">		self.container = Container()</div><div class="line">		self.container.value_changed.connect(self.value_changed_event)</div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">def</span> <span class="title">value_changed_event</span><span class="params">(self, previous, current)</span>:</span></div><div class="line">		print(<span class="string">"%r says: Value was changed from %s to %s"</span> % </div><div class="line">		     (self.__class__.__name__, previous, current))</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Container</span><span class="params">(object)</span>:</span></div><div class="line">	<span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></div><div class="line">		self.__value = <span class="keyword">None</span></div><div class="line"></div><div class="line">		<span class="comment"># 当`value` 改变了我们就发送信号</span></div><div class="line">		self.value_changed = core.Signal()</div><div class="line"></div><div class="line"><span class="meta">	@property</span></div><div class="line">	<span class="function"><span class="keyword">def</span> <span class="title">value</span><span class="params">(self)</span>:</span></div><div class="line">		<span class="keyword">return</span> self.__value</div><div class="line"></div><div class="line"><span class="meta">	@value.setter</span></div><div class="line">	<span class="function"><span class="keyword">def</span> <span class="title">value</span><span class="params">(self, value)</span>:</span></div><div class="line">		self.value_changed.emit(previous=self.__value, </div><div class="line">					current=value)</div><div class="line">		self.__value = value</div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</div><div class="line">	list = Listener()</div><div class="line">        </div><div class="line">	<span class="comment"># 改变value值便会触发</span></div><div class="line"></div><div class="line">	list.container.value = <span class="number">5</span></div><div class="line">	<span class="comment"># 'Listening' 中打印: Value was changed from None to 5</span></div><div class="line"></div><div class="line">	list.container.value = <span class="number">6</span></div><div class="line">	<span class="comment"># 'Listening' 中打印: Value was changed from 5 to 6</span></div></pre></td></tr></table></figure>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ol>
-<li>在某些复杂的场景下，即使功能强大的<code>pyqtSignal</code>也会触短板,这个时候就可以扩展或自己实现</li>
-</ol>
-<ul>
-<li>但选择不站在巨人肩膀上而自己实现某一特性的话，有些情况我们会在遇到时发现（像先提到的线程间的安全性）。这个时候就不得不挑起自己动手实现新特性的担子。</li>
-<li>虽然两种signal机制的实现目的是一样的，但它们不一定需要用谁来替换谁。可能最好的方式是两个在代码中同时使用，各取所长，在各自适合的应用场景使用。<br>例如，<code>QThreads</code> 可以使用 <code>pyqtSignal</code> 而我们自定义的组件的基类和制造器(TODO builders)就可以使用 <code>pySignal</code></li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/18/20170001/" rel="next" title="Python的观察者模式，PyQt signal&slot 机制的理解和应用">
+                <i class="fa fa-chevron-left"></i> Python的观察者模式，PyQt signal&slot 机制的理解和应用
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -623,10 +456,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -634,6 +468,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -654,8 +492,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -708,6 +555,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#string-类型-time"><span class="nav-number">1.</span> <span class="nav-text">string 类型(time)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#datetime-对象"><span class="nav-number">2.</span> <span class="nav-text">datetime 对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#time-对象"><span class="nav-number">3.</span> <span class="nav-text">time 对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#int-类型-时间戳"><span class="nav-number">4.</span> <span class="nav-text">int 类型(时间戳)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#带时区的处理"><span class="nav-number">5.</span> <span class="nav-text">带时区的处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#转换为-datetime对象"><span class="nav-number">5.1.</span> <span class="nav-text">转换为 datetime对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#转换为-time对象"><span class="nav-number">5.2.</span> <span class="nav-text">转换为 time对象</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -832,10 +695,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
