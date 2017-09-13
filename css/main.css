@@ -1489,6 +1489,7 @@ pre .javascript .function {
 }
 .post-wordcount {
   display: inline-block;
+  padding-left: 6px;
 }
 .post-meta-divider {
   margin: 0 0.5em;
@@ -1826,7 +1827,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #bdb6ff;
+  background: #8b0490;
 }
 .links-of-blogroll {
   font-size: 13px;
