@@ -119,7 +119,7 @@
 <meta property="og:site_name" content="Chang&#39;s Blog">
 <meta property="og:description" content="描述能力有限，不确定的翻译会在旁边注释英文更新时间：2017年05月12日官网链接  不与 PyQt4 兼容虽然实际上升级PyQt4写的项目不是那么糟 不再对Python老版本提供支持（Python 2.6 之前）不再实现PyQt4不推荐的API接口PyQt5 不支持任何在PyQt4版本中标记为不推荐或舍弃的Qt API（如果有就会当Bug处理） 不再提供多版本API接口PyQt4 支持多版本的">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-13T11:44:54.000Z">
+<meta property="og:updated_time" content="2017-09-13T12:29:42.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PyQt5 与 PyQt4 差别应用">
 <meta name="twitter:description" content="描述能力有限，不确定的翻译会在旁边注释英文更新时间：2017年05月12日官网链接  不与 PyQt4 兼容虽然实际上升级PyQt4写的项目不是那么糟 不再对Python老版本提供支持（Python 2.6 之前）不再实现PyQt4不推荐的API接口PyQt5 不支持任何在PyQt4版本中标记为不推荐或舍弃的Qt API（如果有就会当Bug处理） 不再提供多版本API接口PyQt4 支持多版本的">
@@ -405,7 +405,39 @@
 <h2 id="QtWebKit-模块更新"><a href="#QtWebKit-模块更新" class="headerlink" title="QtWebKit 模块更新"></a><code>QtWebKit</code> 模块更新</h2><p>PyQt4的<code>QtWebKit</code>在PyQt5中分成了<code>QtWebKit</code>和<code>QtWebKitWidgets</code>模块</p>
 <h2 id="扩展性增强"><a href="#扩展性增强" class="headerlink" title="扩展性增强"></a>扩展性增强</h2><p>不再支持<code>pyqtconfig</code>模块<br><a href="http://pyqt.sourceforge.net/Docs/PyQt5/extension_api.html#ref-build-system" target="_blank" rel="external">The PyQt5 Extension API</a><br>PyQt5 支持第三方包直接基于PyQt5开发(如<a href="https://www.riverbankcomputing.com/software/qscintilla/intro" target="_blank" rel="external">QScintilla</a>)</p>
 <h2 id="dbus-mainloop-qt-模块更名"><a href="#dbus-mainloop-qt-模块更名" class="headerlink" title="dbus.mainloop.qt 模块更名"></a><code>dbus.mainloop.qt</code> 模块更名</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#dbus.mainloop.qt</span></div><div class="line">dbus.mainloop.pyqt5 <span class="comment"># 相同功能只更名</span></div></pre></td></tr></table></figure>
-<h2 id="QDataStream-明显数值的参数以数值处理和返回"><a href="#QDataStream-明显数值的参数以数值处理和返回" class="headerlink" title="QDataStream 明显数值的参数以数值处理和返回"></a><code>QDataStream</code> 明显数值的参数以数值处理和返回</h2><figure class="highlight plain"><figcaption><span>readInt8(); writeUInt8(); writeInt8()``` 方法在PyQt5中以数值类型写入和返回（PyQt4中是以数值文本）</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">## `QFileDialog`  文件操作接口更新</div><div class="line"></div><div class="line">| PyQt5 | PyQt4 | 备注 |</div><div class="line">| --- | --- | --- |</div><div class="line">| getOpenFileName() | getOpenFileNameAndFilter()  ||</div><div class="line">| getOpenFileNames() | getOpenFileNamesAndFilter()||</div><div class="line">| getSaveFileNameAndFilter() | getSaveFileName()||</div><div class="line"></div><div class="line">**PyQt5 舍弃了 PyQt4 同名的方法**</div><div class="line"></div><div class="line">## `QMatrix` 方法不再支持</div><div class="line">PyQt5 中已经不再支持 PyQt4种不推荐方法 `QMatrix` </div><div class="line">PyQt5 中可以考虑使用 `QPropertyAnimation`</div><div class="line"></div><div class="line">## `QGraphicsItemAnimation` 方法不再支持</div><div class="line">PyQt5 中已经不再支持 PyQt4种不推荐方法 `QGraphicsItemAnimation` </div><div class="line">PyQt5 中可以考虑使用 `QTransform`</div><div class="line"></div><div class="line">## `QPyTextObject` 被舍弃</div><div class="line">PyQt4 implements the QPyTextObject as a workaround for the inability to define a Python class that is sub-classed from more than one Qt class. PyQt5 does support the ability to define a Python class that is sub-classed from more than one Qt class so long as all but one of the Qt classes are interfaces, i.e. they have been declared in C++ as such using Q_DECLARE_INTERFACE. Therefore QPyTextObject is not implemented in PyQt5.</div><div class="line"></div><div class="line">## QSet 在PyQt5中完全用 集合 形式实现</div><div class="line"></div><div class="line">## pyuic5 不再提供 `--pyqt3-wrapper`参数</div><div class="line">pyuic5 does not support the --pyqt3-wrapper flag of pyuic4.</div><div class="line"></div><div class="line">## pyrcc5 不再提供 `-py2` 或 `-py3` 参数</div><div class="line">`pyrcc5` cli工具不再支持 `-py2` 或者 `-py3` 参数。因为输出的代码兼容所有Python版本（v2.6以后的所有版本）</div><div class="line"></div><div class="line">## PyQt5 优化 合作性多重继承 （Cooperative Multi-inheritance）的初始化方式</div><div class="line"></div><div class="line">```python</div><div class="line"># PyQt5 调用父类的`__init__`方法.</div><div class="line">def __init(self, **kwargs):</div><div class="line">    super().__init__(**kwargs)</div></pre></td></tr></table></figure>
+<h2 id="QDataStream-明显数值的参数以数值处理和返回"><a href="#QDataStream-明显数值的参数以数值处理和返回" class="headerlink" title="QDataStream 明显数值的参数以数值处理和返回"></a><code>QDataStream</code> 明显数值的参数以数值处理和返回</h2><p><code>readUint8(); readInt8(); writeUInt8(); writeInt8()</code>方法在PyQt5中以数值类型写入和返回（PyQt4中是以数值文本）</p>
+<h2 id="QFileDialog-文件操作接口更新"><a href="#QFileDialog-文件操作接口更新" class="headerlink" title="QFileDialog  文件操作接口更新"></a><code>QFileDialog</code>  文件操作接口更新</h2><table>
+<thead>
+<tr>
+<th>PyQt5</th>
+<th>PyQt4</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>getOpenFileName()</td>
+<td>getOpenFileNameAndFilter()</td>
+<td></td>
+</tr>
+<tr>
+<td>getOpenFileNames()</td>
+<td>getOpenFileNamesAndFilter()</td>
+<td></td>
+</tr>
+<tr>
+<td>getSaveFileNameAndFilter()</td>
+<td>getSaveFileName()</td>
+</tr>
+</tbody>
+</table>
+<p><strong>PyQt5 舍弃了 PyQt4 同名的方法</strong></p>
+<h2 id="QMatrix-方法不再支持"><a href="#QMatrix-方法不再支持" class="headerlink" title="QMatrix 方法不再支持"></a><code>QMatrix</code> 方法不再支持</h2><p>PyQt5 中已经不再支持 PyQt4种不推荐方法 <code>QMatrix</code><br>PyQt5 中可以考虑使用 <code>QPropertyAnimation</code></p>
+<h2 id="QGraphicsItemAnimation-方法不再支持"><a href="#QGraphicsItemAnimation-方法不再支持" class="headerlink" title="QGraphicsItemAnimation 方法不再支持"></a><code>QGraphicsItemAnimation</code> 方法不再支持</h2><p>PyQt5 中已经不再支持 PyQt4种不推荐方法 <code>QGraphicsItemAnimation</code><br>PyQt5 中可以考虑使用 <code>QTransform</code></p>
+<h2 id="QPyTextObject-被舍弃"><a href="#QPyTextObject-被舍弃" class="headerlink" title="QPyTextObject 被舍弃"></a><code>QPyTextObject</code> 被舍弃</h2><p>PyQt4 implements the QPyTextObject as a workaround for the inability to define a Python class that is sub-classed from more than one Qt class. PyQt5 does support the ability to define a Python class that is sub-classed from more than one Qt class so long as all but one of the Qt classes are interfaces, i.e. they have been declared in C++ as such using Q_DECLARE_INTERFACE. Therefore QPyTextObject is not implemented in PyQt5.</p>
+<h2 id="QSet-在PyQt5中完全用-集合-形式实现"><a href="#QSet-在PyQt5中完全用-集合-形式实现" class="headerlink" title="QSet 在PyQt5中完全用 集合 形式实现"></a>QSet 在PyQt5中完全用 集合 形式实现</h2><h2 id="pyuic5-不再提供-pyqt3-wrapper参数"><a href="#pyuic5-不再提供-pyqt3-wrapper参数" class="headerlink" title="pyuic5 不再提供 --pyqt3-wrapper参数"></a>pyuic5 不再提供 <code>--pyqt3-wrapper</code>参数</h2><p>pyuic5 does not support the –pyqt3-wrapper flag of pyuic4.</p>
+<h2 id="pyrcc5-不再提供-py2-或-py3-参数"><a href="#pyrcc5-不再提供-py2-或-py3-参数" class="headerlink" title="pyrcc5 不再提供 -py2 或 -py3 参数"></a>pyrcc5 不再提供 <code>-py2</code> 或 <code>-py3</code> 参数</h2><p><code>pyrcc5</code> cli工具不再支持 <code>-py2</code> 或者 <code>-py3</code> 参数。因为输出的代码兼容所有Python版本（v2.6以后的所有版本）</p>
+<h2 id="PyQt5-优化-合作性多重继承-（Cooperative-Multi-inheritance）的初始化方式"><a href="#PyQt5-优化-合作性多重继承-（Cooperative-Multi-inheritance）的初始化方式" class="headerlink" title="PyQt5 优化 合作性多重继承 （Cooperative Multi-inheritance）的初始化方式"></a>PyQt5 优化 合作性多重继承 （Cooperative Multi-inheritance）的初始化方式</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># PyQt5 调用父类的`__init__`方法.</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__init</span><span class="params">(self, **kwargs)</span>:</span></div><div class="line">    super().__init__(**kwargs)</div></pre></td></tr></table></figure>
 <h2 id="PyQt5-自动释放GIL，而不是PyQt4的强制释放"><a href="#PyQt5-自动释放GIL，而不是PyQt4的强制释放" class="headerlink" title="PyQt5 自动释放GIL，而不是PyQt4的强制释放"></a>PyQt5 自动释放GIL，而不是PyQt4的强制释放</h2><h2 id="PyQt5-退出时自动调用sip-setdestroyonexit-以禁用自动析构"><a href="#PyQt5-退出时自动调用sip-setdestroyonexit-以禁用自动析构" class="headerlink" title="PyQt5 退出时自动调用sip.setdestroyonexit()以禁用自动析构"></a>PyQt5 退出时自动调用<code>sip.setdestroyonexit()</code>以禁用自动析构</h2><p>Python解释器退出PyQt4应用程序时会默认调用C++析构器处理所有它拥有的线程（这通常是以随机的顺序，因此可能会导致解析器崩溃），通过调用 sip.setdestroyonexit() 函数可以禁用。<br>PyQt5 总会自动调用 <code>sip.setdestroyonexit()</code> 函数.</p>
 
       
@@ -574,7 +606,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#不与-PyQt4-兼容"><span class="nav-number">1.</span> <span class="nav-text">不与 PyQt4 兼容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不再对Python老版本提供支持（Python-2-6-之前）"><span class="nav-number">2.</span> <span class="nav-text">不再对Python老版本提供支持（Python 2.6 之前）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不再实现PyQt4不推荐的API接口"><span class="nav-number">3.</span> <span class="nav-text">不再实现PyQt4不推荐的API接口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不再提供多版本API接口"><span class="nav-number">4.</span> <span class="nav-text">不再提供多版本API接口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#信号和插槽（Signals-and-Slots）机制更新"><span class="nav-number">5.</span> <span class="nav-text">信号和插槽（Signals and Slots）机制更新</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#风格对比（代码）"><span class="nav-number">5.1.</span> <span class="nav-text">风格对比（代码）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QtOpenGL-模块更新"><span class="nav-number">6.</span> <span class="nav-text">QtOpenGL 模块更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QtWebKit-模块更新"><span class="nav-number">7.</span> <span class="nav-text">QtWebKit 模块更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#扩展性增强"><span class="nav-number">8.</span> <span class="nav-text">扩展性增强</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#dbus-mainloop-qt-模块更名"><span class="nav-number">9.</span> <span class="nav-text">dbus.mainloop.qt 模块更名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QDataStream-明显数值的参数以数值处理和返回"><span class="nav-number">10.</span> <span class="nav-text">QDataStream 明显数值的参数以数值处理和返回</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PyQt5-自动释放GIL，而不是PyQt4的强制释放"><span class="nav-number">11.</span> <span class="nav-text">PyQt5 自动释放GIL，而不是PyQt4的强制释放</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PyQt5-退出时自动调用sip-setdestroyonexit-以禁用自动析构"><span class="nav-number">12.</span> <span class="nav-text">PyQt5 退出时自动调用sip.setdestroyonexit()以禁用自动析构</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#不与-PyQt4-兼容"><span class="nav-number">1.</span> <span class="nav-text">不与 PyQt4 兼容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不再对Python老版本提供支持（Python-2-6-之前）"><span class="nav-number">2.</span> <span class="nav-text">不再对Python老版本提供支持（Python 2.6 之前）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不再实现PyQt4不推荐的API接口"><span class="nav-number">3.</span> <span class="nav-text">不再实现PyQt4不推荐的API接口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不再提供多版本API接口"><span class="nav-number">4.</span> <span class="nav-text">不再提供多版本API接口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#信号和插槽（Signals-and-Slots）机制更新"><span class="nav-number">5.</span> <span class="nav-text">信号和插槽（Signals and Slots）机制更新</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#风格对比（代码）"><span class="nav-number">5.1.</span> <span class="nav-text">风格对比（代码）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QtOpenGL-模块更新"><span class="nav-number">6.</span> <span class="nav-text">QtOpenGL 模块更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QtWebKit-模块更新"><span class="nav-number">7.</span> <span class="nav-text">QtWebKit 模块更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#扩展性增强"><span class="nav-number">8.</span> <span class="nav-text">扩展性增强</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#dbus-mainloop-qt-模块更名"><span class="nav-number">9.</span> <span class="nav-text">dbus.mainloop.qt 模块更名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QDataStream-明显数值的参数以数值处理和返回"><span class="nav-number">10.</span> <span class="nav-text">QDataStream 明显数值的参数以数值处理和返回</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QFileDialog-文件操作接口更新"><span class="nav-number">11.</span> <span class="nav-text">QFileDialog  文件操作接口更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QMatrix-方法不再支持"><span class="nav-number">12.</span> <span class="nav-text">QMatrix 方法不再支持</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QGraphicsItemAnimation-方法不再支持"><span class="nav-number">13.</span> <span class="nav-text">QGraphicsItemAnimation 方法不再支持</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QPyTextObject-被舍弃"><span class="nav-number">14.</span> <span class="nav-text">QPyTextObject 被舍弃</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QSet-在PyQt5中完全用-集合-形式实现"><span class="nav-number">15.</span> <span class="nav-text">QSet 在PyQt5中完全用 集合 形式实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pyuic5-不再提供-pyqt3-wrapper参数"><span class="nav-number">16.</span> <span class="nav-text">pyuic5 不再提供 --pyqt3-wrapper参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pyrcc5-不再提供-py2-或-py3-参数"><span class="nav-number">17.</span> <span class="nav-text">pyrcc5 不再提供 -py2 或 -py3 参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PyQt5-优化-合作性多重继承-（Cooperative-Multi-inheritance）的初始化方式"><span class="nav-number">18.</span> <span class="nav-text">PyQt5 优化 合作性多重继承 （Cooperative Multi-inheritance）的初始化方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PyQt5-自动释放GIL，而不是PyQt4的强制释放"><span class="nav-number">19.</span> <span class="nav-text">PyQt5 自动释放GIL，而不是PyQt4的强制释放</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PyQt5-退出时自动调用sip-setdestroyonexit-以禁用自动析构"><span class="nav-number">20.</span> <span class="nav-text">PyQt5 退出时自动调用sip.setdestroyonexit()以禁用自动析构</span></a></li></ol></div>
             
 
           </div>
@@ -662,11 +694,16 @@
   
 
 
+  
 
 
 
 
 
+
+
+  
+  
 
 
 
@@ -689,6 +726,15 @@
 
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/canvas_sphere.min.js"></script>
 
 
   
