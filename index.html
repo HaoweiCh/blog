@@ -328,6 +328,623 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://Changgg.github.io/2017/09/02/2017-09-14-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Chang.">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3610305?v=4&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chang's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/09/02/2017-09-14-2/" itemprop="url">开源项目 Morning</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-02T10:20:03+08:00">
+                2017-09-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/开源项目/" itemprop="url" rel="index">
+                    <span itemprop="name">开源项目</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/09/02/2017-09-14-2/" class="leancloud_visitors" data-flag-title="开源项目 Morning">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  476
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>面向用户</p>
+<blockquote>
+<p>有一定动手能力的普通用户和程序员  </p>
+</blockquote>
+<p>使用场景</p>
+<blockquote>
+<p>是打开terminal时自动对某些网站监测并进行规律化操作(如 签到，打卡，发早安，顶帖，内容筛选等)</p>
+</blockquote>
+<p>支持平台</p>
+<blockquote>
+<p>主要是 MacOS和Linux (手里没Win的笔记本)</p>
+</blockquote>
+<hr>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="1-克隆项目"><a href="#1-克隆项目" class="headerlink" title="1. 克隆项目"></a>1. 克隆项目</h3><p><code>git clone https://github.com/Changgg/morning.git&amp;&amp; cd morning</code></p>
+<h3 id="2-安装依赖项"><a href="#2-安装依赖项" class="headerlink" title="2. 安装依赖项"></a>2. 安装依赖项</h3><p><code>pip install -r requirements.txt</code></p>
+<h3 id="3-配置"><a href="#3-配置" class="headerlink" title="3. 配置"></a>3. 配置</h3><p>使用 chrome 浏览器安装 EditThisCookie 插件，将页面cookies导出到剪贴板并放在cookies文件夹下以站点域名打头的txt文件里(如jobbole.com.txt) 推荐站点(v2ex, 网易云音乐，jobbole)。<br><strong>如果不采取这种方式保存的话将会自动读取firefox的cookies，如果读取失败会报错。</strong></p>
+<p><strong>如果不想使用某些网站的话，请修改config.py 内 <code>list_black</code> 数组</strong></p>
+<h3 id="技巧-1-手动调用"><a href="#技巧-1-手动调用" class="headerlink" title="技巧 1 手动调用"></a>技巧 1 手动调用</h3><p><code>alias morning=&quot;python3 /Users/c/PycharmProjects/morning/morning.py&quot;</code></p>
+<h2 id="最近更新"><a href="#最近更新" class="headerlink" title="最近更新"></a>最近更新</h2><ul>
+<li style="list-style: none"><input type="checkbox" checked> 将操作结果保存并对未成功的操作可以再次尝试</li>
+</ul>
+<h2 id="登录逻辑"><a href="#登录逻辑" class="headerlink" title="登录逻辑"></a>登录逻辑</h2><p>登陆部分选择省去，由用户将浏览器的cookies提取出来。目前的可选项是:</p>
+<ul>
+<li style="list-style: none"><input type="checkbox" checked> Chrome浏览器:    使用 EditThisCookie 插件</li>
+<li style="list-style: none"><input type="checkbox" checked> 自动从 Firefox 浏览器内获取Cookies (系统默认路径下)<ul>
+<li style="list-style: none"><input type="checkbox"> 网易音乐无法使用这种方式登陆</li>
+</ul>
+</li>
+</ul>
+<h2 id="站点"><a href="#站点" class="headerlink" title="站点"></a>站点</h2><h3 id="V2EX"><a href="#V2EX" class="headerlink" title="V2EX"></a>V2EX</h3><ul>
+<li style="list-style: none"><input type="checkbox" checked> v2ex 自动签到和消息检查显示</li>
+</ul>
+<h3 id="网易云音乐"><a href="#网易云音乐" class="headerlink" title="网易云音乐"></a>网易云音乐</h3><ul>
+<li style="list-style: none"><input type="checkbox" checked> 移动端签到</li>
+<li style="list-style: none"><input type="checkbox" checked> pc端签到</li>
+</ul>
+<h3 id="伯乐在线"><a href="#伯乐在线" class="headerlink" title="伯乐在线"></a>伯乐在线</h3><ul>
+<li style="list-style: none"><input type="checkbox" checked> 基本功能</li>
+</ul>
+<h3 id="京东"><a href="#京东" class="headerlink" title="京东"></a>京东</h3><ul>
+<li style="list-style: none"><input type="checkbox"> 登录<ul>
+<li style="list-style: none"><input type="checkbox"> 手机号密码登录 <ul>
+<li style="list-style: none"><input type="checkbox"> 静默登录（无需验证码登录）</li>
+</ul>
+</li>
+<li style="list-style: none"><input type="checkbox" checked> 手机号短信登录 </li>
+</ul>
+</li>
+<li style="list-style: none"><input type="checkbox" checked> 小白卡钢镚打卡</li>
+<li style="list-style: none"><input type="checkbox"> 京东客户端钢镚打卡</li>
+<li style="list-style: none"><input type="checkbox"> 流量加油站签到领流量</li>
+<li style="list-style: none"><input type="checkbox"> 京东小金库现金红包</li>
+<li style="list-style: none"><input type="checkbox"> 京东会员页签到领京豆</li>
+<li style="list-style: none"><input type="checkbox"> 京东金融签到领京豆</li>
+<li style="list-style: none"><input type="checkbox"> 京东客户端签到领京豆</li>
+</ul>
+<h4 id="登录逻辑-1"><a href="#登录逻辑-1" class="headerlink" title="登录逻辑"></a>登录逻辑</h4><p><a href="https://payrisk.jd.com/m.html" target="_blank" rel="external">https://payrisk.jd.com/m.html</a></p>
+<h3 id="豆瓣"><a href="#豆瓣" class="headerlink" title="豆瓣"></a>豆瓣</h3><ul>
+<li style="list-style: none"><input type="checkbox" checked> 自动顶帖</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://Changgg.github.io/2017/08/02/2017-09-14-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Chang.">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3610305?v=4&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chang's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/02/2017-09-14-1/" itemprop="url">豆瓣电影页面信息增强</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-02T09:01:03+08:00">
+                2017-08-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Userscript/" itemprop="url" rel="index">
+                    <span itemprop="name">Userscript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/08/02/2017-09-14-1/" class="leancloud_visitors" data-flag-title="豆瓣电影页面信息增强">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  223
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ul>
+<li><a href="https://greasyfork.org/zh-CN/scripts/14636-mydoubanmoviehelper-%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1c-%E8%B1%86%E7%93%A3-%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1-movie-douban-com" target="_blank" rel="external">GreasyFork 脚本页面</a></li>
+</ul>
+<h2 id="功能介绍"><a href="#功能介绍" class="headerlink" title="功能介绍"></a>功能介绍</h2><ol>
+<li>美化豆瓣电影页的排布</li>
+<li>右侧提供各第三方网站的快捷链接，部分站点提供状态检查</li>
+<li>电影介绍下方加入第三方提供字幕资源的站点</li>
+</ol>
+<h2 id="截图"><a href="#截图" class="headerlink" title="截图"></a>截图</h2><p><img src="/media/15053701998111.jpg" alt=""></p>
+<p><img src="/media/15053704210738.jpg" alt=""></p>
+<h2 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h2><ul>
+<li style="list-style: none"><input type="checkbox"> 修复脚本部分网友失效问题<br><a href="https://greasyfork.org/zh-CN/forum/discussion/29341/x" target="_blank" rel="external">https://greasyfork.org/zh-CN/forum/discussion/29341/x</a></li>
+<li style="list-style: none"><input type="checkbox"> 修复BUG <code>ReferenceError: GM_addStyle is not defined</code><br><a href="https://greasyfork.org/zh-CN/forum/discussion/28348/x" target="_blank" rel="external">https://greasyfork.org/zh-CN/forum/discussion/28348/x</a></li>
+</ul>
+<p>2017年06月</p>
+<ul>
+<li style="list-style: none"><input type="checkbox" checked> 增加逻辑屏蔽更多某些让人不舒服的界面元素</li>
+<li style="list-style: none"><input type="checkbox" checked> <a href="https://greasyfork.org/zh-CN/forum/discussion/24565/x" target="_blank" rel="external">https://greasyfork.org/zh-CN/forum/discussion/24565/x</a>  </li>
+<li style="list-style: none"><input type="checkbox" checked> <a href="https://greasyfork.org/zh-CN/forum/discussion/24164/x" target="_blank" rel="external">https://greasyfork.org/zh-CN/forum/discussion/24164/x</a><br>更新站点地址，加入新站点 <a href="http://ifkdy.com/" target="_blank" rel="external">http://ifkdy.com/</a></li>
+<li style="list-style: none"><input type="checkbox" checked> <a href="https://greasyfork.org/zh-CN/forum/discussion/24578/x" target="_blank" rel="external">https://greasyfork.org/zh-CN/forum/discussion/24578/x</a><br>增加在线播放资源点</li>
+</ul>
+<h2 id="参与交流"><a href="#参与交流" class="headerlink" title="参与交流"></a>参与交流</h2><ul>
+<li>Q群 289207565，这里也可以受理建议和脚本更新协助哦</li>
+<li>我的 Github 开源项目里也可以提交issue哦</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://Changgg.github.io/2017/08/01/2017-09-14/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Chang.">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3610305?v=4&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chang's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/01/2017-09-14/" itemprop="url">网易云音乐增强</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-01T08:01:03+08:00">
+                2017-08-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Userscript/" itemprop="url" rel="index">
+                    <span itemprop="name">Userscript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/08/01/2017-09-14/" class="leancloud_visitors" data-flag-title="网易云音乐增强">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  242
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ul>
+<li><a href="https://greasyfork.org/zh-CN/scripts/30482-my163musichelper-%E7%BD%91%E6%98%93%E9%9F%B3%E4%B9%90c-%E7%BD%91%E6%98%93-%E7%BD%91%E6%98%93%E9%9F%B3%E4%B9%90-music-163-com" target="_blank" rel="external">GreasyFork 脚本页面</a></li>
+</ul>
+<h2 id="功能介绍"><a href="#功能介绍" class="headerlink" title="功能介绍"></a>功能介绍</h2><ol>
+<li>美化网易音乐的排布,去除首页某些特别难看的广告或其他用户不友好的页面元素。;</li>
+<li>点击播放器的歌曲封面就可以直接下载歌曲，没有侵入页面元素（不想影响美感,<strong>当听到自己喜欢的歌的时候不需要进入任何界面直接点击歌曲封面就直接可以下载</strong>。;</li>
+<li>在线播放使用更高音质;</li>
+<li>自动点击签到按钮</li>
+</ol>
+<h2 id="截图"><a href="#截图" class="headerlink" title="截图"></a>截图</h2><p><img src="/media/15053701998111.jpg" alt=""></p>
+<p><img src="/media/15053704210738.jpg" alt=""></p>
+<h2 id="已知问题"><a href="#已知问题" class="headerlink" title="已知问题"></a>已知问题</h2><ul>
+<li style="list-style: none"><input type="checkbox"> 不支持 HTTPS<br>下次更新便会修复</li>
+<li style="list-style: none"><input type="checkbox" checked> 部分音乐没有更高音质。<br>因为网易云自生没有提供更高品质的，而我们的脚本并不是从第三方资源点获取（以后可以考虑）。</li>
+</ul>
+<h2 id="参与交流"><a href="#参与交流" class="headerlink" title="参与交流"></a>参与交流</h2><ul>
+<li>Q群 289207565，这里也可以受理建议和脚本更新协助哦</li>
+<li>我的 Github 开源项目里也可以提交issue哦</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://Changgg.github.io/2017/06/14/2017-09-13/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -384,6 +1001,17 @@
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Python/" itemprop="url" rel="index">
                     <span itemprop="name">Python</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/PyQt/" itemprop="url" rel="index">
+                    <span itemprop="name">PyQt</span>
                   </a>
                 </span>
 
@@ -756,7 +1384,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-18T07:06:03+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-18T08:06:03+08:00">
                 2017-05-18
               </time>
             
@@ -781,6 +1409,17 @@
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Python/" itemprop="url" rel="index">
                     <span itemprop="name">Python</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/PyQt/" itemprop="url" rel="index">
+                    <span itemprop="name">PyQt</span>
                   </a>
                 </span>
 
@@ -821,7 +1460,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  1,814
+                  1,796
                 </span>
               
 
@@ -848,8 +1487,7 @@
       
         
           
-            <p>Python的观察者模式，PyQt signal&amp;slot 机制的理解和应用</p>
-<h2 id="内容介绍"><a href="#内容介绍" class="headerlink" title="内容介绍"></a>内容介绍</h2><ul>
+            <h2 id="内容介绍"><a href="#内容介绍" class="headerlink" title="内容介绍"></a>内容介绍</h2><ul>
 <li style="list-style: none"><input type="checkbox" checked> 提供signal&amp;slot的python实现方式（更大的灵活性，效率相比PyQt自带更低）</li>
 <li style="list-style: none"><input type="checkbox"> PyQt 和 Python 两种实现方式的特色对比</li>
 </ul>
@@ -990,7 +1628,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1001,7 +1639,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -1012,7 +1650,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -1026,7 +1664,7 @@
           
             
               <span class="links-of-author-item">
-                <a href="mailto:1132013346@qq.com" target="_blank" title="E-Mail">
+                <a href="mailto:3099891314@qq.com" target="_blank" title="E-Mail">
                   
                     <i class="fa fa-fw fa-envelope"></i>
                   
