@@ -5,7 +5,7 @@
     <url>%2F2017%2F09%2F18%2F2017-09-18%2F</url>
     <content type="text"><![CDATA[问题记录第一次 开机键没反应跑去苹果维修店维修员拿出一根很破旧的magsafe线通电简单的尝试了一下开机后。就说要放在他那，这可是我主力机那肯定不行。回家尝试网上搜索一番，重设PRAM和重设SMC了一下问题就好了。😅以后就养成了一个习惯出了问题先重置。 第二次 iphone数据线连mac响个不停我的线能正常充电，但是连接我的rmbp后响个不停。这次留意了一下就重设PRAM和重设SMC但没啥效果。猜测可能是usb接口松了，尝试轻摁线头一会儿就连接正常了。 这种情况应该注意： 线（一定要用官方线）是不是好的，换台机子测试一下。 重设PRAM 关闭 Mac。 在键盘上找到以下按键的位置：Command (⌘)、Option、P 和 R。您需要在步骤 4 中同时按住这些键。 启动电脑。 出现灰屏前按住 Command-Option-P-R 键。 按下这些键，直到电脑重新启动，您会再次听到启动声。电脑自行重启的第三次，您就可以松开了。 重设SMC 关闭电脑。 将 MagSafe 电源适配器连接到电源和 Mac（如果尚未连接的话）。 在内建键盘上，同时按下（左侧）Shift-Control-Option 键和电源按钮。这个步骤不会启动电脑。 接下来，您可以同时松开所有键和电源按钮。 按下电源按钮打开电脑。]]></content>
       <categories>
-        <category>开源项目</category>
+        <category>RMBP</category>
       </categories>
       <tags>
         <tag>macOS</tag>
@@ -20,8 +20,8 @@
         <category>开源项目</category>
       </categories>
       <tags>
-        <tag>Python</tag>
         <tag>自动化</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
