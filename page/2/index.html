@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,8 +14,19 @@
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
 
 
+
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -25,12 +36,16 @@
 
 
 
+  <meta name="google-site-verification" content="aRJV0sBL8RciQQjv7E0Bym3nTo6mK03tuW-n7-QWv54" />
 
 
 
 
 
 
+
+
+  <meta name="baidu-site-verification" content="MByCMjV3EO" />
 
 
 
@@ -42,6 +57,38 @@
   
   <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Galdeano:300,300italic,400,400italic,700,700italic|PingFang SC:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
 
 
 
@@ -68,7 +115,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Python,Chang" />
 
 
 
@@ -96,9 +143,9 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Mist',
     version: '5.1.3',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"always","offset":12,"offset_float":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -160,7 +207,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">有梦想才会出发，有挑战才有乐趣</p>
+        <h1 class="site-subtitle" itemprop="description">有梦想才会出发，有挑战才有乐趣</h1>
       
   </div>
 
@@ -190,6 +237,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
@@ -201,9 +258,43 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
   
 </nav>
 
@@ -237,7 +328,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chang.">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3610305?v=4&s=460">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -249,9 +340,9 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/06/13/Python/20170613/" itemprop="url">Python时间相关的类型转化</a></h1>
+                <a class="post-title-link" href="/2017/06/13/Python/20170613/" itemprop="url">Python时间相关的类型转化</a></h2>
         
 
         <div class="post-meta">
@@ -303,9 +394,39 @@
 
           
           
+             <span id="/2017/06/13/Python/20170613/" class="leancloud_visitors" data-flag-title="Python时间相关的类型转化">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  335
+                </span>
+              
+
+              
+
+              
+            </div>
           
 
           
@@ -317,24 +438,21 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
 
       
         
-          
-            <p>python时间相关的库和转换关系</p>
-<p><img src="/media/15052943518472.jpg" alt=""></p>
-<h2 id="string-类型-time"><a href="#string-类型-time" class="headerlink" title="string 类型(time)"></a>string 类型(time)</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建文本时间</span></span><br><span class="line">s = time.ctime() <span class="comment"># 以当前系统地区来决定输出的时间文本格式</span></span><br><span class="line">s = <span class="string">"2008-11-10 17:53:59"</span></span><br><span class="line"><span class="comment"># 转换为时间对象</span></span><br><span class="line">t = time.strptime(s, <span class="string">"%Y-%m-%d %H:%M:%S"</span>)</span><br></pre></td></tr></table></figure>
-<h2 id="datetime-对象"><a href="#datetime-对象" class="headerlink" title="datetime 对象"></a>datetime 对象</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建datetime对象</span></span><br><span class="line"><span class="comment"># dt_obj = datetime.datetime.now()</span></span><br><span class="line">dt_obj = datetime.datetime(<span class="number">2008</span>, <span class="number">11</span>, <span class="number">10</span>, <span class="number">17</span>, <span class="number">53</span>, <span class="number">59</span>) </span><br><span class="line"><span class="comment"># 转换为文本型时间</span></span><br><span class="line">print(dt_obj.strftime(<span class="string">"%Y-%m-%d %H:%M:%S"</span>)) </span><br><span class="line"><span class="comment"># 转换为时间对象</span></span><br><span class="line">time_tuple = dt_obj.timetuple()</span><br><span class="line"><span class="comment"># 转化哪位时间戳</span></span><br><span class="line">time_stamp = dt_obj.timestamp()</span><br></pre></td></tr></table></figure>
-<h2 id="time-对象"><a href="#time-对象" class="headerlink" title="time 对象"></a>time 对象</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建time对象</span></span><br><span class="line">time_tuple = (<span class="number">2008</span>, <span class="number">11</span>, <span class="number">12</span>, <span class="number">13</span>, <span class="number">51</span>, <span class="number">18</span>, <span class="number">2</span>, <span class="number">317</span>, <span class="number">0</span>)</span><br><span class="line"><span class="comment"># 转换为文本型时间</span></span><br><span class="line">time.strftime(<span class="string">"%Y-%m-%d %H:%M:%S"</span>, time_tuple)</span><br><span class="line"><span class="comment"># 转换为datetime对象</span></span><br><span class="line">datetime.datetime(*time_tuple[<span class="number">0</span>:<span class="number">6</span>])</span><br><span class="line"><span class="comment"># 转换为时间戳</span></span><br><span class="line">time.mktime(time_tuple)</span><br></pre></td></tr></table></figure>
-<h2 id="int-类型-时间戳"><a href="#int-类型-时间戳" class="headerlink" title="int 类型(时间戳)"></a>int 类型(时间戳)</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time, datetime</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取当前时间的时间戳</span></span><br><span class="line">timestamp = time.time()</span><br><span class="line"><span class="comment"># 转换为 datetime对象</span></span><br><span class="line">datetime.datetime.fromtimestamp(timestamp) <span class="comment"># 本地时区时间</span></span><br><span class="line"><span class="comment"># 转换为 time对象</span></span><br><span class="line">time.localtime(timestamp)</span><br></pre></td></tr></table></figure>
-<h2 id="带时区的处理"><a href="#带时区的处理" class="headerlink" title="带时区的处理"></a>带时区的处理</h2><h3 id="转换为-datetime对象"><a href="#转换为-datetime对象" class="headerlink" title="转换为 datetime对象"></a>转换为 datetime对象</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time, datetime</span><br><span class="line"></span><br><span class="line"><span class="comment"># 本地时区时间</span></span><br><span class="line">datetime.datetime.fromtimestamp(timestamp)</span><br><span class="line"><span class="comment"># 标准时区时间</span></span><br><span class="line">datetime.datetime.utcfromtimestamp(timestamp)</span><br></pre></td></tr></table></figure>
-<h3 id="转换为-time对象"><a href="#转换为-time对象" class="headerlink" title="转换为 time对象"></a>转换为 time对象</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 本地时区</span></span><br><span class="line">time.localtime(timestamp)</span><br><span class="line"><span class="comment"># 标准时区</span></span><br><span class="line">time.gmtime(timestamp)</span><br></pre></td></tr></table></figure>
-
-          
+          <p>python时间相关的库和转换关系</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/06/13/Python/20170613/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -386,7 +504,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chang.">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3610305?v=4&s=460">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -398,9 +516,9 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/05/18/Python/20170518/" itemprop="url">Python的观察者模式，PyQt signal&slot 机制的理解和应用</a></h1>
+                <a class="post-title-link" href="/2017/05/18/Python/20170518/" itemprop="url">Python的观察者模式，PyQt signal&slot 机制的理解和应用</a></h2>
         
 
         <div class="post-meta">
@@ -452,9 +570,39 @@
 
           
           
+             <span id="/2017/05/18/Python/20170518/" class="leancloud_visitors" data-flag-title="Python的观察者模式，PyQt signal&slot 机制的理解和应用">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,907
+                </span>
+              
+
+              
+
+              
+            </div>
           
 
           
@@ -466,76 +614,21 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
 
       
         
-          
-            <h2 id="内容介绍"><a href="#内容介绍" class="headerlink" title="内容介绍"></a>内容介绍</h2><ul>
-<li style="list-style: none"><input type="checkbox" checked> 提供signal&amp;slot的python实现方式（更大的灵活性，效率相比PyQt自带更低）</li>
-<li style="list-style: none"><input type="checkbox"> PyQt 和 Python 两种实现方式的特色对比</li>
-</ul>
-<ul>
-<li style="list-style: none"><input type="checkbox"> PyQt版 功能加强 使slot可以接受到关键字参数</li>
-</ul>
-<h2 id="相关资源"><a href="#相关资源" class="headerlink" title="相关资源"></a>相关资源</h2><ul>
-<li><a href="http://blog.abstractfactory.io/dynamic-signals-in-pyqt/" target="_blank" rel="noopener">来源: 英文 多样化信号</a></li>
-<li><a href="http://pyqt.sourceforge.net/Docs/PyQt5/signals_slots.html" target="_blank" rel="noopener">资料: PyQt5 官方文档</a></li>
-<li><a href="https://www.amazon.co.uk/Design-patterns-elements-reusable-object-oriented/dp/0201633612" target="_blank" rel="noopener">书籍: Design Patterns</a><br>Is an excellent summary and reference of many very useful patterns.</li>
-<li><a href="https://www.amazon.co.uk/Head-First-Design-Patterns-Freeman/dp/0596007124" target="_blank" rel="noopener">书籍: Head First Design Patterns</a><br>Provides a more gentle and explanatory view of many of the same patterns.</li>
-<li><a href="http://stackoverflow.com/questions/21101500/custom-pyqtsignal-implementation" target="_blank" rel="noopener">讨论: SOF Custom pyqtSignal implementation</a></li>
-</ul>
-<h2 id="Python-signal-amp-slot-信号-amp-槽的-Python-实现"><a href="#Python-signal-amp-slot-信号-amp-槽的-Python-实现" class="headerlink" title="Python signal&amp;slot 信号&amp;槽的 Python 实现"></a>Python signal&amp;slot 信号&amp;槽的 Python 实现</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><ul>
-<li>因为实现机制的是Python代码不是PyQt的c++，效率会更低</li>
-<li>更贴合Python的风格，more pythonic，限制更少</li>
-</ul>
-<h4 id="1-不能用实例属性替换pyqtSignal的类属性"><a href="#1-不能用实例属性替换pyqtSignal的类属性" class="headerlink" title="1. 不能用实例属性替换pyqtSignal的类属性"></a>1. <strong>不能用实例属性替换<code>pyqtSignal</code>的类属性</strong></h4><p>..<br>虽然 <code>pySignal</code> 起源于 <code>pyqtSignal</code> 而且直接实例化 <code>pySignal</code> 类的各种使用方式和 <code>pyqtSignal</code>相同（毕竟设计的时候就接口相同），但是有个容易让人困惑的点是</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 代码示例，pySignal 在实例化后的类中替换 pyqtSignal</span><br><span class="line">class Window(QWidget):</span><br><span class="line">	same_signal = pyqtSignal()</span><br><span class="line">	def __init__(self, parent=None):</span><br><span class="line">		super(Window, self).__init__(parent)</span><br><span class="line">		self.same_signal = Signal()</span><br></pre></td></tr></table></figure>
-<p>常理来说 <code>pyqtSignal()</code> 应该被 <code>pySignal</code> 替换掉了，但如早先提到的 <code>pyqtSignal</code> 在所在类实例化后摇身一变成实例化的<code>PyQt5.QtCore.pyqtBoundSignal</code>对象。</p>
-<p>这代表我们先赋值的类属性已经变成了实例化类的属性了</p>
-<p>这样造成的影响是，如果我们给某类多个实例，它们将有自己的signal而且互不干扰（emit 也不干扰）</p>
-<p>我们实现的类没有这样的特性，类属性一直是类属性</p>
-<p>这意味着给某类赋值类属性，其实例也会遗传相同的类属性（不独立）</p>
-<p>解决方案是，pySignal在最开始就应该是实例属性而不是类属性（这样能保证独立）</p>
-<h3 id="pySignal"><a href="#pySignal" class="headerlink" title="pySignal"></a>pySignal</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Signal</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.__subscribers = []</span><br><span class="line">      </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">emit</span><span class="params">(self, *args, **kwargs)</span>:</span></span><br><span class="line">        <span class="keyword">for</span> subs <span class="keyword">in</span> self.__subscribers:</span><br><span class="line">            subs(*args, **kwargs)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">connect</span><span class="params">(self, func)</span>:</span></span><br><span class="line">        self.__subscribers.append(func)  </span><br><span class="line">      </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">disconnect</span><span class="params">(self, func)</span>:</span>  </span><br><span class="line">        <span class="keyword">try</span>:  </span><br><span class="line">            self.__subscribers.remove(func)  </span><br><span class="line">        <span class="keyword">except</span> ValueError:  </span><br><span class="line">            print(<span class="string">'Warning: function %s not removed '</span></span><br><span class="line">                  <span class="string">'from signal %s'</span>%(func,self))</span><br></pre></td></tr></table></figure>
-<h2 id="PyQt-signal-amp-slot"><a href="#PyQt-signal-amp-slot" class="headerlink" title="PyQt signal&amp;slot"></a>PyQt signal&amp;slot</h2><h3 id="介绍-1"><a href="#介绍-1" class="headerlink" title="介绍"></a>介绍</h3><h4 id="1-signal只能作为类属性-Only-works-with-class-attributes"><a href="#1-signal只能作为类属性-Only-works-with-class-attributes" class="headerlink" title="1. signal只能作为类属性 Only works with class attributes"></a>1. signal只能作为类属性 Only works with class attributes</h4><p>Signals are not class attributes. <code>PyQt5.QtCore.pyqtSignal()</code> is merely a vessel for a future instance variable containing a PyQt*.QtCore.pyqtBoundSignal instance. When you instantiate your class, pyqtSignal goes to work and injects itself as an instance variable and adds itself to the QMetaObject of the class.</p>
-<p>QMetaObject? It comes with useful methods such as .className(), superClass(), methodCount() which returns the name of the class, its superclasses and number of methods respectively.</p>
-<p>In C++ these are probably very useful, however a Python programmer might not be very impressed. It’s something we’ve had access to all along via any instances’ <strong>class</strong>, <strong>bases</strong> and <strong>dict</strong>attributes.</p>
-<h4 id="2-不能在已经实例化的类中声明-Cannot-be-used-in-an-already-instantiated-class"><a href="#2-不能在已经实例化的类中声明-Cannot-be-used-in-an-already-instantiated-class" class="headerlink" title="2.不能在已经实例化的类中声明 Cannot be used in an already instantiated class"></a>2.不能在已经实例化的类中声明 Cannot be used in an already instantiated class</h4><p>这是最让人头痛的特性 Now here’s the kicker. </p>
-<p>If you’re doing any sort of base- or abstract class work with Qt widgets, you’ll quickly realise that you can’t inherit signals.</p>
-<p>Other than that, if try and bypass inheritance and have a builder spit out widgets for you, you’ll also notice how Dependency Injection isn’t going to work with signals. They have to be created as class attributes and they can only be created using pyqtSignal(). Please correct me if I’m wrong.</p>
-<h4 id="3-必须在声明signal时指明传输参数的类型-Must-be-pre-specified-with-any-data-types-you-wish-to-emit"><a href="#3-必须在声明signal时指明传输参数的类型-Must-be-pre-specified-with-any-data-types-you-wish-to-emit" class="headerlink" title="3.必须在声明signal时指明传输参数的类型 Must be pre-specified with any data-types you wish to emit"></a>3.必须在声明signal时指明传输参数的类型 Must be pre-specified with any data-types you wish to emit</h4><p>类似于强类型语言的类型声明，这完全不是Python的风格嘛。<br>In other languages, this is referred to as static typing. Python however doesn’t do any of that.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这是演示代码（伪代码），实际上得作为类属性声明</span></span><br><span class="line"><span class="comment"># normally have to be run via a class' class attribute.</span></span><br><span class="line">signal = pyqtSignal(int, str)</span><br><span class="line">signal.emit(my_number, my_string)</span><br><span class="line"></span><br><span class="line">signal.emit(my_string, my_number)</span><br><span class="line"><span class="comment"># 报错 TypeError</span></span><br><span class="line">signal.emit(not_enough_args)</span><br><span class="line"><span class="comment"># 报错 TypeError</span></span><br></pre></td></tr></table></figure>
-<h4 id="4-不支持关键字参数-Does-not-support-keyword-arguments"><a href="#4-不支持关键字参数-Does-not-support-keyword-arguments" class="headerlink" title="4. 不支持关键字参数 Does not support keyword arguments"></a>4. 不支持关键字参数 Does not support keyword arguments</h4><blockquote>
-<p>TypeError: emit() takes no keyword arguments</p>
-</blockquote>
-<p>Keyword arguments are quite useful as a means of self-documenting code.</p>
-<p><code>signal.emit(5)</code><br>本应该写做<br><code>signal.emit(velocity=5)</code><br>这样不仅增强可读性，还可以加强机制使其可以携带相同关键字参数 it can also be used to enforce signals and slots to carry an identical argument signature.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">callback</span><span class="params">(name, address)</span>:</span></span><br><span class="line">	print(<span class="string">"Name=%s and address=%s"</span> % (name, address))</span><br><span class="line"></span><br><span class="line">signal = Signal()</span><br><span class="line">signal.connect(callback)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Mistake the first argument for a tuple.</span></span><br><span class="line">signal.emit(names=(<span class="string">'marcus'</span>, <span class="string">'ottosson'</span>), address=<span class="string">'earth'</span>)</span><br><span class="line"><span class="comment"># TypeError: callback() got an unexpected keyword argument 'names'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># When actually, its a single string value.</span></span><br><span class="line">signal.emit(name=<span class="string">'marcus ottosson'</span>, address=<span class="string">'earth'</span>)</span><br><span class="line"><span class="comment"># Name=marcus ottosson and address=earth</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Of course, non-keyword arguments works too.</span></span><br><span class="line">signal.emit(<span class="string">'marcus ottosson'</span>, <span class="string">'earth'</span>)</span><br></pre></td></tr></table></figure>
-<h4 id="5-Cannot-be-modified-after-instantiation"><a href="#5-Cannot-be-modified-after-instantiation" class="headerlink" title="5. Cannot be modified after instantiation"></a>5. Cannot be modified after instantiation</h4><p>Python对象，很自然的支持 代码动态修改（monkey-patch）,但<code>pyqtSignals</code>非常特别的不支持<br>As a Python object, you would expect the ability to monkey-patch, but pyqtSignals are special enough to not let you do any of that.</p>
-<p>I’ll provide an example of monkey-patching for you below.</p>
-<h2 id="理解-Understanding-Signals-and-Slots"><a href="#理解-Understanding-Signals-and-Slots" class="headerlink" title="理解 Understanding Signals and Slots"></a>理解 Understanding Signals and Slots</h2><p>Qt 提供的 信号和槽 机制基于一个(行为型)设计模式 -&gt;观察者模式 (<a href="http://en.wikipedia.org/wiki/Observer_pattern" target="_blank" rel="noopener">Observer pattern</a>) (TODO 另开一文详细分析 Python的观察者模式)</p>
-<h3 id="跨线程"><a href="#跨线程" class="headerlink" title="跨线程"></a>跨线程</h3><p>上述实现很直接的介绍了基本原理但缺少了很多应该考虑到的应用场景比如跨线程。</p>
-<p>在使用pySignal时你可能已经遇到slot所在的线程<strong>很容易</strong>崩溃（无论是在 <code>QThread</code> 或者 Python的多线程模块），这“怪罪于”多线程之美，两个线程可能<em>同时</em>尝试或访问同一资源.</p>
-<h3 id="QObject-sender"><a href="#QObject-sender" class="headerlink" title="QObject.sender()"></a><code>QObject.sender()</code></h3><p>简而言之, <a href="http://doc.qt.io/qt-5/qobject.html#sender" target="_blank" rel="noopener"><code>QObject.sender()</code></a> 可以让接收端可以获得发送端资源。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">callback</span><span class="params">(self, message)</span>:</span></span><br><span class="line">	<span class="comment"># 在 pySignal 和 pyqtSignal 中都支持slot中查询来源signal</span></span><br><span class="line">	source_of_signal = self.sender()</span><br><span class="line">	<span class="comment"># 这在当slot可能收到多个来源的signal且需要区分他们的时候非常有用</span></span><br></pre></td></tr></table></figure>
-<p><strong>API参考资料中警告说这种方式可能会破坏面向对象程序的模块性，建议尽量避免</strong></p>
-<p>在这里我不准备提供全方位的测评, 但py版相比qt版 <code>pyqtSignal()</code>, 如果是obj1 -&gt; obj2 -&gt; obj3 这种链式调用的话，在obj3的slot中查询sender的话会返回obj1</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 在 obj3.listen 中调用sender()会返回 obj1而不是obj2，虽然obj2是调用obj3的signal</span></span><br><span class="line">obj1.signal.connect(obj2.emit)</span><br><span class="line">obj2.signal.connect(obj3.listen)</span><br><span class="line">obj1.signal.emit()</span><br><span class="line"><span class="comment"># 而在 pyqtSignal, 将会返回 obj2.</span></span><br></pre></td></tr></table></figure>
-<h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><h3 id="Example-–-监视类属性的状态"><a href="#Example-–-监视类属性的状态" class="headerlink" title="Example – 监视类属性的状态"></a>Example – 监视类属性的状态</h3><p>It can sometimes be useful to monitor an attribute of a class.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Listener</span><span class="params">(object)</span>:</span></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">		self.container = Container()</span><br><span class="line">		self.container.value_changed.connect(self.value_changed_event)</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">value_changed_event</span><span class="params">(self, previous, current)</span>:</span></span><br><span class="line">		print(<span class="string">"%r says: Value was changed from %s to %s"</span> % </span><br><span class="line">		     (self.__class__.__name__, previous, current))</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Container</span><span class="params">(object)</span>:</span></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">		self.__value = <span class="keyword">None</span></span><br><span class="line"></span><br><span class="line">		<span class="comment"># 当`value` 改变了我们就发送信号</span></span><br><span class="line">		self.value_changed = core.Signal()</span><br><span class="line"></span><br><span class="line"><span class="meta">	@property</span></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">value</span><span class="params">(self)</span>:</span></span><br><span class="line">		<span class="keyword">return</span> self.__value</span><br><span class="line"></span><br><span class="line"><span class="meta">	@value.setter</span></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">value</span><span class="params">(self, value)</span>:</span></span><br><span class="line">		self.value_changed.emit(previous=self.__value, </span><br><span class="line">					current=value)</span><br><span class="line">		self.__value = value</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">	list = Listener()</span><br><span class="line">        </span><br><span class="line">	<span class="comment"># 改变value值便会触发</span></span><br><span class="line"></span><br><span class="line">	list.container.value = <span class="number">5</span></span><br><span class="line">	<span class="comment"># 'Listening' 中打印: Value was changed from None to 5</span></span><br><span class="line"></span><br><span class="line">	list.container.value = <span class="number">6</span></span><br><span class="line">	<span class="comment"># 'Listening' 中打印: Value was changed from 5 to 6</span></span><br></pre></td></tr></table></figure>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ol>
-<li>在某些复杂的场景下，即使功能强大的<code>pyqtSignal</code>也会触短板,这个时候就可以扩展或自己实现</li>
-</ol>
-<ul>
-<li>但选择不站在巨人肩膀上而自己实现某一特性的话，有些情况我们会在遇到时发现（像先提到的线程间的安全性）。这个时候就不得不挑起自己动手实现新特性的担子。</li>
-<li>虽然两种signal机制的实现目的是一样的，但它们不一定需要用谁来替换谁。可能最好的方式是两个在代码中同时使用，各取所长，在各自适合的应用场景使用。<br>例如，<code>QThreads</code> 可以使用 <code>pyqtSignal</code> 而我们自定义的组件的基类和制造器(TODO builders)就可以使用 <code>pySignal</code></li>
-</ul>
-
-          
+          <p>介绍一下Python语言下的观察者模式和其在PyQt运用<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/05/18/Python/20170518/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -608,8 +701,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="https://avatars3.githubusercontent.com/u/3610305?v=4&s=460"
+                alt="Chang." />
+            
               <p class="site-author-name" itemprop="name">Chang.</p>
-              <p class="site-description motion-element" itemprop="description">有梦想才会出发</br>有挑战才有乐趣</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -653,6 +750,44 @@
 
           <div class="links-of-author motion-element">
             
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/Chaaang" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://bitbucket.org/Chaaang/" target="_blank" title="Bitbucket">
+                    
+                      <i class="fa fa-fw fa-bitbucket"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://coding.net/u/Changhw" target="_blank" title="Coding">
+                    
+                      <i class="fa fa-fw fa-code"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:heawercher@gmail.com" target="_blank" title="E-Mail">
+                    
+                      <i class="fa fa-fw fa-envelope"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.pinterest.com/heawerc/" target="_blank" title="Pinterest">
+                    
+                      <i class="fa fa-fw fa-pinterest"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://music.163.com/#/user/home?id=49826796" target="_blank" title="Netease">
+                    
+                      <i class="fa fa-fw fa-music"></i></a>
+                </span>
+              
+            
           </div>
 
           
@@ -682,28 +817,51 @@
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Chang.</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">所有字数&#58;</span>
+    
+    <span title="所有字数">3.7k</span>
+  
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.3</div>
 
 
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i> 本站访客数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i> 本站总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
 
 
 
@@ -718,6 +876,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
@@ -745,11 +905,16 @@
   
 
 
+  
 
 
 
 
 
+
+
+  
+  
 
 
 
@@ -783,6 +948,21 @@
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_sphere.min.js"></script>
   
 
 
@@ -842,6 +1022,323 @@
 
   
 
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
 
 
 
@@ -849,8 +1346,130 @@
   
 
   
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("STMbkQ0vIOdLG0SvpOjeNDPN-gzGzoHsz", "4mzKhkimOPGed02M0ufOl8jT");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 
   
   

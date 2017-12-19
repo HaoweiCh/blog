@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,8 +14,19 @@
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
 
 
+
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -25,12 +36,16 @@
 
 
 
+  <meta name="google-site-verification" content="aRJV0sBL8RciQQjv7E0Bym3nTo6mK03tuW-n7-QWv54" />
 
 
 
 
 
 
+
+
+  <meta name="baidu-site-verification" content="MByCMjV3EO" />
 
 
 
@@ -42,6 +57,38 @@
   
   <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Galdeano:300,300italic,400,400italic,700,700italic|PingFang SC:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
 
 
 
@@ -68,7 +115,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Python,Chang" />
 
 
 
@@ -96,9 +143,9 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Mist',
     version: '5.1.3',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"always","offset":12,"offset_float":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -160,7 +207,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">有梦想才会出发，有挑战才有乐趣</p>
+        <h1 class="site-subtitle" itemprop="description">有梦想才会出发，有挑战才有乐趣</h1>
       
   </div>
 
@@ -190,6 +237,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
@@ -201,9 +258,43 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
   
 </nav>
 
@@ -237,7 +328,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chang.">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3610305?v=4&s=460">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -249,9 +340,9 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/09/18/生产力工具/20170918/" itemprop="url">iPhone 通过 USB 连接 Macbook 就响个不停的问题</a></h1>
+                <a class="post-title-link" href="/2017/09/18/生产力工具/20170918/" itemprop="url">iPhone 通过 USB 连接 Macbook 就响个不停的问题</a></h2>
         
 
         <div class="post-meta">
@@ -303,9 +394,39 @@
 
           
           
+             <span id="/2017/09/18/生产力工具/20170918/" class="leancloud_visitors" data-flag-title="iPhone 通过 USB 连接 Macbook 就响个不停的问题">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  93
+                </span>
+              
+
+              
+
+              
+            </div>
           
 
           
@@ -317,7 +438,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -380,7 +501,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chang.">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3610305?v=4&s=460">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -392,9 +513,9 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/09/16/生产力工具/20170916/" itemprop="url">rmbp一次惊慌失措的无法启动</a></h1>
+                <a class="post-title-link" href="/2017/09/16/生产力工具/20170916/" itemprop="url">rmbp一次惊慌失措的无法启动</a></h2>
         
 
         <div class="post-meta">
@@ -446,9 +567,39 @@
 
           
           
+             <span id="/2017/09/16/生产力工具/20170916/" class="leancloud_visitors" data-flag-title="rmbp一次惊慌失措的无法启动">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  283
+                </span>
+              
+
+              
+
+              
+            </div>
           
 
           
@@ -460,31 +611,21 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
 
       
         
-          
-            <h3 id="第一次-开机键没反应"><a href="#第一次-开机键没反应" class="headerlink" title="第一次 开机键没反应"></a>第一次 开机键没反应</h3><p>跑去苹果维修店维修员拿出一根很破旧的magsafe线通电然后就按了开机键不能开机后，就说要放在他那，（这么简单）那怎么行。<br>回家尝试网上搜索一番，重设PRAM和重设SMC了一下问题就好了。😅<br>以后就养成了一个习惯出了问题先重置。</p>
-<h3 id="重设PRAM"><a href="#重设PRAM" class="headerlink" title="重设PRAM"></a>重设PRAM</h3><ol>
-<li>关闭 Mac。</li>
-<li>在键盘上找到以下按键的位置：Command (⌘)、Option、P 和 R。您需要在步骤 4 中同时按住这些键。</li>
-<li>启动电脑。</li>
-<li>出现灰屏前按住 Command-Option-P-R 键。</li>
-<li>按下这些键，直到电脑重新启动，您会再次听到启动声。电脑自行重启的第三次，您就可以松开了。</li>
-</ol>
-<h3 id="重设SMC"><a href="#重设SMC" class="headerlink" title="重设SMC"></a>重设SMC</h3><ol>
-<li>关闭电脑。</li>
-<li>将 MagSafe 电源适配器连接到电源和 Mac（如果尚未连接的话）。</li>
-<li>在内建键盘上，同时按下（左侧）Shift-Control-Option 键和电源按钮。这个步骤不会启动电脑。</li>
-<li>接下来，您可以同时松开所有键和电源按钮。</li>
-<li>按下电源按钮打开电脑。</li>
-</ol>
-
-          
+          <p>跑去苹果维修店维修员拿出一根很破旧的magsafe线通电然后就按了开机键不能开机后，就说要放在他那，（这么简单）那怎么行。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/09/16/生产力工具/20170916/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -536,7 +677,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chang.">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3610305?v=4&s=460">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -548,9 +689,9 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/06/14/Python/20170614/" itemprop="url">PyQt5 与 PyQt4 差别应用</a></h1>
+                <a class="post-title-link" href="/2017/06/14/Python/20170614/" itemprop="url">PyQt5 与 PyQt4 差别应用</a></h2>
         
 
         <div class="post-meta">
@@ -602,9 +743,39 @@
 
           
           
+             <span id="/2017/06/14/Python/20170614/" class="leancloud_visitors" data-flag-title="PyQt5 与 PyQt4 差别应用">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,032
+                </span>
+              
+
+              
+
+              
+            </div>
           
 
           
@@ -616,63 +787,21 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
 
       
         
-          
-            <blockquote>
-<p>描述能力有限，不确定的翻译会在旁边注释英文<br>更新时间：2017年05月12日<br><a href="http://pyqt.sourceforge.net/Docs/PyQt5/pyqt4_differences.html" target="_blank" rel="noopener">官网链接</a></p>
-</blockquote>
-<h2 id="不与-PyQt4-兼容"><a href="#不与-PyQt4-兼容" class="headerlink" title="不与 PyQt4 兼容"></a>不与 PyQt4 兼容</h2><p>虽然实际上升级PyQt4写的项目不是那么糟</p>
-<h2 id="不再对Python老版本提供支持（Python-2-6-之前）"><a href="#不再对Python老版本提供支持（Python-2-6-之前）" class="headerlink" title="不再对Python老版本提供支持（Python 2.6 之前）"></a>不再对Python老版本提供支持（Python 2.6 之前）</h2><h2 id="不再实现PyQt4不推荐的API接口"><a href="#不再实现PyQt4不推荐的API接口" class="headerlink" title="不再实现PyQt4不推荐的API接口"></a>不再实现PyQt4不推荐的API接口</h2><p>PyQt5 不支持任何在PyQt4版本中标记为不推荐或舍弃的Qt API（如果有就会当Bug处理）</p>
-<h2 id="不再提供多版本API接口"><a href="#不再提供多版本API接口" class="headerlink" title="不再提供多版本API接口"></a>不再提供多版本API接口</h2><p>PyQt4 支持多版本的API（如<code>QString</code>，<code>QVariant</code>等）<br>PyQt5 只支持最新的API版本(除<code>QVariant</code>外)<br>    <code>QVariant</code>的改变是去掉了 <code>QPyNullVariant</code> （在<code>QVariant</code>的帮助文档里也有显示）</p>
-<h2 id="信号和插槽（Signals-and-Slots）机制更新"><a href="#信号和插槽（Signals-and-Slots）机制更新" class="headerlink" title="信号和插槽（Signals and Slots）机制更新"></a>信号和插槽（Signals and Slots）机制更新</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 下面所列出来的调用方式不再支持</span></span><br><span class="line">QObject.connect()</span><br><span class="line">QObject.emit()</span><br><span class="line">SIGNAL()</span><br><span class="line">SLOT()</span><br></pre></td></tr></table></figure>
-<p>所有含有以SIGNAL()或SLOT()返回结果为参数的方法不再支持，转而提供可调用方法（函数）或已捆绑的信号（a bound signal）</p>
-<h3 id="风格对比（代码）"><a href="#风格对比（代码）" class="headerlink" title="风格对比（代码）"></a>风格对比（代码）</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># PyQt5</span></span><br><span class="line">combo = QtWidgets.QComboBox(self)</span><br><span class="line">combo.activated.connect(self.onActivated)</span><br><span class="line"><span class="comment"># PyQt4</span></span><br><span class="line">combo = QtWidgets.QComboBox(self)</span><br><span class="line">self.connect(combo, QtCore.pyqtSignal(<span class="string">'activated(QString)'</span>), self.onActivated)</span><br><span class="line">```    </span><br><span class="line">    </span><br><span class="line"><span class="comment">###  `QObject.disconnect()` 调用无参数，作用断掉所有信号和插槽的连接</span></span><br><span class="line"></span><br><span class="line"><span class="comment">### TODO New-style Signals and Slots</span></span><br><span class="line">Qt implements signals <span class="keyword">with</span> an optional argument <span class="keyword">as</span> two separate signals, one <span class="keyword">with</span> the argument <span class="keyword">and</span> one without it. PyQt4 exposed both of these allowing you to connect to each of them. However, when emitting the signal, you had to use the signal appropriate to the number of arguments being emitted.</span><br><span class="line"></span><br><span class="line">PyQt5 exposes only the signal where all arguments are specified. However it allows any optional arguments to be omitted when emitting the signal.</span><br><span class="line"></span><br><span class="line">Unlike PyQt4, PyQt5 supports the definition of properties, signals <span class="keyword">and</span> slots <span class="keyword">in</span> classes <span class="keyword">not</span> sub-classed <span class="keyword">from</span> QObject (i.e. <span class="keyword">in</span> mixins).</span><br><span class="line"></span><br><span class="line"><span class="comment">## 新增 `QtQml` `QtQuick` 模块并支持从QML创建Python对象</span></span><br><span class="line">不再支持`QtDeclarative`, `QtScript`, `QtScriptTools`模块</span><br><span class="line">以上模块被 `QtQml` 和 `QtQuick` 替换。</span><br><span class="line">支持从QML创建Python对象</span><br><span class="line"></span><br><span class="line"><span class="comment">## `QtGui` 模块更新</span></span><br><span class="line">QtGui模块被拆分了为QtGui, QtPrintSupport 和QtWidgets三大模块</span><br><span class="line">```python</span><br><span class="line"><span class="keyword">from</span> PyQt5 <span class="keyword">import</span> QtGui, QtPrintSupport, QtWidgets</span><br></pre></td></tr></table></figure>
-<h2 id="QtOpenGL-模块更新"><a href="#QtOpenGL-模块更新" class="headerlink" title="QtOpenGL 模块更新"></a><code>QtOpenGL</code> 模块更新</h2><p>PyQt5的<code>QtOpenGL</code>模块只提供<code>QGLContext</code> <code>QGLFormat</code> 和 <code>QGLWidget</code>类</p>
-<h2 id="QtWebKit-模块更新"><a href="#QtWebKit-模块更新" class="headerlink" title="QtWebKit 模块更新"></a><code>QtWebKit</code> 模块更新</h2><p>PyQt4的<code>QtWebKit</code>在PyQt5中分成了<code>QtWebKit</code>和<code>QtWebKitWidgets</code>模块</p>
-<h2 id="扩展性增强"><a href="#扩展性增强" class="headerlink" title="扩展性增强"></a>扩展性增强</h2><p>不再支持<code>pyqtconfig</code>模块<br><a href="http://pyqt.sourceforge.net/Docs/PyQt5/extension_api.html#ref-build-system" target="_blank" rel="noopener">The PyQt5 Extension API</a><br>PyQt5 支持第三方包直接基于PyQt5开发(如<a href="https://www.riverbankcomputing.com/software/qscintilla/intro" target="_blank" rel="noopener">QScintilla</a>)</p>
-<h2 id="dbus-mainloop-qt-模块更名"><a href="#dbus-mainloop-qt-模块更名" class="headerlink" title="dbus.mainloop.qt 模块更名"></a><code>dbus.mainloop.qt</code> 模块更名</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#dbus.mainloop.qt</span></span><br><span class="line">dbus.mainloop.pyqt5 <span class="comment"># 相同功能只更名</span></span><br></pre></td></tr></table></figure>
-<h2 id="QDataStream-明显数值的参数以数值处理和返回"><a href="#QDataStream-明显数值的参数以数值处理和返回" class="headerlink" title="QDataStream 明显数值的参数以数值处理和返回"></a><code>QDataStream</code> 明显数值的参数以数值处理和返回</h2><p><code>readUint8(); readInt8(); writeUInt8(); writeInt8()</code> 方法在PyQt5中以数值类型写入和返回（PyQt4中是以数值文本）</p>
-<h2 id="QFileDialog-文件操作接口更新"><a href="#QFileDialog-文件操作接口更新" class="headerlink" title="QFileDialog  文件操作接口更新"></a><code>QFileDialog</code>  文件操作接口更新</h2><table>
-<thead>
-<tr>
-<th>PyQt5</th>
-<th>PyQt4</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>getOpenFileName()</td>
-<td>getOpenFileNameAndFilter()</td>
-<td></td>
-</tr>
-<tr>
-<td>getOpenFileNames()</td>
-<td>getOpenFileNamesAndFilter()</td>
-<td></td>
-</tr>
-<tr>
-<td>getSaveFileNameAndFilter()</td>
-<td>getSaveFileName()</td>
-</tr>
-</tbody>
-</table>
-<p><strong>PyQt5 舍弃了 PyQt4 同名的方法</strong></p>
-<h2 id="QMatrix-方法不再支持"><a href="#QMatrix-方法不再支持" class="headerlink" title="QMatrix 方法不再支持"></a><code>QMatrix</code> 方法不再支持</h2><p>PyQt5 中已经不再支持 PyQt4种不推荐方法 <code>QMatrix</code><br>PyQt5 中可以考虑使用 <code>QPropertyAnimation</code></p>
-<h2 id="QGraphicsItemAnimation-方法不再支持"><a href="#QGraphicsItemAnimation-方法不再支持" class="headerlink" title="QGraphicsItemAnimation 方法不再支持"></a><code>QGraphicsItemAnimation</code> 方法不再支持</h2><p>PyQt5 中已经不再支持 PyQt4种不推荐方法 <code>QGraphicsItemAnimation</code><br>PyQt5 中可以考虑使用 <code>QTransform</code></p>
-<h2 id="QPyTextObject-被舍弃"><a href="#QPyTextObject-被舍弃" class="headerlink" title="QPyTextObject 被舍弃"></a><code>QPyTextObject</code> 被舍弃</h2><p>PyQt4 implements the QPyTextObject as a workaround for the inability to define a Python class that is sub-classed from more than one Qt class. PyQt5 does support the ability to define a Python class that is sub-classed from more than one Qt class so long as all but one of the Qt classes are interfaces, i.e. they have been declared in C++ as such using Q_DECLARE_INTERFACE. Therefore QPyTextObject is not implemented in PyQt5.</p>
-<h2 id="QSet-在PyQt5中完全用-集合-形式实现"><a href="#QSet-在PyQt5中完全用-集合-形式实现" class="headerlink" title="QSet 在PyQt5中完全用 集合 形式实现"></a>QSet 在PyQt5中完全用 集合 形式实现</h2><h2 id="pyuic5-不再提供-pyqt3-wrapper参数"><a href="#pyuic5-不再提供-pyqt3-wrapper参数" class="headerlink" title="pyuic5 不再提供 --pyqt3-wrapper参数"></a>pyuic5 不再提供 <code>--pyqt3-wrapper</code>参数</h2><p>pyuic5 does not support the –pyqt3-wrapper flag of pyuic4.</p>
-<h2 id="pyrcc5-不再提供-py2-或-py3-参数"><a href="#pyrcc5-不再提供-py2-或-py3-参数" class="headerlink" title="pyrcc5 不再提供 -py2 或 -py3 参数"></a>pyrcc5 不再提供 <code>-py2</code> 或 <code>-py3</code> 参数</h2><p><code>pyrcc5</code> cli工具不再支持 <code>-py2</code> 或者 <code>-py3</code> 参数。因为输出的代码兼容所有Python版本（v2.6以后的所有版本）</p>
-<h2 id="PyQt5-优化-合作性多重继承-（Cooperative-Multi-inheritance）的初始化方式"><a href="#PyQt5-优化-合作性多重继承-（Cooperative-Multi-inheritance）的初始化方式" class="headerlink" title="PyQt5 优化 合作性多重继承 （Cooperative Multi-inheritance）的初始化方式"></a>PyQt5 优化 合作性多重继承 （Cooperative Multi-inheritance）的初始化方式</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># PyQt5 调用父类的`__init__`方法.</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">__init</span><span class="params">(self, **kwargs)</span>:</span></span><br><span class="line">    super().__init__(**kwargs)</span><br></pre></td></tr></table></figure>
-<h2 id="PyQt5-自动释放GIL，而不是PyQt4的强制释放"><a href="#PyQt5-自动释放GIL，而不是PyQt4的强制释放" class="headerlink" title="PyQt5 自动释放GIL，而不是PyQt4的强制释放"></a>PyQt5 自动释放GIL，而不是PyQt4的强制释放</h2><h2 id="PyQt5-退出时自动调用sip-setdestroyonexit-以禁用自动析构"><a href="#PyQt5-退出时自动调用sip-setdestroyonexit-以禁用自动析构" class="headerlink" title="PyQt5 退出时自动调用sip.setdestroyonexit()以禁用自动析构"></a>PyQt5 退出时自动调用<code>sip.setdestroyonexit()</code>以禁用自动析构</h2><p>Python解释器退出PyQt4应用程序时会默认调用C++析构器处理所有它拥有的线程（这通常是以随机的顺序，因此可能会导致解析器崩溃），通过调用 sip.setdestroyonexit() 函数可以禁用。<br>PyQt5 总会自动调用 <code>sip.setdestroyonexit()</code> 函数.</p>
-
-          
+          <p>此文为官网原文的翻译和整理<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/06/14/Python/20170614/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -745,8 +874,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="https://avatars3.githubusercontent.com/u/3610305?v=4&s=460"
+                alt="Chang." />
+            
               <p class="site-author-name" itemprop="name">Chang.</p>
-              <p class="site-description motion-element" itemprop="description">有梦想才会出发</br>有挑战才有乐趣</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -790,6 +923,44 @@
 
           <div class="links-of-author motion-element">
             
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/Chaaang" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://bitbucket.org/Chaaang/" target="_blank" title="Bitbucket">
+                    
+                      <i class="fa fa-fw fa-bitbucket"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://coding.net/u/Changhw" target="_blank" title="Coding">
+                    
+                      <i class="fa fa-fw fa-code"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:heawercher@gmail.com" target="_blank" title="E-Mail">
+                    
+                      <i class="fa fa-fw fa-envelope"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.pinterest.com/heawerc/" target="_blank" title="Pinterest">
+                    
+                      <i class="fa fa-fw fa-pinterest"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://music.163.com/#/user/home?id=49826796" target="_blank" title="Netease">
+                    
+                      <i class="fa fa-fw fa-music"></i></a>
+                </span>
+              
+            
           </div>
 
           
@@ -819,28 +990,51 @@
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Chang.</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">所有字数&#58;</span>
+    
+    <span title="所有字数">3.7k</span>
+  
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.3</div>
 
 
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i> 本站访客数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i> 本站总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
 
 
 
@@ -855,6 +1049,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
@@ -882,11 +1078,16 @@
   
 
 
+  
 
 
 
 
 
+
+
+  
+  
 
 
 
@@ -920,6 +1121,21 @@
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_sphere.min.js"></script>
   
 
 
@@ -979,6 +1195,323 @@
 
   
 
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
 
 
 
@@ -986,8 +1519,130 @@
   
 
   
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("STMbkQ0vIOdLG0SvpOjeNDPN-gzGzoHsz", "4mzKhkimOPGed02M0ufOl8jT");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 
   
   
