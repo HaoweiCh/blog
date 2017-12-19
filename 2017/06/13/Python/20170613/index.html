@@ -99,7 +99,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="macOS,iOS," />
+  <meta name="keywords" content="time,datetime,timestamp," />
 
 
 
@@ -115,18 +115,20 @@
 
 
 
-<meta name="description" content="问题记录第一次 开机键没反应跑去苹果维修店维修员拿出一根很破旧的magsafe线通电简单的尝试了一下开机后。就说要放在他那，这可是我主力机那肯定不行。回家尝试网上搜索一番，重设PRAM和重设SMC了一下问题就好了。😅以后就养成了一个习惯出了问题先重置。 第二次 iphone数据线连mac响个不停我的线能正常充电，但是连接我的rmbp后响个不停。这次留意了一下就重设PRAM和重设SMC但没啥效果。">
-<meta name="keywords" content="macOS,iOS">
+<meta name="description" content="python时间相关的库和转换关系  string 类型(time)1234567import time# 创建文本时间s = time.ctime() # 以当前系统地区来决定输出的时间文本格式s = &quot;2008-11-10 17:53:59&quot;# 转换为时间对象t = time.strptime(s, &quot;%Y-%m-%d %H:%M:%S&quot;) datetime 对象1234567891011im">
+<meta name="keywords" content="time,datetime,timestamp">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的RMBP遇到的问题和解决方法（如 iPhone 通过 USB 连接 Macbook 就响个不停的问题 莫名其妙无法启动）">
-<meta property="og:url" content="http://haowei.ch/2017/09/18/2017-09-18/index.html">
+<meta property="og:title" content="Python时间相关的类型转化">
+<meta property="og:url" content="http://haowei.ch/2017/06/13/Python/20170613/index.html">
 <meta property="og:site_name" content="Chang&#39;s Blog">
-<meta property="og:description" content="问题记录第一次 开机键没反应跑去苹果维修店维修员拿出一根很破旧的magsafe线通电简单的尝试了一下开机后。就说要放在他那，这可是我主力机那肯定不行。回家尝试网上搜索一番，重设PRAM和重设SMC了一下问题就好了。😅以后就养成了一个习惯出了问题先重置。 第二次 iphone数据线连mac响个不停我的线能正常充电，但是连接我的rmbp后响个不停。这次留意了一下就重设PRAM和重设SMC但没啥效果。">
+<meta property="og:description" content="python时间相关的库和转换关系  string 类型(time)1234567import time# 创建文本时间s = time.ctime() # 以当前系统地区来决定输出的时间文本格式s = &quot;2008-11-10 17:53:59&quot;# 转换为时间对象t = time.strptime(s, &quot;%Y-%m-%d %H:%M:%S&quot;) datetime 对象1234567891011im">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-18T08:25:24.000Z">
+<meta property="og:image" content="http://haowei.ch/media/15052943518472.jpg">
+<meta property="og:updated_time" content="2017-12-19T01:27:27.889Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的RMBP遇到的问题和解决方法（如 iPhone 通过 USB 连接 Macbook 就响个不停的问题 莫名其妙无法启动）">
-<meta name="twitter:description" content="问题记录第一次 开机键没反应跑去苹果维修店维修员拿出一根很破旧的magsafe线通电简单的尝试了一下开机后。就说要放在他那，这可是我主力机那肯定不行。回家尝试网上搜索一番，重设PRAM和重设SMC了一下问题就好了。😅以后就养成了一个习惯出了问题先重置。 第二次 iphone数据线连mac响个不停我的线能正常充电，但是连接我的rmbp后响个不停。这次留意了一下就重设PRAM和重设SMC但没啥效果。">
+<meta name="twitter:title" content="Python时间相关的类型转化">
+<meta name="twitter:description" content="python时间相关的库和转换关系  string 类型(time)1234567import time# 创建文本时间s = time.ctime() # 以当前系统地区来决定输出的时间文本格式s = &quot;2008-11-10 17:53:59&quot;# 转换为时间对象t = time.strptime(s, &quot;%Y-%m-%d %H:%M:%S&quot;) datetime 对象1234567891011im">
+<meta name="twitter:image" content="http://haowei.ch/media/15052943518472.jpg">
 
 
 
@@ -155,13 +157,13 @@
 
 
 
-  <link rel="canonical" href="http://haowei.ch/2017/09/18/2017-09-18/"/>
+  <link rel="canonical" href="http://haowei.ch/2017/06/13/Python/20170613/"/>
 
 
 
 
 
-  <title>我的RMBP遇到的问题和解决方法（如 iPhone 通过 USB 连接 Macbook 就响个不停的问题 莫名其妙无法启动） | Chang's Blog</title>
+  <title>Python时间相关的类型转化 | Chang's Blog</title>
   
 
 
@@ -328,7 +330,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://haowei.ch/2017/09/18/2017-09-18/">
+    <link itemprop="mainEntityOfPage" href="http://haowei.ch/2017/06/13/Python/20170613/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chang.">
@@ -345,7 +347,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">我的RMBP遇到的问题和解决方法（如 iPhone 通过 USB 连接 Macbook 就响个不停的问题 莫名其妙无法启动）</h1>
+          <h1 class="post-title" itemprop="name headline">Python时间相关的类型转化</h1>
         
 
         <div class="post-meta">
@@ -357,8 +359,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-18T14:22:03+08:00">
-                2017-09-18
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-13T18:03:09+08:00">
+                2017-06-13
               </time>
             
 
@@ -380,8 +382,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/RMBP/" itemprop="url" rel="index">
-                    <span itemprop="name">RMBP</span>
+                  <a href="/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
                   </a>
                 </span>
 
@@ -397,7 +399,7 @@
 
           
           
-             <span id="/2017/09/18/2017-09-18/" class="leancloud_visitors" data-flag-title="我的RMBP遇到的问题和解决方法（如 iPhone 通过 USB 连接 Macbook 就响个不停的问题 莫名其妙无法启动）">
+             <span id="/2017/06/13/Python/20170613/" class="leancloud_visitors" data-flag-title="Python时间相关的类型转化">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -422,7 +424,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  403
+                  335
                 </span>
               
 
@@ -447,23 +449,14 @@
       
 
       
-        <h2 id="问题记录"><a href="#问题记录" class="headerlink" title="问题记录"></a>问题记录</h2><h3 id="第一次-开机键没反应"><a href="#第一次-开机键没反应" class="headerlink" title="第一次 开机键没反应"></a>第一次 开机键没反应</h3><p>跑去苹果维修店维修员拿出一根很破旧的magsafe线通电简单的尝试了一下开机后。就说要放在他那，这可是我主力机那肯定不行。<br>回家尝试网上搜索一番，重设PRAM和重设SMC了一下问题就好了。😅<br>以后就养成了一个习惯出了问题先重置。</p>
-<h3 id="第二次-iphone数据线连mac响个不停"><a href="#第二次-iphone数据线连mac响个不停" class="headerlink" title="第二次 iphone数据线连mac响个不停"></a>第二次 iphone数据线连mac响个不停</h3><p>我的线能正常充电，但是连接我的rmbp后响个不停。<br>这次留意了一下就重设PRAM和重设SMC但没啥效果。<br>猜测可能是usb接口松了，尝试轻摁线头一会儿就连接正常了。</p>
-<p>这种情况应该注意： 线（一定要用官方线）是不是好的，换台机子测试一下。</p>
-<h3 id="重设PRAM"><a href="#重设PRAM" class="headerlink" title="重设PRAM"></a>重设PRAM</h3><ol>
-<li>关闭 Mac。</li>
-<li>在键盘上找到以下按键的位置：Command (⌘)、Option、P 和 R。您需要在步骤 4 中同时按住这些键。</li>
-<li>启动电脑。</li>
-<li>出现灰屏前按住 Command-Option-P-R 键。</li>
-<li>按下这些键，直到电脑重新启动，您会再次听到启动声。电脑自行重启的第三次，您就可以松开了。</li>
-</ol>
-<h3 id="重设SMC"><a href="#重设SMC" class="headerlink" title="重设SMC"></a>重设SMC</h3><ol>
-<li>关闭电脑。</li>
-<li>将 MagSafe 电源适配器连接到电源和 Mac（如果尚未连接的话）。</li>
-<li>在内建键盘上，同时按下（左侧）Shift-Control-Option 键和电源按钮。这个步骤不会启动电脑。</li>
-<li>接下来，您可以同时松开所有键和电源按钮。</li>
-<li>按下电源按钮打开电脑。</li>
-</ol>
+        <p>python时间相关的库和转换关系</p>
+<p><img src="/media/15052943518472.jpg" alt=""></p>
+<h2 id="string-类型-time"><a href="#string-类型-time" class="headerlink" title="string 类型(time)"></a>string 类型(time)</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建文本时间</span></span><br><span class="line">s = time.ctime() <span class="comment"># 以当前系统地区来决定输出的时间文本格式</span></span><br><span class="line">s = <span class="string">"2008-11-10 17:53:59"</span></span><br><span class="line"><span class="comment"># 转换为时间对象</span></span><br><span class="line">t = time.strptime(s, <span class="string">"%Y-%m-%d %H:%M:%S"</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="datetime-对象"><a href="#datetime-对象" class="headerlink" title="datetime 对象"></a>datetime 对象</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建datetime对象</span></span><br><span class="line"><span class="comment"># dt_obj = datetime.datetime.now()</span></span><br><span class="line">dt_obj = datetime.datetime(<span class="number">2008</span>, <span class="number">11</span>, <span class="number">10</span>, <span class="number">17</span>, <span class="number">53</span>, <span class="number">59</span>) </span><br><span class="line"><span class="comment"># 转换为文本型时间</span></span><br><span class="line">print(dt_obj.strftime(<span class="string">"%Y-%m-%d %H:%M:%S"</span>)) </span><br><span class="line"><span class="comment"># 转换为时间对象</span></span><br><span class="line">time_tuple = dt_obj.timetuple()</span><br><span class="line"><span class="comment"># 转化哪位时间戳</span></span><br><span class="line">time_stamp = dt_obj.timestamp()</span><br></pre></td></tr></table></figure>
+<h2 id="time-对象"><a href="#time-对象" class="headerlink" title="time 对象"></a>time 对象</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建time对象</span></span><br><span class="line">time_tuple = (<span class="number">2008</span>, <span class="number">11</span>, <span class="number">12</span>, <span class="number">13</span>, <span class="number">51</span>, <span class="number">18</span>, <span class="number">2</span>, <span class="number">317</span>, <span class="number">0</span>)</span><br><span class="line"><span class="comment"># 转换为文本型时间</span></span><br><span class="line">time.strftime(<span class="string">"%Y-%m-%d %H:%M:%S"</span>, time_tuple)</span><br><span class="line"><span class="comment"># 转换为datetime对象</span></span><br><span class="line">datetime.datetime(*time_tuple[<span class="number">0</span>:<span class="number">6</span>])</span><br><span class="line"><span class="comment"># 转换为时间戳</span></span><br><span class="line">time.mktime(time_tuple)</span><br></pre></td></tr></table></figure>
+<h2 id="int-类型-时间戳"><a href="#int-类型-时间戳" class="headerlink" title="int 类型(时间戳)"></a>int 类型(时间戳)</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time, datetime</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取当前时间的时间戳</span></span><br><span class="line">timestamp = time.time()</span><br><span class="line"><span class="comment"># 转换为 datetime对象</span></span><br><span class="line">datetime.datetime.fromtimestamp(timestamp) <span class="comment"># 本地时区时间</span></span><br><span class="line"><span class="comment"># 转换为 time对象</span></span><br><span class="line">time.localtime(timestamp)</span><br></pre></td></tr></table></figure>
+<h2 id="带时区的处理"><a href="#带时区的处理" class="headerlink" title="带时区的处理"></a>带时区的处理</h2><h3 id="转换为-datetime对象"><a href="#转换为-datetime对象" class="headerlink" title="转换为 datetime对象"></a>转换为 datetime对象</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time, datetime</span><br><span class="line"></span><br><span class="line"><span class="comment"># 本地时区时间</span></span><br><span class="line">datetime.datetime.fromtimestamp(timestamp)</span><br><span class="line"><span class="comment"># 标准时区时间</span></span><br><span class="line">datetime.datetime.utcfromtimestamp(timestamp)</span><br></pre></td></tr></table></figure>
+<h3 id="转换为-time对象"><a href="#转换为-time对象" class="headerlink" title="转换为 time对象"></a>转换为 time对象</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 本地时区</span></span><br><span class="line">time.localtime(timestamp)</span><br><span class="line"><span class="comment"># 标准时区</span></span><br><span class="line">time.gmtime(timestamp)</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -508,7 +501,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://haowei.ch/2017/09/18/2017-09-18/" title="我的RMBP遇到的问题和解决方法（如 iPhone 通过 USB 连接 Macbook 就响个不停的问题 莫名其妙无法启动）">http://haowei.ch/2017/09/18/2017-09-18/</a>
+    <a href="http://haowei.ch/2017/06/13/Python/20170613/" title="Python时间相关的类型转化">http://haowei.ch/2017/06/13/Python/20170613/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -523,9 +516,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/macOS/" rel="tag"># macOS</a>
+            <a href="/tags/time/" rel="tag"># time</a>
           
-            <a href="/tags/iOS/" rel="tag"># iOS</a>
+            <a href="/tags/datetime/" rel="tag"># datetime</a>
+          
+            <a href="/tags/timestamp/" rel="tag"># timestamp</a>
           
         </div>
       
@@ -538,8 +533,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/14/2017-09-13/" rel="next" title="PyQt5 与 PyQt4 差别应用">
-                <i class="fa fa-chevron-left"></i> PyQt5 与 PyQt4 差别应用
+              <a href="/2017/05/18/Python/20170518/" rel="next" title="Python的观察者模式，PyQt signal&slot 机制的理解和应用">
+                <i class="fa fa-chevron-left"></i> Python的观察者模式，PyQt signal&slot 机制的理解和应用
               </a>
             
           </div>
@@ -547,6 +542,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/06/14/Python/20170614/" rel="prev" title="PyQt5 与 PyQt4 差别应用">
+                PyQt5 与 PyQt4 差别应用 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -634,7 +633,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -645,7 +644,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -736,7 +735,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题记录"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x95EE;&#x9898;&#x8BB0;&#x5F55;" class="headerlink" title="&#x95EE;&#x9898;&#x8BB0;&#x5F55;"></a>&#x95EE;&#x9898;&#x8BB0;&#x5F55;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一次-开机键没反应"><span class="nav-number">1.1.</span> <span class="nav-text"><a href="#&#x7B2C;&#x4E00;&#x6B21;-&#x5F00;&#x673A;&#x952E;&#x6CA1;&#x53CD;&#x5E94;" class="headerlink" title="&#x7B2C;&#x4E00;&#x6B21; &#x5F00;&#x673A;&#x952E;&#x6CA1;&#x53CD;&#x5E94;"></a>&#x7B2C;&#x4E00;&#x6B21; &#x5F00;&#x673A;&#x952E;&#x6CA1;&#x53CD;&#x5E94;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二次-iphone数据线连mac响个不停"><span class="nav-number">1.2.</span> <span class="nav-text"><a href="#&#x7B2C;&#x4E8C;&#x6B21;-iphone&#x6570;&#x636E;&#x7EBF;&#x8FDE;mac&#x54CD;&#x4E2A;&#x4E0D;&#x505C;" class="headerlink" title="&#x7B2C;&#x4E8C;&#x6B21; iphone&#x6570;&#x636E;&#x7EBF;&#x8FDE;mac&#x54CD;&#x4E2A;&#x4E0D;&#x505C;"></a>&#x7B2C;&#x4E8C;&#x6B21; iphone&#x6570;&#x636E;&#x7EBF;&#x8FDE;mac&#x54CD;&#x4E2A;&#x4E0D;&#x505C;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重设PRAM"><span class="nav-number">1.3.</span> <span class="nav-text"><a href="#&#x91CD;&#x8BBE;PRAM" class="headerlink" title="&#x91CD;&#x8BBE;PRAM"></a>&#x91CD;&#x8BBE;PRAM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重设SMC"><span class="nav-number">1.4.</span> <span class="nav-text"><a href="#&#x91CD;&#x8BBE;SMC" class="headerlink" title="&#x91CD;&#x8BBE;SMC"></a>&#x91CD;&#x8BBE;SMC</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#string-类型-time"><span class="nav-number">1.</span> <span class="nav-text"><a href="#string-&#x7C7B;&#x578B;-time" class="headerlink" title="string &#x7C7B;&#x578B;(time)"></a>string &#x7C7B;&#x578B;(time)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#datetime-对象"><span class="nav-number">2.</span> <span class="nav-text"><a href="#datetime-&#x5BF9;&#x8C61;" class="headerlink" title="datetime &#x5BF9;&#x8C61;"></a>datetime &#x5BF9;&#x8C61;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#time-对象"><span class="nav-number">3.</span> <span class="nav-text"><a href="#time-&#x5BF9;&#x8C61;" class="headerlink" title="time &#x5BF9;&#x8C61;"></a>time &#x5BF9;&#x8C61;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#int-类型-时间戳"><span class="nav-number">4.</span> <span class="nav-text"><a href="#int-&#x7C7B;&#x578B;-&#x65F6;&#x95F4;&#x6233;" class="headerlink" title="int &#x7C7B;&#x578B;(&#x65F6;&#x95F4;&#x6233;)"></a>int &#x7C7B;&#x578B;(&#x65F6;&#x95F4;&#x6233;)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#带时区的处理"><span class="nav-number">5.</span> <span class="nav-text"><a href="#&#x5E26;&#x65F6;&#x533A;&#x7684;&#x5904;&#x7406;" class="headerlink" title="&#x5E26;&#x65F6;&#x533A;&#x7684;&#x5904;&#x7406;"></a>&#x5E26;&#x65F6;&#x533A;&#x7684;&#x5904;&#x7406;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#转换为-datetime对象"><span class="nav-number">5.1.</span> <span class="nav-text"><a href="#&#x8F6C;&#x6362;&#x4E3A;-datetime&#x5BF9;&#x8C61;" class="headerlink" title="&#x8F6C;&#x6362;&#x4E3A; datetime&#x5BF9;&#x8C61;"></a>&#x8F6C;&#x6362;&#x4E3A; datetime&#x5BF9;&#x8C61;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#转换为-time对象"><span class="nav-number">5.2.</span> <span class="nav-text"><a href="#&#x8F6C;&#x6362;&#x4E3A;-time&#x5BF9;&#x8C61;" class="headerlink" title="&#x8F6C;&#x6362;&#x4E3A; time&#x5BF9;&#x8C61;"></a>&#x8F6C;&#x6362;&#x4E3A; time&#x5BF9;&#x8C61;</span></a></li></ol></li></ol></div>
             
 
           </div>

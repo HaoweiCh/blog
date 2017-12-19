@@ -99,7 +99,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Python,PyQt,观察者模式," />
+  <meta name="keywords" content="PyQt,观察者模式," />
 
 
 
@@ -115,18 +115,18 @@
 
 
 
-<meta name="description" content="描述能力有限，不确定的翻译会在旁边注释英文更新时间：2017年05月12日官网链接  不与 PyQt4 兼容虽然实际上升级PyQt4写的项目不是那么糟 不再对Python老版本提供支持（Python 2.6 之前）不再实现PyQt4不推荐的API接口PyQt5 不支持任何在PyQt4版本中标记为不推荐或舍弃的Qt API（如果有就会当Bug处理） 不再提供多版本API接口PyQt4 支持多版本的">
-<meta name="keywords" content="Python,PyQt,观察者模式">
+<meta name="description" content="内容介绍  提供signal&amp;amp;slot的python实现方式（更大的灵活性，效率相比PyQt自带更低）  PyQt 和 Python 两种实现方式的特色对比    PyQt版 功能加强 使slot可以接受到关键字参数  相关资源 来源: 英文 多样化信号 资料: PyQt5 官方文档 书籍: Design PatternsIs an excellent summary and refere">
+<meta name="keywords" content="PyQt,观察者模式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PyQt5 与 PyQt4 差别应用">
-<meta property="og:url" content="http://haowei.ch/2017/06/14/2017-09-13/index.html">
+<meta property="og:title" content="Python的观察者模式，PyQt signal&amp;slot 机制的理解和应用">
+<meta property="og:url" content="http://haowei.ch/2017/05/18/Python/20170518/index.html">
 <meta property="og:site_name" content="Chang&#39;s Blog">
-<meta property="og:description" content="描述能力有限，不确定的翻译会在旁边注释英文更新时间：2017年05月12日官网链接  不与 PyQt4 兼容虽然实际上升级PyQt4写的项目不是那么糟 不再对Python老版本提供支持（Python 2.6 之前）不再实现PyQt4不推荐的API接口PyQt5 不支持任何在PyQt4版本中标记为不推荐或舍弃的Qt API（如果有就会当Bug处理） 不再提供多版本API接口PyQt4 支持多版本的">
+<meta property="og:description" content="内容介绍  提供signal&amp;amp;slot的python实现方式（更大的灵活性，效率相比PyQt自带更低）  PyQt 和 Python 两种实现方式的特色对比    PyQt版 功能加强 使slot可以接受到关键字参数  相关资源 来源: 英文 多样化信号 资料: PyQt5 官方文档 书籍: Design PatternsIs an excellent summary and refere">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-14T06:45:26.000Z">
+<meta property="og:updated_time" content="2017-12-19T01:27:24.892Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PyQt5 与 PyQt4 差别应用">
-<meta name="twitter:description" content="描述能力有限，不确定的翻译会在旁边注释英文更新时间：2017年05月12日官网链接  不与 PyQt4 兼容虽然实际上升级PyQt4写的项目不是那么糟 不再对Python老版本提供支持（Python 2.6 之前）不再实现PyQt4不推荐的API接口PyQt5 不支持任何在PyQt4版本中标记为不推荐或舍弃的Qt API（如果有就会当Bug处理） 不再提供多版本API接口PyQt4 支持多版本的">
+<meta name="twitter:title" content="Python的观察者模式，PyQt signal&amp;slot 机制的理解和应用">
+<meta name="twitter:description" content="内容介绍  提供signal&amp;amp;slot的python实现方式（更大的灵活性，效率相比PyQt自带更低）  PyQt 和 Python 两种实现方式的特色对比    PyQt版 功能加强 使slot可以接受到关键字参数  相关资源 来源: 英文 多样化信号 资料: PyQt5 官方文档 书籍: Design PatternsIs an excellent summary and refere">
 
 
 
@@ -155,13 +155,13 @@
 
 
 
-  <link rel="canonical" href="http://haowei.ch/2017/06/14/2017-09-13/"/>
+  <link rel="canonical" href="http://haowei.ch/2017/05/18/Python/20170518/"/>
 
 
 
 
 
-  <title>PyQt5 与 PyQt4 差别应用 | Chang's Blog</title>
+  <title>Python的观察者模式，PyQt signal&slot 机制的理解和应用 | Chang's Blog</title>
   
 
 
@@ -328,7 +328,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://haowei.ch/2017/06/14/2017-09-13/">
+    <link itemprop="mainEntityOfPage" href="http://haowei.ch/2017/05/18/Python/20170518/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chang.">
@@ -345,7 +345,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">PyQt5 与 PyQt4 差别应用</h1>
+          <h1 class="post-title" itemprop="name headline">Python的观察者模式，PyQt signal&slot 机制的理解和应用</h1>
         
 
         <div class="post-meta">
@@ -357,8 +357,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-14T07:06:03+08:00">
-                2017-06-14
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-18T08:06:03+08:00">
+                2017-05-18
               </time>
             
 
@@ -387,17 +387,6 @@
 
                 
                 
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python/PyQt/" itemprop="url" rel="index">
-                    <span itemprop="name">PyQt</span>
-                  </a>
-                </span>
-
-                
-                
               
             </span>
           
@@ -408,7 +397,7 @@
 
           
           
-             <span id="/2017/06/14/2017-09-13/" class="leancloud_visitors" data-flag-title="PyQt5 与 PyQt4 差别应用">
+             <span id="/2017/05/18/Python/20170518/" class="leancloud_visitors" data-flag-title="Python的观察者模式，PyQt signal&slot 机制的理解和应用">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -433,7 +422,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  1,019
+                  1,888
                 </span>
               
 
@@ -458,53 +447,66 @@
       
 
       
-        <blockquote>
-<p>描述能力有限，不确定的翻译会在旁边注释英文<br>更新时间：2017年05月12日<br><a href="http://pyqt.sourceforge.net/Docs/PyQt5/pyqt4_differences.html" target="_blank" rel="noopener">官网链接</a></p>
+        <h2 id="内容介绍"><a href="#内容介绍" class="headerlink" title="内容介绍"></a>内容介绍</h2><ul>
+<li style="list-style: none"><input type="checkbox" checked> 提供signal&amp;slot的python实现方式（更大的灵活性，效率相比PyQt自带更低）</li>
+<li style="list-style: none"><input type="checkbox"> PyQt 和 Python 两种实现方式的特色对比</li>
+</ul>
+<ul>
+<li style="list-style: none"><input type="checkbox"> PyQt版 功能加强 使slot可以接受到关键字参数</li>
+</ul>
+<h2 id="相关资源"><a href="#相关资源" class="headerlink" title="相关资源"></a>相关资源</h2><ul>
+<li><a href="http://blog.abstractfactory.io/dynamic-signals-in-pyqt/" target="_blank" rel="noopener">来源: 英文 多样化信号</a></li>
+<li><a href="http://pyqt.sourceforge.net/Docs/PyQt5/signals_slots.html" target="_blank" rel="noopener">资料: PyQt5 官方文档</a></li>
+<li><a href="https://www.amazon.co.uk/Design-patterns-elements-reusable-object-oriented/dp/0201633612" target="_blank" rel="noopener">书籍: Design Patterns</a><br>Is an excellent summary and reference of many very useful patterns.</li>
+<li><a href="https://www.amazon.co.uk/Head-First-Design-Patterns-Freeman/dp/0596007124" target="_blank" rel="noopener">书籍: Head First Design Patterns</a><br>Provides a more gentle and explanatory view of many of the same patterns.</li>
+<li><a href="http://stackoverflow.com/questions/21101500/custom-pyqtsignal-implementation" target="_blank" rel="noopener">讨论: SOF Custom pyqtSignal implementation</a></li>
+</ul>
+<h2 id="Python-signal-amp-slot-信号-amp-槽的-Python-实现"><a href="#Python-signal-amp-slot-信号-amp-槽的-Python-实现" class="headerlink" title="Python signal&amp;slot 信号&amp;槽的 Python 实现"></a>Python signal&amp;slot 信号&amp;槽的 Python 实现</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><ul>
+<li>因为实现机制的是Python代码不是PyQt的c++，效率会更低</li>
+<li>更贴合Python的风格，more pythonic，限制更少</li>
+</ul>
+<h4 id="1-不能用实例属性替换pyqtSignal的类属性"><a href="#1-不能用实例属性替换pyqtSignal的类属性" class="headerlink" title="1. 不能用实例属性替换pyqtSignal的类属性"></a>1. <strong>不能用实例属性替换<code>pyqtSignal</code>的类属性</strong></h4><p>..<br>虽然 <code>pySignal</code> 起源于 <code>pyqtSignal</code> 而且直接实例化 <code>pySignal</code> 类的各种使用方式和 <code>pyqtSignal</code>相同（毕竟设计的时候就接口相同），但是有个容易让人困惑的点是</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 代码示例，pySignal 在实例化后的类中替换 pyqtSignal</span><br><span class="line">class Window(QWidget):</span><br><span class="line">	same_signal = pyqtSignal()</span><br><span class="line">	def __init__(self, parent=None):</span><br><span class="line">		super(Window, self).__init__(parent)</span><br><span class="line">		self.same_signal = Signal()</span><br></pre></td></tr></table></figure>
+<p>常理来说 <code>pyqtSignal()</code> 应该被 <code>pySignal</code> 替换掉了，但如早先提到的 <code>pyqtSignal</code> 在所在类实例化后摇身一变成实例化的<code>PyQt5.QtCore.pyqtBoundSignal</code>对象。</p>
+<p>这代表我们先赋值的类属性已经变成了实例化类的属性了</p>
+<p>这样造成的影响是，如果我们给某类多个实例，它们将有自己的signal而且互不干扰（emit 也不干扰）</p>
+<p>我们实现的类没有这样的特性，类属性一直是类属性</p>
+<p>这意味着给某类赋值类属性，其实例也会遗传相同的类属性（不独立）</p>
+<p>解决方案是，pySignal在最开始就应该是实例属性而不是类属性（这样能保证独立）</p>
+<h3 id="pySignal"><a href="#pySignal" class="headerlink" title="pySignal"></a>pySignal</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Signal</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.__subscribers = []</span><br><span class="line">      </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">emit</span><span class="params">(self, *args, **kwargs)</span>:</span></span><br><span class="line">        <span class="keyword">for</span> subs <span class="keyword">in</span> self.__subscribers:</span><br><span class="line">            subs(*args, **kwargs)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">connect</span><span class="params">(self, func)</span>:</span></span><br><span class="line">        self.__subscribers.append(func)  </span><br><span class="line">      </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">disconnect</span><span class="params">(self, func)</span>:</span>  </span><br><span class="line">        <span class="keyword">try</span>:  </span><br><span class="line">            self.__subscribers.remove(func)  </span><br><span class="line">        <span class="keyword">except</span> ValueError:  </span><br><span class="line">            print(<span class="string">'Warning: function %s not removed '</span></span><br><span class="line">                  <span class="string">'from signal %s'</span>%(func,self))</span><br></pre></td></tr></table></figure>
+<h2 id="PyQt-signal-amp-slot"><a href="#PyQt-signal-amp-slot" class="headerlink" title="PyQt signal&amp;slot"></a>PyQt signal&amp;slot</h2><h3 id="介绍-1"><a href="#介绍-1" class="headerlink" title="介绍"></a>介绍</h3><h4 id="1-signal只能作为类属性-Only-works-with-class-attributes"><a href="#1-signal只能作为类属性-Only-works-with-class-attributes" class="headerlink" title="1. signal只能作为类属性 Only works with class attributes"></a>1. signal只能作为类属性 Only works with class attributes</h4><p>Signals are not class attributes. <code>PyQt5.QtCore.pyqtSignal()</code> is merely a vessel for a future instance variable containing a PyQt*.QtCore.pyqtBoundSignal instance. When you instantiate your class, pyqtSignal goes to work and injects itself as an instance variable and adds itself to the QMetaObject of the class.</p>
+<p>QMetaObject? It comes with useful methods such as .className(), superClass(), methodCount() which returns the name of the class, its superclasses and number of methods respectively.</p>
+<p>In C++ these are probably very useful, however a Python programmer might not be very impressed. It’s something we’ve had access to all along via any instances’ <strong>class</strong>, <strong>bases</strong> and <strong>dict</strong>attributes.</p>
+<h4 id="2-不能在已经实例化的类中声明-Cannot-be-used-in-an-already-instantiated-class"><a href="#2-不能在已经实例化的类中声明-Cannot-be-used-in-an-already-instantiated-class" class="headerlink" title="2.不能在已经实例化的类中声明 Cannot be used in an already instantiated class"></a>2.不能在已经实例化的类中声明 Cannot be used in an already instantiated class</h4><p>这是最让人头痛的特性 Now here’s the kicker. </p>
+<p>If you’re doing any sort of base- or abstract class work with Qt widgets, you’ll quickly realise that you can’t inherit signals.</p>
+<p>Other than that, if try and bypass inheritance and have a builder spit out widgets for you, you’ll also notice how Dependency Injection isn’t going to work with signals. They have to be created as class attributes and they can only be created using pyqtSignal(). Please correct me if I’m wrong.</p>
+<h4 id="3-必须在声明signal时指明传输参数的类型-Must-be-pre-specified-with-any-data-types-you-wish-to-emit"><a href="#3-必须在声明signal时指明传输参数的类型-Must-be-pre-specified-with-any-data-types-you-wish-to-emit" class="headerlink" title="3.必须在声明signal时指明传输参数的类型 Must be pre-specified with any data-types you wish to emit"></a>3.必须在声明signal时指明传输参数的类型 Must be pre-specified with any data-types you wish to emit</h4><p>类似于强类型语言的类型声明，这完全不是Python的风格嘛。<br>In other languages, this is referred to as static typing. Python however doesn’t do any of that.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这是演示代码（伪代码），实际上得作为类属性声明</span></span><br><span class="line"><span class="comment"># normally have to be run via a class' class attribute.</span></span><br><span class="line">signal = pyqtSignal(int, str)</span><br><span class="line">signal.emit(my_number, my_string)</span><br><span class="line"></span><br><span class="line">signal.emit(my_string, my_number)</span><br><span class="line"><span class="comment"># 报错 TypeError</span></span><br><span class="line">signal.emit(not_enough_args)</span><br><span class="line"><span class="comment"># 报错 TypeError</span></span><br></pre></td></tr></table></figure>
+<h4 id="4-不支持关键字参数-Does-not-support-keyword-arguments"><a href="#4-不支持关键字参数-Does-not-support-keyword-arguments" class="headerlink" title="4. 不支持关键字参数 Does not support keyword arguments"></a>4. 不支持关键字参数 Does not support keyword arguments</h4><blockquote>
+<p>TypeError: emit() takes no keyword arguments</p>
 </blockquote>
-<h2 id="不与-PyQt4-兼容"><a href="#不与-PyQt4-兼容" class="headerlink" title="不与 PyQt4 兼容"></a>不与 PyQt4 兼容</h2><p>虽然实际上升级PyQt4写的项目不是那么糟</p>
-<h2 id="不再对Python老版本提供支持（Python-2-6-之前）"><a href="#不再对Python老版本提供支持（Python-2-6-之前）" class="headerlink" title="不再对Python老版本提供支持（Python 2.6 之前）"></a>不再对Python老版本提供支持（Python 2.6 之前）</h2><h2 id="不再实现PyQt4不推荐的API接口"><a href="#不再实现PyQt4不推荐的API接口" class="headerlink" title="不再实现PyQt4不推荐的API接口"></a>不再实现PyQt4不推荐的API接口</h2><p>PyQt5 不支持任何在PyQt4版本中标记为不推荐或舍弃的Qt API（如果有就会当Bug处理）</p>
-<h2 id="不再提供多版本API接口"><a href="#不再提供多版本API接口" class="headerlink" title="不再提供多版本API接口"></a>不再提供多版本API接口</h2><p>PyQt4 支持多版本的API（如<code>QString</code>，<code>QVariant</code>等）<br>PyQt5 只支持最新的API版本(除<code>QVariant</code>外)<br>    <code>QVariant</code>的改变是去掉了 <code>QPyNullVariant</code> （在<code>QVariant</code>的帮助文档里也有显示）</p>
-<h2 id="信号和插槽（Signals-and-Slots）机制更新"><a href="#信号和插槽（Signals-and-Slots）机制更新" class="headerlink" title="信号和插槽（Signals and Slots）机制更新"></a>信号和插槽（Signals and Slots）机制更新</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 下面所列出来的调用方式不再支持</span></span><br><span class="line">QObject.connect()</span><br><span class="line">QObject.emit()</span><br><span class="line">SIGNAL()</span><br><span class="line">SLOT()</span><br></pre></td></tr></table></figure>
-<p>所有含有以SIGNAL()或SLOT()返回结果为参数的方法不再支持，转而提供可调用方法（函数）或已捆绑的信号（a bound signal）</p>
-<h3 id="风格对比（代码）"><a href="#风格对比（代码）" class="headerlink" title="风格对比（代码）"></a>风格对比（代码）</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># PyQt5</span></span><br><span class="line">combo = QtWidgets.QComboBox(self)</span><br><span class="line">combo.activated.connect(self.onActivated)</span><br><span class="line"><span class="comment"># PyQt4</span></span><br><span class="line">combo = QtWidgets.QComboBox(self)</span><br><span class="line">self.connect(combo, QtCore.pyqtSignal(<span class="string">'activated(QString)'</span>), self.onActivated)</span><br><span class="line">```    </span><br><span class="line">    </span><br><span class="line"><span class="comment">###  `QObject.disconnect()` 调用无参数，作用断掉所有信号和插槽的连接</span></span><br><span class="line"></span><br><span class="line"><span class="comment">### TODO New-style Signals and Slots</span></span><br><span class="line">Qt implements signals <span class="keyword">with</span> an optional argument <span class="keyword">as</span> two separate signals, one <span class="keyword">with</span> the argument <span class="keyword">and</span> one without it. PyQt4 exposed both of these allowing you to connect to each of them. However, when emitting the signal, you had to use the signal appropriate to the number of arguments being emitted.</span><br><span class="line"></span><br><span class="line">PyQt5 exposes only the signal where all arguments are specified. However it allows any optional arguments to be omitted when emitting the signal.</span><br><span class="line"></span><br><span class="line">Unlike PyQt4, PyQt5 supports the definition of properties, signals <span class="keyword">and</span> slots <span class="keyword">in</span> classes <span class="keyword">not</span> sub-classed <span class="keyword">from</span> QObject (i.e. <span class="keyword">in</span> mixins).</span><br><span class="line"></span><br><span class="line"><span class="comment">## 新增 `QtQml` `QtQuick` 模块并支持从QML创建Python对象</span></span><br><span class="line">不再支持`QtDeclarative`, `QtScript`, `QtScriptTools`模块</span><br><span class="line">以上模块被 `QtQml` 和 `QtQuick` 替换。</span><br><span class="line">支持从QML创建Python对象</span><br><span class="line"></span><br><span class="line"><span class="comment">## `QtGui` 模块更新</span></span><br><span class="line">QtGui模块被拆分了为QtGui, QtPrintSupport 和QtWidgets三大模块</span><br><span class="line">```python</span><br><span class="line"><span class="keyword">from</span> PyQt5 <span class="keyword">import</span> QtGui, QtPrintSupport, QtWidgets</span><br></pre></td></tr></table></figure>
-<h2 id="QtOpenGL-模块更新"><a href="#QtOpenGL-模块更新" class="headerlink" title="QtOpenGL 模块更新"></a><code>QtOpenGL</code> 模块更新</h2><p>PyQt5的<code>QtOpenGL</code>模块只提供<code>QGLContext</code> <code>QGLFormat</code> 和 <code>QGLWidget</code>类</p>
-<h2 id="QtWebKit-模块更新"><a href="#QtWebKit-模块更新" class="headerlink" title="QtWebKit 模块更新"></a><code>QtWebKit</code> 模块更新</h2><p>PyQt4的<code>QtWebKit</code>在PyQt5中分成了<code>QtWebKit</code>和<code>QtWebKitWidgets</code>模块</p>
-<h2 id="扩展性增强"><a href="#扩展性增强" class="headerlink" title="扩展性增强"></a>扩展性增强</h2><p>不再支持<code>pyqtconfig</code>模块<br><a href="http://pyqt.sourceforge.net/Docs/PyQt5/extension_api.html#ref-build-system" target="_blank" rel="noopener">The PyQt5 Extension API</a><br>PyQt5 支持第三方包直接基于PyQt5开发(如<a href="https://www.riverbankcomputing.com/software/qscintilla/intro" target="_blank" rel="noopener">QScintilla</a>)</p>
-<h2 id="dbus-mainloop-qt-模块更名"><a href="#dbus-mainloop-qt-模块更名" class="headerlink" title="dbus.mainloop.qt 模块更名"></a><code>dbus.mainloop.qt</code> 模块更名</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#dbus.mainloop.qt</span></span><br><span class="line">dbus.mainloop.pyqt5 <span class="comment"># 相同功能只更名</span></span><br></pre></td></tr></table></figure>
-<h2 id="QDataStream-明显数值的参数以数值处理和返回"><a href="#QDataStream-明显数值的参数以数值处理和返回" class="headerlink" title="QDataStream 明显数值的参数以数值处理和返回"></a><code>QDataStream</code> 明显数值的参数以数值处理和返回</h2><p><code>readUint8(); readInt8(); writeUInt8(); writeInt8()</code> 方法在PyQt5中以数值类型写入和返回（PyQt4中是以数值文本）</p>
-<h2 id="QFileDialog-文件操作接口更新"><a href="#QFileDialog-文件操作接口更新" class="headerlink" title="QFileDialog  文件操作接口更新"></a><code>QFileDialog</code>  文件操作接口更新</h2><table>
-<thead>
-<tr>
-<th>PyQt5</th>
-<th>PyQt4</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>getOpenFileName()</td>
-<td>getOpenFileNameAndFilter()</td>
-<td></td>
-</tr>
-<tr>
-<td>getOpenFileNames()</td>
-<td>getOpenFileNamesAndFilter()</td>
-<td></td>
-</tr>
-<tr>
-<td>getSaveFileNameAndFilter()</td>
-<td>getSaveFileName()</td>
-</tr>
-</tbody>
-</table>
-<p><strong>PyQt5 舍弃了 PyQt4 同名的方法</strong></p>
-<h2 id="QMatrix-方法不再支持"><a href="#QMatrix-方法不再支持" class="headerlink" title="QMatrix 方法不再支持"></a><code>QMatrix</code> 方法不再支持</h2><p>PyQt5 中已经不再支持 PyQt4种不推荐方法 <code>QMatrix</code><br>PyQt5 中可以考虑使用 <code>QPropertyAnimation</code></p>
-<h2 id="QGraphicsItemAnimation-方法不再支持"><a href="#QGraphicsItemAnimation-方法不再支持" class="headerlink" title="QGraphicsItemAnimation 方法不再支持"></a><code>QGraphicsItemAnimation</code> 方法不再支持</h2><p>PyQt5 中已经不再支持 PyQt4种不推荐方法 <code>QGraphicsItemAnimation</code><br>PyQt5 中可以考虑使用 <code>QTransform</code></p>
-<h2 id="QPyTextObject-被舍弃"><a href="#QPyTextObject-被舍弃" class="headerlink" title="QPyTextObject 被舍弃"></a><code>QPyTextObject</code> 被舍弃</h2><p>PyQt4 implements the QPyTextObject as a workaround for the inability to define a Python class that is sub-classed from more than one Qt class. PyQt5 does support the ability to define a Python class that is sub-classed from more than one Qt class so long as all but one of the Qt classes are interfaces, i.e. they have been declared in C++ as such using Q_DECLARE_INTERFACE. Therefore QPyTextObject is not implemented in PyQt5.</p>
-<h2 id="QSet-在PyQt5中完全用-集合-形式实现"><a href="#QSet-在PyQt5中完全用-集合-形式实现" class="headerlink" title="QSet 在PyQt5中完全用 集合 形式实现"></a>QSet 在PyQt5中完全用 集合 形式实现</h2><h2 id="pyuic5-不再提供-pyqt3-wrapper参数"><a href="#pyuic5-不再提供-pyqt3-wrapper参数" class="headerlink" title="pyuic5 不再提供 --pyqt3-wrapper参数"></a>pyuic5 不再提供 <code>--pyqt3-wrapper</code>参数</h2><p>pyuic5 does not support the –pyqt3-wrapper flag of pyuic4.</p>
-<h2 id="pyrcc5-不再提供-py2-或-py3-参数"><a href="#pyrcc5-不再提供-py2-或-py3-参数" class="headerlink" title="pyrcc5 不再提供 -py2 或 -py3 参数"></a>pyrcc5 不再提供 <code>-py2</code> 或 <code>-py3</code> 参数</h2><p><code>pyrcc5</code> cli工具不再支持 <code>-py2</code> 或者 <code>-py3</code> 参数。因为输出的代码兼容所有Python版本（v2.6以后的所有版本）</p>
-<h2 id="PyQt5-优化-合作性多重继承-（Cooperative-Multi-inheritance）的初始化方式"><a href="#PyQt5-优化-合作性多重继承-（Cooperative-Multi-inheritance）的初始化方式" class="headerlink" title="PyQt5 优化 合作性多重继承 （Cooperative Multi-inheritance）的初始化方式"></a>PyQt5 优化 合作性多重继承 （Cooperative Multi-inheritance）的初始化方式</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># PyQt5 调用父类的`__init__`方法.</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">__init</span><span class="params">(self, **kwargs)</span>:</span></span><br><span class="line">    super().__init__(**kwargs)</span><br></pre></td></tr></table></figure>
-<h2 id="PyQt5-自动释放GIL，而不是PyQt4的强制释放"><a href="#PyQt5-自动释放GIL，而不是PyQt4的强制释放" class="headerlink" title="PyQt5 自动释放GIL，而不是PyQt4的强制释放"></a>PyQt5 自动释放GIL，而不是PyQt4的强制释放</h2><h2 id="PyQt5-退出时自动调用sip-setdestroyonexit-以禁用自动析构"><a href="#PyQt5-退出时自动调用sip-setdestroyonexit-以禁用自动析构" class="headerlink" title="PyQt5 退出时自动调用sip.setdestroyonexit()以禁用自动析构"></a>PyQt5 退出时自动调用<code>sip.setdestroyonexit()</code>以禁用自动析构</h2><p>Python解释器退出PyQt4应用程序时会默认调用C++析构器处理所有它拥有的线程（这通常是以随机的顺序，因此可能会导致解析器崩溃），通过调用 sip.setdestroyonexit() 函数可以禁用。<br>PyQt5 总会自动调用 <code>sip.setdestroyonexit()</code> 函数.</p>
+<p>Keyword arguments are quite useful as a means of self-documenting code.</p>
+<p><code>signal.emit(5)</code><br>本应该写做<br><code>signal.emit(velocity=5)</code><br>这样不仅增强可读性，还可以加强机制使其可以携带相同关键字参数 it can also be used to enforce signals and slots to carry an identical argument signature.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">callback</span><span class="params">(name, address)</span>:</span></span><br><span class="line">	print(<span class="string">"Name=%s and address=%s"</span> % (name, address))</span><br><span class="line"></span><br><span class="line">signal = Signal()</span><br><span class="line">signal.connect(callback)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Mistake the first argument for a tuple.</span></span><br><span class="line">signal.emit(names=(<span class="string">'marcus'</span>, <span class="string">'ottosson'</span>), address=<span class="string">'earth'</span>)</span><br><span class="line"><span class="comment"># TypeError: callback() got an unexpected keyword argument 'names'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># When actually, its a single string value.</span></span><br><span class="line">signal.emit(name=<span class="string">'marcus ottosson'</span>, address=<span class="string">'earth'</span>)</span><br><span class="line"><span class="comment"># Name=marcus ottosson and address=earth</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Of course, non-keyword arguments works too.</span></span><br><span class="line">signal.emit(<span class="string">'marcus ottosson'</span>, <span class="string">'earth'</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="5-Cannot-be-modified-after-instantiation"><a href="#5-Cannot-be-modified-after-instantiation" class="headerlink" title="5. Cannot be modified after instantiation"></a>5. Cannot be modified after instantiation</h4><p>Python对象，很自然的支持 代码动态修改（monkey-patch）,但<code>pyqtSignals</code>非常特别的不支持<br>As a Python object, you would expect the ability to monkey-patch, but pyqtSignals are special enough to not let you do any of that.</p>
+<p>I’ll provide an example of monkey-patching for you below.</p>
+<h2 id="理解-Understanding-Signals-and-Slots"><a href="#理解-Understanding-Signals-and-Slots" class="headerlink" title="理解 Understanding Signals and Slots"></a>理解 Understanding Signals and Slots</h2><p>Qt 提供的 信号和槽 机制基于一个(行为型)设计模式 -&gt;观察者模式 (<a href="http://en.wikipedia.org/wiki/Observer_pattern" target="_blank" rel="noopener">Observer pattern</a>) (TODO 另开一文详细分析 Python的观察者模式)</p>
+<h3 id="跨线程"><a href="#跨线程" class="headerlink" title="跨线程"></a>跨线程</h3><p>上述实现很直接的介绍了基本原理但缺少了很多应该考虑到的应用场景比如跨线程。</p>
+<p>在使用pySignal时你可能已经遇到slot所在的线程<strong>很容易</strong>崩溃（无论是在 <code>QThread</code> 或者 Python的多线程模块），这“怪罪于”多线程之美，两个线程可能<em>同时</em>尝试或访问同一资源.</p>
+<h3 id="QObject-sender"><a href="#QObject-sender" class="headerlink" title="QObject.sender()"></a><code>QObject.sender()</code></h3><p>简而言之, <a href="http://doc.qt.io/qt-5/qobject.html#sender" target="_blank" rel="noopener"><code>QObject.sender()</code></a> 可以让接收端可以获得发送端资源。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">callback</span><span class="params">(self, message)</span>:</span></span><br><span class="line">	<span class="comment"># 在 pySignal 和 pyqtSignal 中都支持slot中查询来源signal</span></span><br><span class="line">	source_of_signal = self.sender()</span><br><span class="line">	<span class="comment"># 这在当slot可能收到多个来源的signal且需要区分他们的时候非常有用</span></span><br></pre></td></tr></table></figure>
+<p><strong>API参考资料中警告说这种方式可能会破坏面向对象程序的模块性，建议尽量避免</strong></p>
+<p>在这里我不准备提供全方位的测评, 但py版相比qt版 <code>pyqtSignal()</code>, 如果是obj1 -&gt; obj2 -&gt; obj3 这种链式调用的话，在obj3的slot中查询sender的话会返回obj1</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 在 obj3.listen 中调用sender()会返回 obj1而不是obj2，虽然obj2是调用obj3的signal</span></span><br><span class="line">obj1.signal.connect(obj2.emit)</span><br><span class="line">obj2.signal.connect(obj3.listen)</span><br><span class="line">obj1.signal.emit()</span><br><span class="line"><span class="comment"># 而在 pyqtSignal, 将会返回 obj2.</span></span><br></pre></td></tr></table></figure>
+<h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><h3 id="Example-–-监视类属性的状态"><a href="#Example-–-监视类属性的状态" class="headerlink" title="Example – 监视类属性的状态"></a>Example – 监视类属性的状态</h3><p>It can sometimes be useful to monitor an attribute of a class.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Listener</span><span class="params">(object)</span>:</span></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">		self.container = Container()</span><br><span class="line">		self.container.value_changed.connect(self.value_changed_event)</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">value_changed_event</span><span class="params">(self, previous, current)</span>:</span></span><br><span class="line">		print(<span class="string">"%r says: Value was changed from %s to %s"</span> % </span><br><span class="line">		     (self.__class__.__name__, previous, current))</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Container</span><span class="params">(object)</span>:</span></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">		self.__value = <span class="keyword">None</span></span><br><span class="line"></span><br><span class="line">		<span class="comment"># 当`value` 改变了我们就发送信号</span></span><br><span class="line">		self.value_changed = core.Signal()</span><br><span class="line"></span><br><span class="line"><span class="meta">	@property</span></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">value</span><span class="params">(self)</span>:</span></span><br><span class="line">		<span class="keyword">return</span> self.__value</span><br><span class="line"></span><br><span class="line"><span class="meta">	@value.setter</span></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">value</span><span class="params">(self, value)</span>:</span></span><br><span class="line">		self.value_changed.emit(previous=self.__value, </span><br><span class="line">					current=value)</span><br><span class="line">		self.__value = value</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">	list = Listener()</span><br><span class="line">        </span><br><span class="line">	<span class="comment"># 改变value值便会触发</span></span><br><span class="line"></span><br><span class="line">	list.container.value = <span class="number">5</span></span><br><span class="line">	<span class="comment"># 'Listening' 中打印: Value was changed from None to 5</span></span><br><span class="line"></span><br><span class="line">	list.container.value = <span class="number">6</span></span><br><span class="line">	<span class="comment"># 'Listening' 中打印: Value was changed from 5 to 6</span></span><br></pre></td></tr></table></figure>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ol>
+<li>在某些复杂的场景下，即使功能强大的<code>pyqtSignal</code>也会触短板,这个时候就可以扩展或自己实现</li>
+</ol>
+<ul>
+<li>但选择不站在巨人肩膀上而自己实现某一特性的话，有些情况我们会在遇到时发现（像先提到的线程间的安全性）。这个时候就不得不挑起自己动手实现新特性的担子。</li>
+<li>虽然两种signal机制的实现目的是一样的，但它们不一定需要用谁来替换谁。可能最好的方式是两个在代码中同时使用，各取所长，在各自适合的应用场景使用。<br>例如，<code>QThreads</code> 可以使用 <code>pyqtSignal</code> 而我们自定义的组件的基类和制造器(TODO builders)就可以使用 <code>pySignal</code></li>
+</ul>
 
       
     </div>
@@ -549,7 +551,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://haowei.ch/2017/06/14/2017-09-13/" title="PyQt5 与 PyQt4 差别应用">http://haowei.ch/2017/06/14/2017-09-13/</a>
+    <a href="http://haowei.ch/2017/05/18/Python/20170518/" title="Python的观察者模式，PyQt signal&slot 机制的理解和应用">http://haowei.ch/2017/05/18/Python/20170518/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -563,8 +565,6 @@
     <footer class="post-footer">
       
         <div class="post-tags">
-          
-            <a href="/tags/Python/" rel="tag"># Python</a>
           
             <a href="/tags/PyQt/" rel="tag"># PyQt</a>
           
@@ -581,18 +581,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/13/20170002/" rel="next" title="Python时间相关的类型转化">
-                <i class="fa fa-chevron-left"></i> Python时间相关的类型转化
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/09/18/2017-09-18/" rel="prev" title="我的RMBP遇到的问题和解决方法（如 iPhone 通过 USB 连接 Macbook 就响个不停的问题 莫名其妙无法启动）">
-                我的RMBP遇到的问题和解决方法（如 iPhone 通过 USB 连接 Macbook 就响个不停的问题 莫名其妙无法启动） <i class="fa fa-chevron-right"></i>
+              <a href="/2017/06/13/Python/20170613/" rel="prev" title="Python时间相关的类型转化">
+                Python时间相关的类型转化 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -681,7 +677,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -692,7 +688,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -783,7 +779,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#不与-PyQt4-兼容"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x4E0D;&#x4E0E;-PyQt4-&#x517C;&#x5BB9;" class="headerlink" title="&#x4E0D;&#x4E0E; PyQt4 &#x517C;&#x5BB9;"></a>&#x4E0D;&#x4E0E; PyQt4 &#x517C;&#x5BB9;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不再对Python老版本提供支持（Python-2-6-之前）"><span class="nav-number">2.</span> <span class="nav-text"><a href="#&#x4E0D;&#x518D;&#x5BF9;Python&#x8001;&#x7248;&#x672C;&#x63D0;&#x4F9B;&#x652F;&#x6301;&#xFF08;Python-2-6-&#x4E4B;&#x524D;&#xFF09;" class="headerlink" title="&#x4E0D;&#x518D;&#x5BF9;Python&#x8001;&#x7248;&#x672C;&#x63D0;&#x4F9B;&#x652F;&#x6301;&#xFF08;Python 2.6 &#x4E4B;&#x524D;&#xFF09;"></a>&#x4E0D;&#x518D;&#x5BF9;Python&#x8001;&#x7248;&#x672C;&#x63D0;&#x4F9B;&#x652F;&#x6301;&#xFF08;Python 2.6 &#x4E4B;&#x524D;&#xFF09;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不再实现PyQt4不推荐的API接口"><span class="nav-number">3.</span> <span class="nav-text"><a href="#&#x4E0D;&#x518D;&#x5B9E;&#x73B0;PyQt4&#x4E0D;&#x63A8;&#x8350;&#x7684;API&#x63A5;&#x53E3;" class="headerlink" title="&#x4E0D;&#x518D;&#x5B9E;&#x73B0;PyQt4&#x4E0D;&#x63A8;&#x8350;&#x7684;API&#x63A5;&#x53E3;"></a>&#x4E0D;&#x518D;&#x5B9E;&#x73B0;PyQt4&#x4E0D;&#x63A8;&#x8350;&#x7684;API&#x63A5;&#x53E3;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不再提供多版本API接口"><span class="nav-number">4.</span> <span class="nav-text"><a href="#&#x4E0D;&#x518D;&#x63D0;&#x4F9B;&#x591A;&#x7248;&#x672C;API&#x63A5;&#x53E3;" class="headerlink" title="&#x4E0D;&#x518D;&#x63D0;&#x4F9B;&#x591A;&#x7248;&#x672C;API&#x63A5;&#x53E3;"></a>&#x4E0D;&#x518D;&#x63D0;&#x4F9B;&#x591A;&#x7248;&#x672C;API&#x63A5;&#x53E3;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#信号和插槽（Signals-and-Slots）机制更新"><span class="nav-number">5.</span> <span class="nav-text"><a href="#&#x4FE1;&#x53F7;&#x548C;&#x63D2;&#x69FD;&#xFF08;Signals-and-Slots&#xFF09;&#x673A;&#x5236;&#x66F4;&#x65B0;" class="headerlink" title="&#x4FE1;&#x53F7;&#x548C;&#x63D2;&#x69FD;&#xFF08;Signals and Slots&#xFF09;&#x673A;&#x5236;&#x66F4;&#x65B0;"></a>&#x4FE1;&#x53F7;&#x548C;&#x63D2;&#x69FD;&#xFF08;Signals and Slots&#xFF09;&#x673A;&#x5236;&#x66F4;&#x65B0;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#风格对比（代码）"><span class="nav-number">5.1.</span> <span class="nav-text"><a href="#&#x98CE;&#x683C;&#x5BF9;&#x6BD4;&#xFF08;&#x4EE3;&#x7801;&#xFF09;" class="headerlink" title="&#x98CE;&#x683C;&#x5BF9;&#x6BD4;&#xFF08;&#x4EE3;&#x7801;&#xFF09;"></a>&#x98CE;&#x683C;&#x5BF9;&#x6BD4;&#xFF08;&#x4EE3;&#x7801;&#xFF09;</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QtOpenGL-模块更新"><span class="nav-number">6.</span> <span class="nav-text"><a href="#QtOpenGL-&#x6A21;&#x5757;&#x66F4;&#x65B0;" class="headerlink" title="QtOpenGL &#x6A21;&#x5757;&#x66F4;&#x65B0;"></a><code>QtOpenGL</code> &#x6A21;&#x5757;&#x66F4;&#x65B0;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QtWebKit-模块更新"><span class="nav-number">7.</span> <span class="nav-text"><a href="#QtWebKit-&#x6A21;&#x5757;&#x66F4;&#x65B0;" class="headerlink" title="QtWebKit &#x6A21;&#x5757;&#x66F4;&#x65B0;"></a><code>QtWebKit</code> &#x6A21;&#x5757;&#x66F4;&#x65B0;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#扩展性增强"><span class="nav-number">8.</span> <span class="nav-text"><a href="#&#x6269;&#x5C55;&#x6027;&#x589E;&#x5F3A;" class="headerlink" title="&#x6269;&#x5C55;&#x6027;&#x589E;&#x5F3A;"></a>&#x6269;&#x5C55;&#x6027;&#x589E;&#x5F3A;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#dbus-mainloop-qt-模块更名"><span class="nav-number">9.</span> <span class="nav-text"><a href="#dbus-mainloop-qt-&#x6A21;&#x5757;&#x66F4;&#x540D;" class="headerlink" title="dbus.mainloop.qt &#x6A21;&#x5757;&#x66F4;&#x540D;"></a><code>dbus.mainloop.qt</code> &#x6A21;&#x5757;&#x66F4;&#x540D;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QDataStream-明显数值的参数以数值处理和返回"><span class="nav-number">10.</span> <span class="nav-text"><a href="#QDataStream-&#x660E;&#x663E;&#x6570;&#x503C;&#x7684;&#x53C2;&#x6570;&#x4EE5;&#x6570;&#x503C;&#x5904;&#x7406;&#x548C;&#x8FD4;&#x56DE;" class="headerlink" title="QDataStream &#x660E;&#x663E;&#x6570;&#x503C;&#x7684;&#x53C2;&#x6570;&#x4EE5;&#x6570;&#x503C;&#x5904;&#x7406;&#x548C;&#x8FD4;&#x56DE;"></a><code>QDataStream</code> &#x660E;&#x663E;&#x6570;&#x503C;&#x7684;&#x53C2;&#x6570;&#x4EE5;&#x6570;&#x503C;&#x5904;&#x7406;&#x548C;&#x8FD4;&#x56DE;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QFileDialog-文件操作接口更新"><span class="nav-number">11.</span> <span class="nav-text"><a href="#QFileDialog-&#x6587;&#x4EF6;&#x64CD;&#x4F5C;&#x63A5;&#x53E3;&#x66F4;&#x65B0;" class="headerlink" title="QFileDialog  &#x6587;&#x4EF6;&#x64CD;&#x4F5C;&#x63A5;&#x53E3;&#x66F4;&#x65B0;"></a><code>QFileDialog</code>  &#x6587;&#x4EF6;&#x64CD;&#x4F5C;&#x63A5;&#x53E3;&#x66F4;&#x65B0;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QMatrix-方法不再支持"><span class="nav-number">12.</span> <span class="nav-text"><a href="#QMatrix-&#x65B9;&#x6CD5;&#x4E0D;&#x518D;&#x652F;&#x6301;" class="headerlink" title="QMatrix &#x65B9;&#x6CD5;&#x4E0D;&#x518D;&#x652F;&#x6301;"></a><code>QMatrix</code> &#x65B9;&#x6CD5;&#x4E0D;&#x518D;&#x652F;&#x6301;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QGraphicsItemAnimation-方法不再支持"><span class="nav-number">13.</span> <span class="nav-text"><a href="#QGraphicsItemAnimation-&#x65B9;&#x6CD5;&#x4E0D;&#x518D;&#x652F;&#x6301;" class="headerlink" title="QGraphicsItemAnimation &#x65B9;&#x6CD5;&#x4E0D;&#x518D;&#x652F;&#x6301;"></a><code>QGraphicsItemAnimation</code> &#x65B9;&#x6CD5;&#x4E0D;&#x518D;&#x652F;&#x6301;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QPyTextObject-被舍弃"><span class="nav-number">14.</span> <span class="nav-text"><a href="#QPyTextObject-&#x88AB;&#x820D;&#x5F03;" class="headerlink" title="QPyTextObject &#x88AB;&#x820D;&#x5F03;"></a><code>QPyTextObject</code> &#x88AB;&#x820D;&#x5F03;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QSet-在PyQt5中完全用-集合-形式实现"><span class="nav-number">15.</span> <span class="nav-text"><a href="#QSet-&#x5728;PyQt5&#x4E2D;&#x5B8C;&#x5168;&#x7528;-&#x96C6;&#x5408;-&#x5F62;&#x5F0F;&#x5B9E;&#x73B0;" class="headerlink" title="QSet &#x5728;PyQt5&#x4E2D;&#x5B8C;&#x5168;&#x7528; &#x96C6;&#x5408; &#x5F62;&#x5F0F;&#x5B9E;&#x73B0;"></a>QSet &#x5728;PyQt5&#x4E2D;&#x5B8C;&#x5168;&#x7528; &#x96C6;&#x5408; &#x5F62;&#x5F0F;&#x5B9E;&#x73B0;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pyuic5-不再提供-pyqt3-wrapper参数"><span class="nav-number">16.</span> <span class="nav-text"><a href="#pyuic5-&#x4E0D;&#x518D;&#x63D0;&#x4F9B;-pyqt3-wrapper&#x53C2;&#x6570;" class="headerlink" title="pyuic5 &#x4E0D;&#x518D;&#x63D0;&#x4F9B; --pyqt3-wrapper&#x53C2;&#x6570;"></a>pyuic5 &#x4E0D;&#x518D;&#x63D0;&#x4F9B; <code>--pyqt3-wrapper</code>&#x53C2;&#x6570;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pyrcc5-不再提供-py2-或-py3-参数"><span class="nav-number">17.</span> <span class="nav-text"><a href="#pyrcc5-&#x4E0D;&#x518D;&#x63D0;&#x4F9B;-py2-&#x6216;-py3-&#x53C2;&#x6570;" class="headerlink" title="pyrcc5 &#x4E0D;&#x518D;&#x63D0;&#x4F9B; -py2 &#x6216; -py3 &#x53C2;&#x6570;"></a>pyrcc5 &#x4E0D;&#x518D;&#x63D0;&#x4F9B; <code>-py2</code> &#x6216; <code>-py3</code> &#x53C2;&#x6570;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PyQt5-优化-合作性多重继承-（Cooperative-Multi-inheritance）的初始化方式"><span class="nav-number">18.</span> <span class="nav-text"><a href="#PyQt5-&#x4F18;&#x5316;-&#x5408;&#x4F5C;&#x6027;&#x591A;&#x91CD;&#x7EE7;&#x627F;-&#xFF08;Cooperative-Multi-inheritance&#xFF09;&#x7684;&#x521D;&#x59CB;&#x5316;&#x65B9;&#x5F0F;" class="headerlink" title="PyQt5 &#x4F18;&#x5316; &#x5408;&#x4F5C;&#x6027;&#x591A;&#x91CD;&#x7EE7;&#x627F; &#xFF08;Cooperative Multi-inheritance&#xFF09;&#x7684;&#x521D;&#x59CB;&#x5316;&#x65B9;&#x5F0F;"></a>PyQt5 &#x4F18;&#x5316; &#x5408;&#x4F5C;&#x6027;&#x591A;&#x91CD;&#x7EE7;&#x627F; &#xFF08;Cooperative Multi-inheritance&#xFF09;&#x7684;&#x521D;&#x59CB;&#x5316;&#x65B9;&#x5F0F;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PyQt5-自动释放GIL，而不是PyQt4的强制释放"><span class="nav-number">19.</span> <span class="nav-text"><a href="#PyQt5-&#x81EA;&#x52A8;&#x91CA;&#x653E;GIL&#xFF0C;&#x800C;&#x4E0D;&#x662F;PyQt4&#x7684;&#x5F3A;&#x5236;&#x91CA;&#x653E;" class="headerlink" title="PyQt5 &#x81EA;&#x52A8;&#x91CA;&#x653E;GIL&#xFF0C;&#x800C;&#x4E0D;&#x662F;PyQt4&#x7684;&#x5F3A;&#x5236;&#x91CA;&#x653E;"></a>PyQt5 &#x81EA;&#x52A8;&#x91CA;&#x653E;GIL&#xFF0C;&#x800C;&#x4E0D;&#x662F;PyQt4&#x7684;&#x5F3A;&#x5236;&#x91CA;&#x653E;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PyQt5-退出时自动调用sip-setdestroyonexit-以禁用自动析构"><span class="nav-number">20.</span> <span class="nav-text"><a href="#PyQt5-&#x9000;&#x51FA;&#x65F6;&#x81EA;&#x52A8;&#x8C03;&#x7528;sip-setdestroyonexit-&#x4EE5;&#x7981;&#x7528;&#x81EA;&#x52A8;&#x6790;&#x6784;" class="headerlink" title="PyQt5 &#x9000;&#x51FA;&#x65F6;&#x81EA;&#x52A8;&#x8C03;&#x7528;sip.setdestroyonexit()&#x4EE5;&#x7981;&#x7528;&#x81EA;&#x52A8;&#x6790;&#x6784;"></a>PyQt5 &#x9000;&#x51FA;&#x65F6;&#x81EA;&#x52A8;&#x8C03;&#x7528;<code>sip.setdestroyonexit()</code>&#x4EE5;&#x7981;&#x7528;&#x81EA;&#x52A8;&#x6790;&#x6784;</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#内容介绍"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x5185;&#x5BB9;&#x4ECB;&#x7ECD;" class="headerlink" title="&#x5185;&#x5BB9;&#x4ECB;&#x7ECD;"></a>&#x5185;&#x5BB9;&#x4ECB;&#x7ECD;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#相关资源"><span class="nav-number">2.</span> <span class="nav-text"><a href="#&#x76F8;&#x5173;&#x8D44;&#x6E90;" class="headerlink" title="&#x76F8;&#x5173;&#x8D44;&#x6E90;"></a>&#x76F8;&#x5173;&#x8D44;&#x6E90;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python-signal-amp-slot-信号-amp-槽的-Python-实现"><span class="nav-number">3.</span> <span class="nav-text"><a href="#Python-signal-amp-slot-&#x4FE1;&#x53F7;-amp-&#x69FD;&#x7684;-Python-&#x5B9E;&#x73B0;" class="headerlink" title="Python signal&amp;slot &#x4FE1;&#x53F7;&amp;&#x69FD;&#x7684; Python &#x5B9E;&#x73B0;"></a>Python signal&amp;slot &#x4FE1;&#x53F7;&amp;&#x69FD;&#x7684; Python &#x5B9E;&#x73B0;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#介绍"><span class="nav-number">3.1.</span> <span class="nav-text"><a href="#&#x4ECB;&#x7ECD;" class="headerlink" title="&#x4ECB;&#x7ECD;"></a>&#x4ECB;&#x7ECD;</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-不能用实例属性替换pyqtSignal的类属性"><span class="nav-number">3.1.1.</span> <span class="nav-text"><a href="#1-&#x4E0D;&#x80FD;&#x7528;&#x5B9E;&#x4F8B;&#x5C5E;&#x6027;&#x66FF;&#x6362;pyqtSignal&#x7684;&#x7C7B;&#x5C5E;&#x6027;" class="headerlink" title="1. &#x4E0D;&#x80FD;&#x7528;&#x5B9E;&#x4F8B;&#x5C5E;&#x6027;&#x66FF;&#x6362;pyqtSignal&#x7684;&#x7C7B;&#x5C5E;&#x6027;"></a>1. <strong>&#x4E0D;&#x80FD;&#x7528;&#x5B9E;&#x4F8B;&#x5C5E;&#x6027;&#x66FF;&#x6362;<code>pyqtSignal</code>&#x7684;&#x7C7B;&#x5C5E;&#x6027;</strong></span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pySignal"><span class="nav-number">3.2.</span> <span class="nav-text"><a href="#pySignal" class="headerlink" title="pySignal"></a>pySignal</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PyQt-signal-amp-slot"><span class="nav-number">4.</span> <span class="nav-text"><a href="#PyQt-signal-amp-slot" class="headerlink" title="PyQt signal&amp;slot"></a>PyQt signal&amp;slot</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#介绍-1"><span class="nav-number">4.1.</span> <span class="nav-text"><a href="#&#x4ECB;&#x7ECD;-1" class="headerlink" title="&#x4ECB;&#x7ECD;"></a>&#x4ECB;&#x7ECD;</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-signal只能作为类属性-Only-works-with-class-attributes"><span class="nav-number">4.1.1.</span> <span class="nav-text"><a href="#1-signal&#x53EA;&#x80FD;&#x4F5C;&#x4E3A;&#x7C7B;&#x5C5E;&#x6027;-Only-works-with-class-attributes" class="headerlink" title="1. signal&#x53EA;&#x80FD;&#x4F5C;&#x4E3A;&#x7C7B;&#x5C5E;&#x6027; Only works with class attributes"></a>1. signal&#x53EA;&#x80FD;&#x4F5C;&#x4E3A;&#x7C7B;&#x5C5E;&#x6027; Only works with class attributes</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-不能在已经实例化的类中声明-Cannot-be-used-in-an-already-instantiated-class"><span class="nav-number">4.1.2.</span> <span class="nav-text"><a href="#2-&#x4E0D;&#x80FD;&#x5728;&#x5DF2;&#x7ECF;&#x5B9E;&#x4F8B;&#x5316;&#x7684;&#x7C7B;&#x4E2D;&#x58F0;&#x660E;-Cannot-be-used-in-an-already-instantiated-class" class="headerlink" title="2.&#x4E0D;&#x80FD;&#x5728;&#x5DF2;&#x7ECF;&#x5B9E;&#x4F8B;&#x5316;&#x7684;&#x7C7B;&#x4E2D;&#x58F0;&#x660E; Cannot be used in an already instantiated class"></a>2.&#x4E0D;&#x80FD;&#x5728;&#x5DF2;&#x7ECF;&#x5B9E;&#x4F8B;&#x5316;&#x7684;&#x7C7B;&#x4E2D;&#x58F0;&#x660E; Cannot be used in an already instantiated class</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-必须在声明signal时指明传输参数的类型-Must-be-pre-specified-with-any-data-types-you-wish-to-emit"><span class="nav-number">4.1.3.</span> <span class="nav-text"><a href="#3-&#x5FC5;&#x987B;&#x5728;&#x58F0;&#x660E;signal&#x65F6;&#x6307;&#x660E;&#x4F20;&#x8F93;&#x53C2;&#x6570;&#x7684;&#x7C7B;&#x578B;-Must-be-pre-specified-with-any-data-types-you-wish-to-emit" class="headerlink" title="3.&#x5FC5;&#x987B;&#x5728;&#x58F0;&#x660E;signal&#x65F6;&#x6307;&#x660E;&#x4F20;&#x8F93;&#x53C2;&#x6570;&#x7684;&#x7C7B;&#x578B; Must be pre-specified with any data-types you wish to emit"></a>3.&#x5FC5;&#x987B;&#x5728;&#x58F0;&#x660E;signal&#x65F6;&#x6307;&#x660E;&#x4F20;&#x8F93;&#x53C2;&#x6570;&#x7684;&#x7C7B;&#x578B; Must be pre-specified with any data-types you wish to emit</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-不支持关键字参数-Does-not-support-keyword-arguments"><span class="nav-number">4.1.4.</span> <span class="nav-text"><a href="#4-&#x4E0D;&#x652F;&#x6301;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;-Does-not-support-keyword-arguments" class="headerlink" title="4. &#x4E0D;&#x652F;&#x6301;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570; Does not support keyword arguments"></a>4. &#x4E0D;&#x652F;&#x6301;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570; Does not support keyword arguments</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-Cannot-be-modified-after-instantiation"><span class="nav-number">4.1.5.</span> <span class="nav-text"><a href="#5-Cannot-be-modified-after-instantiation" class="headerlink" title="5. Cannot be modified after instantiation"></a>5. Cannot be modified after instantiation</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#理解-Understanding-Signals-and-Slots"><span class="nav-number">5.</span> <span class="nav-text"><a href="#&#x7406;&#x89E3;-Understanding-Signals-and-Slots" class="headerlink" title="&#x7406;&#x89E3; Understanding Signals and Slots"></a>&#x7406;&#x89E3; Understanding Signals and Slots</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#跨线程"><span class="nav-number">5.1.</span> <span class="nav-text"><a href="#&#x8DE8;&#x7EBF;&#x7A0B;" class="headerlink" title="&#x8DE8;&#x7EBF;&#x7A0B;"></a>&#x8DE8;&#x7EBF;&#x7A0B;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#QObject-sender"><span class="nav-number">5.2.</span> <span class="nav-text"><a href="#QObject-sender" class="headerlink" title="QObject.sender()"></a><code>QObject.sender()</code></span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#应用"><span class="nav-number">6.</span> <span class="nav-text"><a href="#&#x5E94;&#x7528;" class="headerlink" title="&#x5E94;&#x7528;"></a>&#x5E94;&#x7528;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Example-–-监视类属性的状态"><span class="nav-number">6.1.</span> <span class="nav-text"><a href="#Example-&#x2013;-&#x76D1;&#x89C6;&#x7C7B;&#x5C5E;&#x6027;&#x7684;&#x72B6;&#x6001;" class="headerlink" title="Example &#x2013; &#x76D1;&#x89C6;&#x7C7B;&#x5C5E;&#x6027;&#x7684;&#x72B6;&#x6001;"></a>Example &#x2013; &#x76D1;&#x89C6;&#x7C7B;&#x5C5E;&#x6027;&#x7684;&#x72B6;&#x6001;</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">7.</span> <span class="nav-text"><a href="#&#x603B;&#x7ED3;" class="headerlink" title="&#x603B;&#x7ED3;"></a>&#x603B;&#x7ED3;</span></a></li></ol></div>
             
 
           </div>
