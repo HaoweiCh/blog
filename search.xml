@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[执行 hexo 命令报错，找不到模块DTraceProviderBindings]]></title>
+    <url>%2F2017%2F09%2F19%2F%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7%2F20170919%2F</url>
+    <content type="text"><![CDATA[hexo报错，找不到模块DTraceProviderBindings 情况是这样的，过了有一段时间没有更新hexo-cli后每次使用无论是hexo s还是hexo d都会报错 1&quot;Cannot find module &apos;./build/Release/DTraceProviderBindings&apos;&quot; 解决 方案是执行 12npm uninstall hexo-cli -gnpm install hexo-cli -g 或 12yarn global remove hexo-cliyarn global add hexo-cli]]></content>
+      <categories>
+        <category>生产力工具</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[iPhone 通过 USB 连接 Macbook 就响个不停的问题]]></title>
     <url>%2F2017%2F09%2F18%2F%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7%2F20170918%2F</url>
     <content type="text"><![CDATA[我的线能正常充电，但是连接我的rmbp后响个不停。这次留意了一下就重设PRAM和重设SMC但没啥效果。猜测可能是usb接口松了，尝试轻摁线头一会儿就连接正常了。 这种情况应该注意： 线（一定要用官方线）是不是好的，换台机子测试一下。]]></content>

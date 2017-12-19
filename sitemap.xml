@@ -2,23 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://haowei.ch/2017/06/14/Python/20170614/</loc>
+    <loc>http://haowei.ch/2017/09/19/%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7/20170919/</loc>
     
-    <lastmod>2017-12-19T03:36:24.902Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haowei.ch/2017/05/18/Python/20170518/</loc>
-    
-    <lastmod>2017-12-19T03:35:44.705Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haowei.ch/2017/06/13/Python/20170613/</loc>
-    
-    <lastmod>2017-12-19T03:33:43.521Z</lastmod>
+    <lastmod>2017-12-19T06:25:54.000Z</lastmod>
     
   </url>
   
@@ -47,6 +33,27 @@
     <loc>http://haowei.ch/tags/index.html</loc>
     
     <lastmod>2017-09-13T10:03:33.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haowei.ch/2017/06/14/Python/20170614/</loc>
+    
+    <lastmod>2017-06-13T23:06:03.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haowei.ch/2017/06/13/Python/20170613/</loc>
+    
+    <lastmod>2017-06-13T10:03:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haowei.ch/2017/05/18/Python/20170518/</loc>
+    
+    <lastmod>2017-05-18T00:06:03.000Z</lastmod>
     
   </url>
   
