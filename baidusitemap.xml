@@ -67,6 +67,28 @@
     
     
   <url>
+    <loc>http://haowei.ch/2017/05/18/Python/20170518/</loc>
+    <lastmod>2017-06-18T00:06:03.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python的观察者模式，PyQt 信号和插槽 机制的理解和应用</title>
+        <pubTime>2017-05-18T00:06:03.000Z</pubTime>
+        
+        <tag>PyQt</tag>
+         
+        <tag>观察者模式</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="http://haowei.ch/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://haowei.ch/2017/06/14/Python/20170614/</loc>
     <lastmod>2017-06-13T23:06:03.000Z</lastmod>
     <data>
@@ -101,28 +123,6 @@
         <tag>datetime</tag>
          
         <tag>timestamp</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="http://haowei.ch/categories/Python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haowei.ch/2017/05/18/Python/20170518/</loc>
-    <lastmod>2017-05-18T00:06:03.000Z</lastmod>
-    <data>
-        <display>
-        <title>Python的观察者模式，PyQt signal&slot 机制的理解和应用</title>
-        <pubTime>2017-05-18T00:06:03.000Z</pubTime>
-        
-        <tag>PyQt</tag>
-         
-        <tag>观察者模式</tag>
          
          
            
