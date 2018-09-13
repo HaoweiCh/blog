@@ -3,6 +3,26 @@
 
 
     
+  <url>
+    <loc>http://haowei.ch/2017/09/16/tool/20170916/</loc>
+    <lastmod>2018-09-13T06:22:03.000Z</lastmod>
+    <data>
+        <display>
+        <title>RMBP 使用问题总结</title>
+        <pubTime>2017-09-16T06:22:03.000Z</pubTime>
+        
+        <tag>macOS</tag>
+         
+         
+           
+             
+              <breadCrumb title="tool" url="http://haowei.ch/categories/tool/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
     
   <url>
@@ -45,30 +65,34 @@
     </url>
 
     
+    
   <url>
-    <loc>http://haowei.ch/2017/09/16/tool/20170916/</loc>
-    <lastmod>2017-09-16T06:22:03.000Z</lastmod>
+    <loc>http://haowei.ch/2017/06/13/Python/20170613/</loc>
+    <lastmod>2017-07-13T10:03:09.000Z</lastmod>
     <data>
         <display>
-        <title>rmbp一次惊慌失措的无法启动</title>
-        <pubTime>2017-09-16T06:22:03.000Z</pubTime>
+        <title>Python时间相关的类型转化</title>
+        <pubTime>2017-06-13T10:03:09.000Z</pubTime>
         
-        <tag>macOS</tag>
+        <tag>time</tag>
+         
+        <tag>datetime</tag>
+         
+        <tag>timestamp</tag>
          
          
            
              
-              <breadCrumb title="tool" url="http://haowei.ch/categories/tool/"/>
+              <breadCrumb title="Python" url="http://haowei.ch/categories/Python/"/>
           
         </display>
     </data>
     </url>
 
     
-    
   <url>
     <loc>http://haowei.ch/2017/05/18/Python/20170518/</loc>
-    <lastmod>2017-06-18T00:06:03.000Z</lastmod>
+    <lastmod>2017-06-22T08:04:03.000Z</lastmod>
     <data>
         <display>
         <title>Python的观察者模式，PyQt 信号和插槽 机制的理解和应用</title>
@@ -99,30 +123,6 @@
         <tag>PyQt</tag>
          
         <tag>观察者模式</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="http://haowei.ch/categories/Python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haowei.ch/2017/06/13/Python/20170613/</loc>
-    <lastmod>2017-06-13T10:03:09.000Z</lastmod>
-    <data>
-        <display>
-        <title>Python时间相关的类型转化</title>
-        <pubTime>2017-06-13T10:03:09.000Z</pubTime>
-        
-        <tag>time</tag>
-         
-        <tag>datetime</tag>
-         
-        <tag>timestamp</tag>
          
          
            
