@@ -1988,7 +1988,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #71ff7e;
+  background: #ec1629;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3025,4 +3025,7 @@ hr {
 .site-description {
   font-family: Galdeano;
   font-size: 18px;
+}
+li.menu-item.menu-item-archives {
+  display: None;
 }
