@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://haowei.ch/schedule/index.html</loc>
+    
+    <lastmod>2018-09-14T09:31:15.268Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haowei.ch/about/index.html</loc>
+    
+    <lastmod>2018-09-14T08:49:16.032Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://haowei.ch/categories/index.html</loc>
     
     <lastmod>2018-09-14T08:28:29.167Z</lastmod>
@@ -12,20 +26,6 @@
     <loc>http://haowei.ch/archives/index.html</loc>
     
     <lastmod>2018-09-14T08:28:24.105Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haowei.ch/schedule/index.html</loc>
-    
-    <lastmod>2018-09-14T08:21:57.451Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haowei.ch/about/index.html</loc>
-    
-    <lastmod>2018-09-13T09:39:25.328Z</lastmod>
     
   </url>
   
