@@ -1988,7 +1988,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f2f;
+  background: #ffd1e8;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3026,7 +3026,8 @@ hr {
   visibility: hidden;
   display: none;
 }
-.site-description {
+.site-description,
+.archive-page-counter {
   font-family: Galdeano;
   font-size: 18px;
 }
