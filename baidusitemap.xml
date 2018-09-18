@@ -3,6 +3,28 @@
 
 
     
+  <url>
+    <loc>http://blog.haowei.ch/2018/02/18/%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2-20180218/</loc>
+    <lastmod>2018-09-18T13:22:34.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python 多版本共存最佳方案 pyenv & pyenv-virtualenv</title>
+        <pubTime>2018-02-18T13:22:34.000Z</pubTime>
+        
+        <tag>Mac</tag>
+         
+        <tag>Ubuntu</tag>
+         
+         
+           
+             
+              <breadCrumb title="环境部署" url="http://blog.haowei.ch/categories/%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://blog.haowei.ch/2018/08/18/CheatSheet-20180818/</loc>
@@ -53,19 +75,19 @@
 
     
   <url>
-    <loc>http://blog.haowei.ch/2018/09/01/Tool-20180901/</loc>
+    <loc>http://blog.haowei.ch/2018/03/01/%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2-20180301/</loc>
     <lastmod>2018-09-17T01:35:59.000Z</lastmod>
     <data>
         <display>
         <title>博客搭建和美化</title>
-        <pubTime>2018-09-01T01:35:59.000Z</pubTime>
+        <pubTime>2018-03-01T01:35:59.000Z</pubTime>
         
         <tag>hexo</tag>
          
          
            
              
-              <breadCrumb title="Tool" url="http://blog.haowei.ch/categories/Tool/"/>
+              <breadCrumb title="环境部署" url="http://blog.haowei.ch/categories/%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/"/>
           
         </display>
     </data>
@@ -76,7 +98,7 @@
     
     
   <url>
-    <loc>http://blog.haowei.ch/2017/09/16/Tool-20170916/</loc>
+    <loc>http://blog.haowei.ch/2017/09/16/%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2-20170916/</loc>
     <lastmod>2018-09-13T06:22:03.000Z</lastmod>
     <data>
         <display>
@@ -88,7 +110,29 @@
          
            
              
-              <breadCrumb title="Tool" url="http://blog.haowei.ch/categories/Tool/"/>
+              <breadCrumb title="环境部署" url="http://blog.haowei.ch/categories/%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.haowei.ch/2018/01/18/%E7%88%AC%E8%99%AB-20180118/</loc>
+    <lastmod>2018-03-18T12:52:14.000Z</lastmod>
+    <data>
+        <display>
+        <title>爬虫动态 js 渲染</title>
+        <pubTime>2018-01-18T12:52:14.000Z</pubTime>
+        
+        <tag>爬虫</tag>
+         
+        <tag>javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="爬虫" url="http://blog.haowei.ch/categories/%E7%88%AC%E8%99%AB/"/>
           
         </display>
     </data>
