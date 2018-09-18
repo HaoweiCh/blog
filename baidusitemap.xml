@@ -3,6 +3,7 @@
 
 
     
+    
   <url>
     <loc>http://blog.haowei.ch/2018/08/18/CheatSheet-20180818/</loc>
     <lastmod>2018-09-18T09:44:59.000Z</lastmod>
@@ -26,7 +27,6 @@
     </data>
     </url>
 
-    
     
   <url>
     <loc>http://blog.haowei.ch/2018/09/02/Python-20180902/</loc>
@@ -95,7 +95,7 @@
     
     
   <url>
-    <loc>http://blog.haowei.ch/2017/09/19/Tool-20170919/</loc>
+    <loc>http://blog.haowei.ch/2017/09/19/issue-20170919/</loc>
     <lastmod>2017-12-19T06:25:54.000Z</lastmod>
     <data>
         <display>
@@ -107,7 +107,7 @@
          
            
              
-              <breadCrumb title="Tool" url="http://blog.haowei.ch/categories/Tool/"/>
+              <breadCrumb title="issue" url="http://blog.haowei.ch/categories/issue/"/>
           
         </display>
     </data>
