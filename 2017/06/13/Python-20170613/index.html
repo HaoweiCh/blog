@@ -456,7 +456,7 @@
 
       
         <p>python时间相关的库和转换关系</p>
- <a id="more"></a> 
+ <a id="more"></a>
 <p><img src="/media/15052943518472.jpg" alt=""></p>
 <h2 id="string-类型-time"><a href="#string-类型-time" class="headerlink" title="string 类型(time)"></a>string 类型(time)</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建文本时间</span></span><br><span class="line">s = time.ctime() <span class="comment"># 以当前系统地区来决定输出的时间文本格式</span></span><br><span class="line">s = <span class="string">"2008-11-10 17:53:59"</span></span><br><span class="line"><span class="comment"># 转换为时间对象</span></span><br><span class="line">t = time.strptime(s, <span class="string">"%Y-%m-%d %H:%M:%S"</span>)</span><br></pre></td></tr></table></figure>
 <h2 id="datetime-对象"><a href="#datetime-对象" class="headerlink" title="datetime 对象"></a>datetime 对象</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建datetime对象</span></span><br><span class="line"><span class="comment"># dt_obj = datetime.datetime.now()</span></span><br><span class="line">dt_obj = datetime.datetime(<span class="number">2008</span>, <span class="number">11</span>, <span class="number">10</span>, <span class="number">17</span>, <span class="number">53</span>, <span class="number">59</span>) </span><br><span class="line"><span class="comment"># 转换为文本型时间</span></span><br><span class="line">print(dt_obj.strftime(<span class="string">"%Y-%m-%d %H:%M:%S"</span>)) </span><br><span class="line"><span class="comment"># 转换为时间对象</span></span><br><span class="line">time_tuple = dt_obj.timetuple()</span><br><span class="line"><span class="comment"># 转化哪位时间戳</span></span><br><span class="line">time_stamp = dt_obj.timestamp()</span><br></pre></td></tr></table></figure>
@@ -612,7 +612,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -629,7 +629,13 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -664,7 +670,13 @@
                     
                       
                     
-                    <span class="site-state-item-count">9</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

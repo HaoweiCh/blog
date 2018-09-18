@@ -492,7 +492,7 @@
 </ul>
 <h2 id="ISSUE"><a href="#ISSUE" class="headerlink" title="ISSUE"></a>ISSUE</h2><h3 id="ROOT模式上不能启动"><a href="#ROOT模式上不能启动" class="headerlink" title="ROOT模式上不能启动"></a>ROOT模式上不能启动</h3><p>Running a worker with superuser privileges when the<br>worker accepts messages serialized with pickle is a very bad idea!</p>
 <p>If you really want to continue then you have to set the C_FORCE_ROOT<br>environment variable (but please think about this before you do).</p>
-
+<h2 id="单元测试"><a href="#单元测试" class="headerlink" title="单元测试"></a>单元测试</h2>
       
     </div>
 
@@ -545,7 +545,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/01/tool-20180901/" rel="next" title="博客搭建和美化">
+              <a href="/2018/09/01/Tool-20180901/" rel="next" title="博客搭建和美化">
                 <i class="fa fa-chevron-left"></i> 博客搭建和美化
               </a>
             
@@ -634,7 +634,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -651,7 +651,13 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -686,7 +692,13 @@
                     
                       
                     
-                    <span class="site-state-item-count">9</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -809,7 +821,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#设计"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x8BBE;&#x8BA1;" class="headerlink" title="&#x8BBE;&#x8BA1;"></a>&#x8BBE;&#x8BA1;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#任务长度应该尽量小"><span class="nav-number">1.1.</span> <span class="nav-text"><a href="#&#x4EFB;&#x52A1;&#x957F;&#x5EA6;&#x5E94;&#x8BE5;&#x5C3D;&#x91CF;&#x5C0F;" class="headerlink" title="&#x4EFB;&#x52A1;&#x957F;&#x5EA6;&#x5E94;&#x8BE5;&#x5C3D;&#x91CF;&#x5C0F;"></a>&#x4EFB;&#x52A1;&#x957F;&#x5EA6;&#x5E94;&#x8BE5;&#x5C3D;&#x91CF;&#x5C0F;</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#不可避免的长耗时任务处理方法"><span class="nav-number">1.1.1.</span> <span class="nav-text"><a href="#&#x4E0D;&#x53EF;&#x907F;&#x514D;&#x7684;&#x957F;&#x8017;&#x65F6;&#x4EFB;&#x52A1;&#x5904;&#x7406;&#x65B9;&#x6CD5;" class="headerlink" title="&#x4E0D;&#x53EF;&#x907F;&#x514D;&#x7684;&#x957F;&#x8017;&#x65F6;&#x4EFB;&#x52A1;&#x5904;&#x7406;&#x65B9;&#x6CD5;"></a>&#x4E0D;&#x53EF;&#x907F;&#x514D;&#x7684;&#x957F;&#x8017;&#x65F6;&#x4EFB;&#x52A1;&#x5904;&#x7406;&#x65B9;&#x6CD5;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#并发模式"><span class="nav-number">1.1.2.</span> <span class="nav-text"><a href="#&#x5E76;&#x53D1;&#x6A21;&#x5F0F;" class="headerlink" title="&#x5E76;&#x53D1;&#x6A21;&#x5F0F;"></a>&#x5E76;&#x53D1;&#x6A21;&#x5F0F;</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ISSUE"><span class="nav-number">2.</span> <span class="nav-text"><a href="#ISSUE" class="headerlink" title="ISSUE"></a>ISSUE</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ROOT模式上不能启动"><span class="nav-number">2.1.</span> <span class="nav-text"><a href="#ROOT&#x6A21;&#x5F0F;&#x4E0A;&#x4E0D;&#x80FD;&#x542F;&#x52A8;" class="headerlink" title="ROOT&#x6A21;&#x5F0F;&#x4E0A;&#x4E0D;&#x80FD;&#x542F;&#x52A8;"></a>ROOT&#x6A21;&#x5F0F;&#x4E0A;&#x4E0D;&#x80FD;&#x542F;&#x52A8;</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#设计"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x8BBE;&#x8BA1;" class="headerlink" title="&#x8BBE;&#x8BA1;"></a>&#x8BBE;&#x8BA1;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#任务长度应该尽量小"><span class="nav-number">1.1.</span> <span class="nav-text"><a href="#&#x4EFB;&#x52A1;&#x957F;&#x5EA6;&#x5E94;&#x8BE5;&#x5C3D;&#x91CF;&#x5C0F;" class="headerlink" title="&#x4EFB;&#x52A1;&#x957F;&#x5EA6;&#x5E94;&#x8BE5;&#x5C3D;&#x91CF;&#x5C0F;"></a>&#x4EFB;&#x52A1;&#x957F;&#x5EA6;&#x5E94;&#x8BE5;&#x5C3D;&#x91CF;&#x5C0F;</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#不可避免的长耗时任务处理方法"><span class="nav-number">1.1.1.</span> <span class="nav-text"><a href="#&#x4E0D;&#x53EF;&#x907F;&#x514D;&#x7684;&#x957F;&#x8017;&#x65F6;&#x4EFB;&#x52A1;&#x5904;&#x7406;&#x65B9;&#x6CD5;" class="headerlink" title="&#x4E0D;&#x53EF;&#x907F;&#x514D;&#x7684;&#x957F;&#x8017;&#x65F6;&#x4EFB;&#x52A1;&#x5904;&#x7406;&#x65B9;&#x6CD5;"></a>&#x4E0D;&#x53EF;&#x907F;&#x514D;&#x7684;&#x957F;&#x8017;&#x65F6;&#x4EFB;&#x52A1;&#x5904;&#x7406;&#x65B9;&#x6CD5;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#并发模式"><span class="nav-number">1.1.2.</span> <span class="nav-text"><a href="#&#x5E76;&#x53D1;&#x6A21;&#x5F0F;" class="headerlink" title="&#x5E76;&#x53D1;&#x6A21;&#x5F0F;"></a>&#x5E76;&#x53D1;&#x6A21;&#x5F0F;</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ISSUE"><span class="nav-number">2.</span> <span class="nav-text"><a href="#ISSUE" class="headerlink" title="ISSUE"></a>ISSUE</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ROOT模式上不能启动"><span class="nav-number">2.1.</span> <span class="nav-text"><a href="#ROOT&#x6A21;&#x5F0F;&#x4E0A;&#x4E0D;&#x80FD;&#x542F;&#x52A8;" class="headerlink" title="ROOT&#x6A21;&#x5F0F;&#x4E0A;&#x4E0D;&#x80FD;&#x542F;&#x52A8;"></a>ROOT&#x6A21;&#x5F0F;&#x4E0A;&#x4E0D;&#x80FD;&#x542F;&#x52A8;</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单元测试"><span class="nav-number">3.</span> <span class="nav-text"><a href="#&#x5355;&#x5143;&#x6D4B;&#x8BD5;" class="headerlink" title="&#x5355;&#x5143;&#x6D4B;&#x8BD5;"></a>&#x5355;&#x5143;&#x6D4B;&#x8BD5;</span></a></li></ol></div>
             
 
           </div>

@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.haowei.ch/2018/08/18/CheatSheet-20180818/</loc>
+    
+    <lastmod>2018-09-18T09:44:59.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.haowei.ch/about/index.html</loc>
+    
+    <lastmod>2018-09-18T02:14:32.002Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.haowei.ch/2018/09/02/Python-20180902/</loc>
     
     <lastmod>2018-09-17T03:28:31.000Z</lastmod>
@@ -9,7 +23,7 @@
   </url>
   
   <url>
-    <loc>http://blog.haowei.ch/2018/09/01/tool-20180901/</loc>
+    <loc>http://blog.haowei.ch/2018/09/01/Tool-20180901/</loc>
     
     <lastmod>2018-09-17T01:35:59.000Z</lastmod>
     
@@ -19,13 +33,6 @@
     <loc>http://blog.haowei.ch/schedule/index.html</loc>
     
     <lastmod>2018-09-16T15:22:17.627Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.haowei.ch/about/index.html</loc>
-    
-    <lastmod>2018-09-16T14:39:05.049Z</lastmod>
     
   </url>
   
@@ -44,7 +51,7 @@
   </url>
   
   <url>
-    <loc>http://blog.haowei.ch/2017/09/16/tool-20170916/</loc>
+    <loc>http://blog.haowei.ch/2017/09/16/Tool-20170916/</loc>
     
     <lastmod>2018-09-13T06:22:03.000Z</lastmod>
     
@@ -58,7 +65,7 @@
   </url>
   
   <url>
-    <loc>http://blog.haowei.ch/2017/09/19/tool-20170919/</loc>
+    <loc>http://blog.haowei.ch/2017/09/19/Tool-20170919/</loc>
     
     <lastmod>2017-12-19T06:25:54.000Z</lastmod>
     
