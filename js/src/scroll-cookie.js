@@ -15,7 +15,7 @@ $(document).ready(function() {
   });
 
   // Read position from cookie
-  if (Cookies.get('scroll-cookie') !== undefined) {
+  if (Cookies.get('scroll-cookie') !== undefined && window.location.pathname !== '/') {
     var cvalues = Cookies.get('scroll-cookie').split('|');
     if (cvalues[1] === rpath) {
       $(window).scrollTop(cvalues[0]);
