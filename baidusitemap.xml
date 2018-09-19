@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://blog.haowei.ch/2018/09/02/Python-20180902/</loc>
+    <lastmod>2018-09-19T02:28:31.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python 消息队列 Celery</title>
+        <pubTime>2018-09-02T01:36:31.000Z</pubTime>
+        
+        <tag>celery</tag>
+         
+        <tag>消息队列</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="http://blog.haowei.ch/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.haowei.ch/2018/02/18/%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2-20180218/</loc>
     <lastmod>2018-09-18T13:22:34.000Z</lastmod>
     <data>
@@ -46,28 +68,6 @@
            
              
               <breadCrumb title="CheatSheet" url="http://blog.haowei.ch/categories/CheatSheet/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.haowei.ch/2018/09/02/Python-20180902/</loc>
-    <lastmod>2018-09-17T03:28:31.000Z</lastmod>
-    <data>
-        <display>
-        <title>Python 消息队列</title>
-        <pubTime>2018-09-02T01:36:31.000Z</pubTime>
-        
-        <tag>celery</tag>
-         
-        <tag>消息队列</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="http://blog.haowei.ch/categories/Python/"/>
           
         </display>
     </data>

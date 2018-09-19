@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.haowei.ch/2018/09/02/Python-20180902/</loc>
+    
+    <lastmod>2018-09-19T02:28:31.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.haowei.ch/2018/02/18/%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2-20180218/</loc>
     
     <lastmod>2018-09-18T13:22:34.000Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://blog.haowei.ch/2018/08/18/CheatSheet-20180818/</loc>
     
     <lastmod>2018-09-18T09:44:59.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.haowei.ch/2018/09/02/Python-20180902/</loc>
-    
-    <lastmod>2018-09-17T03:28:31.000Z</lastmod>
     
   </url>
   

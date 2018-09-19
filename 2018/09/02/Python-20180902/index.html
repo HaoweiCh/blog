@@ -158,14 +158,14 @@
   <meta name="description" content="名字 官网 备注     celery https://github.com/celery/celery Celery 5.x &amp;gt;= CPython 3.5   huey https://github.com/coleifer/huey 轻量化，支持2.*   dramatiq https://github.com/Bogdanp/dramatiq &amp;gt;=3.5 https://d">
 <meta name="keywords" content="celery,消息队列">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python 消息队列">
+<meta property="og:title" content="Python 消息队列 Celery">
 <meta property="og:url" content="http://blog.haowei.ch/2018/09/02/Python-20180902/index.html">
 <meta property="og:site_name" content="Bamboo Sticks">
 <meta property="og:description" content="名字 官网 备注     celery https://github.com/celery/celery Celery 5.x &amp;gt;= CPython 3.5   huey https://github.com/coleifer/huey 轻量化，支持2.*   dramatiq https://github.com/Bogdanp/dramatiq &amp;gt;=3.5 https://d">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-17T03:28:31.000Z">
+<meta property="og:updated_time" content="2018-09-19T02:28:31.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python 消息队列">
+<meta name="twitter:title" content="Python 消息队列 Celery">
 <meta name="twitter:description" content="名字 官网 备注     celery https://github.com/celery/celery Celery 5.x &amp;gt;= CPython 3.5   huey https://github.com/coleifer/huey 轻量化，支持2.*   dramatiq https://github.com/Bogdanp/dramatiq &amp;gt;=3.5 https://d">
 
 
@@ -183,7 +183,7 @@
   };
 </script>
 
-  <title>Python 消息队列 | Bamboo Sticks</title>
+  <title>Python 消息队列 Celery | Bamboo Sticks</title>
   
 
 
@@ -378,7 +378,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Python 消息队列
+          <h1 class="post-title" itemprop="name headline">Python 消息队列 Celery
               
             
           </h1>
@@ -420,7 +420,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-09-17 11:28:31" itemprop="dateModified" datetime="2018-09-17T11:28:31+08:00">2018-09-17</time>
+                <time title="修改时间：2018-09-19 10:28:31" itemprop="dateModified" datetime="2018-09-19T10:28:31+08:00">2018-09-19</time>
               
             
           </span>
@@ -485,14 +485,26 @@
 </ul>
 <p>长耗时任务还带来更新耗时更长的问题。当需要更新程序的时候，由于还有任务在执行，只能使用<code>kill -9 ****</code> 来强制结束进程（带来不可恢复的任务终止，在某些情况下是不可采取的操作）。</p>
 <h4 id="不可避免的长耗时任务处理方法"><a href="#不可避免的长耗时任务处理方法" class="headerlink" title="不可避免的长耗时任务处理方法"></a>不可避免的长耗时任务处理方法</h4><p> 长耗时任务虽然不能说不好但应该尽量避免。<br> 长耗时任务应该被分割开到独立的队列，并启动只处理指定队列的worker。</p>
-<p>绑定Queue的task<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> @app.task(queue=&apos;add&apos;)</span><br><span class="line">def add(x, y):</span><br><span class="line">    return 2*x + 2*y</span><br></pre></td></tr></table></figure></p>
-<p>启动只处理指定队列的worker<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">celery -A tasks worker -Q add</span><br></pre></td></tr></table></figure></p>
+<p>绑定Queue的task </p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"> @app.task(queue='add')</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add</span><span class="params">(x, y)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">2</span>*x + <span class="number">2</span>*y</span><br></pre></td></tr></table></figure>
+<p>启动只处理指定队列的worker</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">celery -A tasks worker -Q add</span><br></pre></td></tr></table></figure>
 <h4 id="并发模式"><a href="#并发模式" class="headerlink" title="并发模式"></a>并发模式</h4><ul>
-<li><a href="http://docs.celeryproject.org/en/latest/userguide/concurrency/eventlet.html#concurrency-eventlet" target="_blank" rel="noopener">http://docs.celeryproject.org/en/latest/userguide/concurrency/eventlet.html#concurrency-eventlet</a></li>
+<li style="list-style: none"><input type="checkbox"> <a href="http://docs.celeryproject.org/en/latest/userguide/concurrency/eventlet.html#concurrency-eventlet" target="_blank" rel="noopener">http://docs.celeryproject.org/en/latest/userguide/concurrency/eventlet.html#concurrency-eventlet</a></li>
 </ul>
 <h2 id="ISSUE"><a href="#ISSUE" class="headerlink" title="ISSUE"></a>ISSUE</h2><h3 id="ROOT模式上不能启动"><a href="#ROOT模式上不能启动" class="headerlink" title="ROOT模式上不能启动"></a>ROOT模式上不能启动</h3><p>Running a worker with superuser privileges when the<br>worker accepts messages serialized with pickle is a very bad idea!</p>
 <p>If you really want to continue then you have to set the C_FORCE_ROOT<br>environment variable (but please think about this before you do).</p>
-<h2 id="单元测试"><a href="#单元测试" class="headerlink" title="单元测试"></a>单元测试</h2>
+<h2 id="单元测试"><a href="#单元测试" class="headerlink" title="单元测试"></a>单元测试</h2><ul>
+<li style="list-style: none"><input type="checkbox"> <a href="http://docs.celeryproject.org/en/latest/userguide/testing.html" target="_blank" rel="noopener">http://docs.celeryproject.org/en/latest/userguide/testing.html</a></li>
+</ul>
+<p>实例</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># file "tasks.py"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> celery <span class="keyword">import</span> Celery</span><br><span class="line"><span class="keyword">from</span> time <span class="keyword">import</span> sleep</span><br><span class="line"></span><br><span class="line">BROKER_URL = ‘amqp://guest@localhost:<span class="number">5672</span>//’</span><br><span class="line">REDIS = ‘redis://localhost/<span class="number">0</span>’</span><br><span class="line">app = Celery(‘test’, broker=BROKER_URL, backend=REDIS)</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.task(name=”add”)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add</span><span class="params">(x, y)</span>:</span></span><br><span class="line"> <span class="keyword">return</span> x+y</span><br></pre></td></tr></table></figure>
+<h2 id="本地调试-Celery-任务逻辑"><a href="#本地调试-Celery-任务逻辑" class="headerlink" title="本地调试 Celery 任务逻辑"></a>本地调试 Celery 任务逻辑</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># file "tests.py"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> tasks <span class="keyword">import</span> add, app</span><br><span class="line"><span class="keyword">import</span> unittest</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_local_run</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">assert</span> add.run(x=<span class="number">3</span>, y=<span class="number">5</span>) == <span class="number">8</span></span><br></pre></td></tr></table></figure>
+<h3 id="本地调试-Celery-任务执行状态"><a href="#本地调试-Celery-任务执行状态" class="headerlink" title="本地调试 Celery 任务执行状态"></a>本地调试 Celery 任务执行状态</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># file "tests.py"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> tasks <span class="keyword">import</span> add, app</span><br><span class="line"><span class="keyword">import</span> unittest</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestAddTask</span><span class="params">(unittest.TestCase)</span>:</span></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">setUp</span><span class="params">(self)</span>:</span></span><br><span class="line">    self.task = add.apply_async(args=[<span class="number">3</span>, <span class="number">5</span>])</span><br><span class="line">    self.results = self.task.get()</span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">test_task_state</span><span class="params">(self)</span>:</span></span><br><span class="line">    self.assertEqual(self.task.state, ‘SUCCESS’)</span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">test_addition</span><span class="params">(self)</span>:</span></span><br><span class="line">    self.assertEqual(self.results, <span class="number">8</span>)</span><br></pre></td></tr></table></figure>
+<p>启动 Celery <code>celery -A tasks worker — loglevel=INFO</code><br>启动 单元测试</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">➜ python -m unittest discover</span><br><span class="line">..</span><br><span class="line"> — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —</span><br><span class="line">Ran 2 tests in 5.353s</span><br><span class="line">OK</span><br></pre></td></tr></table></figure>
+<h3 id="调试远程-worker-的任务执行状态"><a href="#调试远程-worker-的任务执行状态" class="headerlink" title="调试远程 worker 的任务执行状态"></a>调试远程 worker 的任务执行状态</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># file "tests.py"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> tasks <span class="keyword">import</span> add, app</span><br><span class="line"><span class="keyword">import</span> unittest</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestAddTask</span><span class="params">(unittest.TestCase)</span>:</span></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">setUp</span><span class="params">(self)</span>:</span></span><br><span class="line">    self.task = add.send_task(‘add’, args=[<span class="number">3</span>, <span class="number">5</span>])</span><br><span class="line">    self.results = self.task.get()</span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">test_task_state</span><span class="params">(self)</span>:</span></span><br><span class="line">    self.assertEqual(self.task.state, ‘SUCCESS’)</span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">test_addition</span><span class="params">(self)</span>:</span></span><br><span class="line">    self.assertEqual(self.results, <span class="number">8</span>)</span><br></pre></td></tr></table></figure>
+
       
     </div>
 
@@ -517,7 +529,7 @@
     <strong>本文作者： </strong>HWei</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://blog.haowei.ch/2018/09/02/Python-20180902/" title="Python 消息队列">http://blog.haowei.ch/2018/09/02/Python-20180902/</a>
+    <a href="http://blog.haowei.ch/2018/09/02/Python-20180902/" title="Python 消息队列 Celery">http://blog.haowei.ch/2018/09/02/Python-20180902/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
@@ -800,6 +812,10 @@
                     <a href="https://www.regex101.com/#" title="regex101" target="_blank">regex101</a>
                   </li>
                 
+                  <li class="links-of-blogroll-item">
+                    <a href="http://cn.linux.vbird.org/" title="鸟哥 Linux 私房菜" target="_blank">鸟哥 Linux 私房菜</a>
+                  </li>
+                
               </ul>
             </div>
           
@@ -822,7 +838,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#设计"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x8BBE;&#x8BA1;" class="headerlink" title="&#x8BBE;&#x8BA1;"></a>&#x8BBE;&#x8BA1;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#任务长度应该尽量小"><span class="nav-number">1.1.</span> <span class="nav-text"><a href="#&#x4EFB;&#x52A1;&#x957F;&#x5EA6;&#x5E94;&#x8BE5;&#x5C3D;&#x91CF;&#x5C0F;" class="headerlink" title="&#x4EFB;&#x52A1;&#x957F;&#x5EA6;&#x5E94;&#x8BE5;&#x5C3D;&#x91CF;&#x5C0F;"></a>&#x4EFB;&#x52A1;&#x957F;&#x5EA6;&#x5E94;&#x8BE5;&#x5C3D;&#x91CF;&#x5C0F;</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#不可避免的长耗时任务处理方法"><span class="nav-number">1.1.1.</span> <span class="nav-text"><a href="#&#x4E0D;&#x53EF;&#x907F;&#x514D;&#x7684;&#x957F;&#x8017;&#x65F6;&#x4EFB;&#x52A1;&#x5904;&#x7406;&#x65B9;&#x6CD5;" class="headerlink" title="&#x4E0D;&#x53EF;&#x907F;&#x514D;&#x7684;&#x957F;&#x8017;&#x65F6;&#x4EFB;&#x52A1;&#x5904;&#x7406;&#x65B9;&#x6CD5;"></a>&#x4E0D;&#x53EF;&#x907F;&#x514D;&#x7684;&#x957F;&#x8017;&#x65F6;&#x4EFB;&#x52A1;&#x5904;&#x7406;&#x65B9;&#x6CD5;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#并发模式"><span class="nav-number">1.1.2.</span> <span class="nav-text"><a href="#&#x5E76;&#x53D1;&#x6A21;&#x5F0F;" class="headerlink" title="&#x5E76;&#x53D1;&#x6A21;&#x5F0F;"></a>&#x5E76;&#x53D1;&#x6A21;&#x5F0F;</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ISSUE"><span class="nav-number">2.</span> <span class="nav-text"><a href="#ISSUE" class="headerlink" title="ISSUE"></a>ISSUE</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ROOT模式上不能启动"><span class="nav-number">2.1.</span> <span class="nav-text"><a href="#ROOT&#x6A21;&#x5F0F;&#x4E0A;&#x4E0D;&#x80FD;&#x542F;&#x52A8;" class="headerlink" title="ROOT&#x6A21;&#x5F0F;&#x4E0A;&#x4E0D;&#x80FD;&#x542F;&#x52A8;"></a>ROOT&#x6A21;&#x5F0F;&#x4E0A;&#x4E0D;&#x80FD;&#x542F;&#x52A8;</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单元测试"><span class="nav-number">3.</span> <span class="nav-text"><a href="#&#x5355;&#x5143;&#x6D4B;&#x8BD5;" class="headerlink" title="&#x5355;&#x5143;&#x6D4B;&#x8BD5;"></a>&#x5355;&#x5143;&#x6D4B;&#x8BD5;</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#设计"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x8BBE;&#x8BA1;" class="headerlink" title="&#x8BBE;&#x8BA1;"></a>&#x8BBE;&#x8BA1;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#任务长度应该尽量小"><span class="nav-number">1.1.</span> <span class="nav-text"><a href="#&#x4EFB;&#x52A1;&#x957F;&#x5EA6;&#x5E94;&#x8BE5;&#x5C3D;&#x91CF;&#x5C0F;" class="headerlink" title="&#x4EFB;&#x52A1;&#x957F;&#x5EA6;&#x5E94;&#x8BE5;&#x5C3D;&#x91CF;&#x5C0F;"></a>&#x4EFB;&#x52A1;&#x957F;&#x5EA6;&#x5E94;&#x8BE5;&#x5C3D;&#x91CF;&#x5C0F;</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#不可避免的长耗时任务处理方法"><span class="nav-number">1.1.1.</span> <span class="nav-text"><a href="#&#x4E0D;&#x53EF;&#x907F;&#x514D;&#x7684;&#x957F;&#x8017;&#x65F6;&#x4EFB;&#x52A1;&#x5904;&#x7406;&#x65B9;&#x6CD5;" class="headerlink" title="&#x4E0D;&#x53EF;&#x907F;&#x514D;&#x7684;&#x957F;&#x8017;&#x65F6;&#x4EFB;&#x52A1;&#x5904;&#x7406;&#x65B9;&#x6CD5;"></a>&#x4E0D;&#x53EF;&#x907F;&#x514D;&#x7684;&#x957F;&#x8017;&#x65F6;&#x4EFB;&#x52A1;&#x5904;&#x7406;&#x65B9;&#x6CD5;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#并发模式"><span class="nav-number">1.1.2.</span> <span class="nav-text"><a href="#&#x5E76;&#x53D1;&#x6A21;&#x5F0F;" class="headerlink" title="&#x5E76;&#x53D1;&#x6A21;&#x5F0F;"></a>&#x5E76;&#x53D1;&#x6A21;&#x5F0F;</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ISSUE"><span class="nav-number">2.</span> <span class="nav-text"><a href="#ISSUE" class="headerlink" title="ISSUE"></a>ISSUE</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ROOT模式上不能启动"><span class="nav-number">2.1.</span> <span class="nav-text"><a href="#ROOT&#x6A21;&#x5F0F;&#x4E0A;&#x4E0D;&#x80FD;&#x542F;&#x52A8;" class="headerlink" title="ROOT&#x6A21;&#x5F0F;&#x4E0A;&#x4E0D;&#x80FD;&#x542F;&#x52A8;"></a>ROOT&#x6A21;&#x5F0F;&#x4E0A;&#x4E0D;&#x80FD;&#x542F;&#x52A8;</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单元测试"><span class="nav-number">3.</span> <span class="nav-text"><a href="#&#x5355;&#x5143;&#x6D4B;&#x8BD5;" class="headerlink" title="&#x5355;&#x5143;&#x6D4B;&#x8BD5;"></a>&#x5355;&#x5143;&#x6D4B;&#x8BD5;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地调试-Celery-任务逻辑"><span class="nav-number">4.</span> <span class="nav-text"><a href="#&#x672C;&#x5730;&#x8C03;&#x8BD5;-Celery-&#x4EFB;&#x52A1;&#x903B;&#x8F91;" class="headerlink" title="&#x672C;&#x5730;&#x8C03;&#x8BD5; Celery &#x4EFB;&#x52A1;&#x903B;&#x8F91;"></a>&#x672C;&#x5730;&#x8C03;&#x8BD5; Celery &#x4EFB;&#x52A1;&#x903B;&#x8F91;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#本地调试-Celery-任务执行状态"><span class="nav-number">4.1.</span> <span class="nav-text"><a href="#&#x672C;&#x5730;&#x8C03;&#x8BD5;-Celery-&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x72B6;&#x6001;" class="headerlink" title="&#x672C;&#x5730;&#x8C03;&#x8BD5; Celery &#x4EFB;&#x52A1;&#x6267;&#x884C;&#x72B6;&#x6001;"></a>&#x672C;&#x5730;&#x8C03;&#x8BD5; Celery &#x4EFB;&#x52A1;&#x6267;&#x884C;&#x72B6;&#x6001;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#调试远程-worker-的任务执行状态"><span class="nav-number">4.2.</span> <span class="nav-text"><a href="#&#x8C03;&#x8BD5;&#x8FDC;&#x7A0B;-worker-&#x7684;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x72B6;&#x6001;" class="headerlink" title="&#x8C03;&#x8BD5;&#x8FDC;&#x7A0B; worker &#x7684;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x72B6;&#x6001;"></a>&#x8C03;&#x8BD5;&#x8FDC;&#x7A0B; worker &#x7684;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x72B6;&#x6001;</span></a></li></ol></li></ol></div>
             
 
           </div>
