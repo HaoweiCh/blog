@@ -345,10 +345,6 @@ $(document).ready(function() {
 
     sidebar: function(integrator) {
       if (CONFIG.sidebar.display === 'always') {
-        if (CONFIG.page.sidebar===false){
-          return;
-        }
-
         NexT.utils.displaySidebar();
       }
       integrator.next();

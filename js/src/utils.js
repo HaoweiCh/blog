@@ -226,7 +226,7 @@ NexT.utils = NexT.$u = {
   },
 
   displaySidebar: function() {
-    if (!this.isDesktop() || this.isPisces() || this.isGemini()) {
+    if (!this.isDesktop() || this.isPisces() || this.isGemini() || CONFIG.page.sidebar===false) {
       return;
     }
     $('.sidebar-toggle').trigger('click');
