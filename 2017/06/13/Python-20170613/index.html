@@ -164,7 +164,7 @@
 <meta property="og:description" content="python时间相关的库和转换关系">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://blog.haowei.ch/media/15052943518472.jpg">
-<meta property="og:updated_time" content="2017-07-13T10:03:09.000Z">
+<meta property="og:updated_time" content="2018-09-29T01:29:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python时间相关的类型转化">
 <meta name="twitter:description" content="python时间相关的库和转换关系">
@@ -414,7 +414,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2017-07-13 18:03:09" itemprop="dateModified" datetime="2017-07-13T18:03:09+08:00">2017-07-13</time>
+                <time title="修改时间：2018-09-29 09:29:09" itemprop="dateModified" datetime="2018-09-29T09:29:09+08:00">2018-09-29</time>
               
             
           </span>
@@ -450,7 +450,7 @@
         <p>python时间相关的库和转换关系</p>
  <a id="more"></a>
 <p><img src="/media/15052943518472.jpg" alt=""></p>
-<h2 id="string-类型-time"><a href="#string-类型-time" class="headerlink" title="string 类型(time)"></a>string 类型(time)</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建文本时间</span></span><br><span class="line">s = time.ctime() <span class="comment"># 以当前系统地区来决定输出的时间文本格式</span></span><br><span class="line">s = <span class="string">"2008-11-10 17:53:59"</span></span><br><span class="line"><span class="comment"># 转换为时间对象</span></span><br><span class="line">t = time.strptime(s, <span class="string">"%Y-%m-%d %H:%M:%S"</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="string-类型-time"><a href="#string-类型-time" class="headerlink" title="string 类型(time)"></a>string 类型(time)</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建文本时间</span></span><br><span class="line">s = time.ctime() <span class="comment"># 以当前系统地区来决定输出的时间文本格式</span></span><br><span class="line">s = <span class="string">"2008-11-10 17:53:59"</span></span><br><span class="line"><span class="comment"># 转换为时间对象</span></span><br><span class="line">t = time.strptime(s, <span class="string">"%Y-%m-%d %H:%M:%S"</span>)</span><br><span class="line">dt_obj = datetime.datetime.strptime(t_str, <span class="string">'%Y-%m-%d %H:%M:%S'</span>)</span><br></pre></td></tr></table></figure>
 <h2 id="datetime-对象"><a href="#datetime-对象" class="headerlink" title="datetime 对象"></a>datetime 对象</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建datetime对象</span></span><br><span class="line"><span class="comment"># dt_obj = datetime.datetime.now()</span></span><br><span class="line">dt_obj = datetime.datetime(<span class="number">2008</span>, <span class="number">11</span>, <span class="number">10</span>, <span class="number">17</span>, <span class="number">53</span>, <span class="number">59</span>) </span><br><span class="line"><span class="comment"># 转换为文本型时间</span></span><br><span class="line">print(dt_obj.strftime(<span class="string">"%Y-%m-%d %H:%M:%S"</span>)) </span><br><span class="line"><span class="comment"># 转换为时间对象</span></span><br><span class="line">time_tuple = dt_obj.timetuple()</span><br><span class="line"><span class="comment"># 转化哪位时间戳</span></span><br><span class="line">time_stamp = dt_obj.timestamp()</span><br></pre></td></tr></table></figure>
 <h2 id="time-对象"><a href="#time-对象" class="headerlink" title="time 对象"></a>time 对象</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建time对象</span></span><br><span class="line">time_tuple = (<span class="number">2008</span>, <span class="number">11</span>, <span class="number">12</span>, <span class="number">13</span>, <span class="number">51</span>, <span class="number">18</span>, <span class="number">2</span>, <span class="number">317</span>, <span class="number">0</span>)</span><br><span class="line"><span class="comment"># 转换为文本型时间</span></span><br><span class="line">time.strftime(<span class="string">"%Y-%m-%d %H:%M:%S"</span>, time_tuple)</span><br><span class="line"><span class="comment"># 转换为datetime对象</span></span><br><span class="line">datetime.datetime(*time_tuple[<span class="number">0</span>:<span class="number">6</span>])</span><br><span class="line"><span class="comment"># 转换为时间戳</span></span><br><span class="line">time.mktime(time_tuple)</span><br></pre></td></tr></table></figure>
 <h2 id="int-类型-时间戳"><a href="#int-类型-时间戳" class="headerlink" title="int 类型(时间戳)"></a>int 类型(时间戳)</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time, datetime</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取当前时间的时间戳</span></span><br><span class="line">timestamp = time.time()</span><br><span class="line"><span class="comment"># 转换为 datetime对象</span></span><br><span class="line">datetime.datetime.fromtimestamp(timestamp) <span class="comment"># 本地时区时间</span></span><br><span class="line"><span class="comment"># 转换为 time对象</span></span><br><span class="line">time.localtime(timestamp)</span><br></pre></td></tr></table></figure>
@@ -625,6 +625,8 @@
                     
                       
                     
+                      
+                    
                     <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
@@ -676,7 +678,21 @@
                     
                       
                     
-                    <span class="site-state-item-count">17</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">18</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

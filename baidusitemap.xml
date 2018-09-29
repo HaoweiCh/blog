@@ -3,6 +3,30 @@
 
 
     
+  <url>
+    <loc>http://blog.haowei.ch/2017/06/13/Python-20170613/</loc>
+    <lastmod>2018-09-29T01:29:09.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python时间相关的类型转化</title>
+        <pubTime>2017-06-13T10:03:09.000Z</pubTime>
+        
+        <tag>time</tag>
+         
+        <tag>datetime</tag>
+         
+        <tag>timestamp</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="http://blog.haowei.ch/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
     
     
@@ -32,13 +56,15 @@
 
     
   <url>
-    <loc>http://blog.haowei.ch/2018/02/18/%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2-20180218/</loc>
+    <loc>http://blog.haowei.ch/2018/02/18/Environment-20180218/</loc>
     <lastmod>2018-09-18T13:22:34.000Z</lastmod>
     <data>
         <display>
         <title>Python 多版本共存最佳方案 pyenv & pyenv-virtualenv</title>
         <pubTime>2018-02-18T13:22:34.000Z</pubTime>
         
+        <tag>环境部署</tag>
+         
         <tag>Mac</tag>
          
         <tag>Ubuntu</tag>
@@ -46,7 +72,7 @@
          
            
              
-              <breadCrumb title="环境部署" url="http://blog.haowei.ch/categories/%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/"/>
+              <breadCrumb title="Environment" url="http://blog.haowei.ch/categories/Environment/"/>
           
         </display>
     </data>
@@ -80,19 +106,21 @@
 
     
   <url>
-    <loc>http://blog.haowei.ch/2018/03/01/%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2-20180301/</loc>
+    <loc>http://blog.haowei.ch/2018/03/01/Environment-20180301/</loc>
     <lastmod>2018-09-17T01:35:59.000Z</lastmod>
     <data>
         <display>
         <title>博客搭建和美化</title>
         <pubTime>2018-03-01T01:35:59.000Z</pubTime>
         
+        <tag>环境部署</tag>
+         
         <tag>hexo</tag>
          
          
            
              
-              <breadCrumb title="环境部署" url="http://blog.haowei.ch/categories/%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/"/>
+              <breadCrumb title="Environment" url="http://blog.haowei.ch/categories/Environment/"/>
           
         </display>
     </data>
@@ -100,19 +128,21 @@
 
     
   <url>
-    <loc>http://blog.haowei.ch/2017/09/16/%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2-20170916/</loc>
+    <loc>http://blog.haowei.ch/2017/09/16/Environment-20170916/</loc>
     <lastmod>2018-09-13T06:22:03.000Z</lastmod>
     <data>
         <display>
         <title>RMBP 使用问题总结</title>
         <pubTime>2017-09-16T06:22:03.000Z</pubTime>
         
+        <tag>环境部署</tag>
+         
         <tag>macOS</tag>
          
          
            
              
-              <breadCrumb title="环境部署" url="http://blog.haowei.ch/categories/%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/"/>
+              <breadCrumb title="Environment" url="http://blog.haowei.ch/categories/Environment/"/>
           
         </display>
     </data>
@@ -120,7 +150,7 @@
 
     
   <url>
-    <loc>http://blog.haowei.ch/2018/01/18/%E7%88%AC%E8%99%AB-20180118/</loc>
+    <loc>http://blog.haowei.ch/2018/01/18/Spider-20180118/</loc>
     <lastmod>2018-03-18T12:52:14.000Z</lastmod>
     <data>
         <display>
@@ -134,31 +164,7 @@
          
            
              
-              <breadCrumb title="爬虫" url="http://blog.haowei.ch/categories/%E7%88%AC%E8%99%AB/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.haowei.ch/2017/06/13/Python-20170613/</loc>
-    <lastmod>2017-07-13T10:03:09.000Z</lastmod>
-    <data>
-        <display>
-        <title>Python时间相关的类型转化</title>
-        <pubTime>2017-06-13T10:03:09.000Z</pubTime>
-        
-        <tag>time</tag>
-         
-        <tag>datetime</tag>
-         
-        <tag>timestamp</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="http://blog.haowei.ch/categories/Python/"/>
+              <breadCrumb title="Spider" url="http://blog.haowei.ch/categories/Spider/"/>
           
         </display>
     </data>
