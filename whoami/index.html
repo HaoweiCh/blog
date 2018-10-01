@@ -8,12 +8,63 @@
             border: 1px solid black;
         }
     </style>
+    <script type="application/javascript">
+        function refreshIP() {
+            var url_ip = "https://httpbin.org/ip";
+            var http_request = new XMLHttpRequest();
+            try {
+                // Opera 8.0+, Firefox, Chrome, Safari
+                http_request = new XMLHttpRequest();
+            } catch (e) {
+                // Internet Explorer Browsers
+                try {
+                    http_request = new ActiveXObject("Msxml2.XMLHTTP");
+
+                } catch (e) {
+
+                    try {
+                        http_request = new ActiveXObject("Microsoft.XMLHTTP");
+                    } catch (e) {
+                        console.log("Your browser broke!");
+                        return false;
+                    }
+
+                }
+            }
+
+            http_request.onreadystatechange = function () {
+                console.log('test');
+                if (http_request.readyState === 4) {
+                    // Javascript function JSON.parse to parse JSON data
+                    var j = JSON.parse(http_request.responseText);
+
+                    // jsonObj variable now contains the data structure and can
+                    // be accessed as jsonObj.name and jsonObj.country.
+                    document.getElementById("ip").innerHTML = j.origin;
+                    console.log(j.origin)
+                }
+            };
+
+            http_request.open("GET", url_ip, true);
+            http_request.send();
+        }
+
+        window.addEventListener('load', function () {
+            refreshIP();
+        })
+    </script>
 </head>
 <body>
-<table style="margin-left: 10%;width:80%">
+<table style="width:100%">
     <tr>
         <th>Key</th>
         <th>Value</th>
+    </tr>
+    <tr>
+        <td>IP</td>
+        <td>
+            <p id="ip"></p>
+        </td>
     </tr>
     <tr>
         <td>process.env.NODE_ENV</td>
@@ -89,4 +140,5 @@
     </tr>
 </table>
 </body>
+
 </html>
