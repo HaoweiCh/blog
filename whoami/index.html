@@ -25,7 +25,6 @@
                     try {
                         http_request = new ActiveXObject("Microsoft.XMLHTTP");
                     } catch (e) {
-                        console.log("Your browser broke!");
                         return false;
                     }
 
@@ -33,7 +32,6 @@
             }
 
             http_request.onreadystatechange = function () {
-                console.log('test');
                 if (http_request.readyState === 4) {
                     // Javascript function JSON.parse to parse JSON data
                     var j = JSON.parse(http_request.responseText);
@@ -41,7 +39,6 @@
                     // jsonObj variable now contains the data structure and can
                     // be accessed as jsonObj.name and jsonObj.country.
                     document.getElementById("ip").innerHTML = j.origin;
-                    console.log(j.origin)
                 }
             };
 
