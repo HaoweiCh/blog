@@ -16,10 +16,6 @@ $(document).ready(function() {
     return footerOffset;
   }
 
-  function setSidebarMarginTop(headerOffset) {
-    return $('#sidebar').css({ 'margin-top': headerOffset });
-  }
-
   function initAffix() {
     var headerOffset = getHeaderOffset();
     var footerOffset = getFooterOffset();
@@ -34,9 +30,10 @@ $(document).ready(function() {
           bottom: footerOffset
         }
       });
+      sidebarInner.affix('checkPosition');
     }
 
-    setSidebarMarginTop(headerOffset).css({ 'margin-left': 'initial' });
+    $('#sidebar').css({ 'margin-top': headerOffset, 'margin-left': 'initial' });
   }
 
   function recalculateAffixPosition() {
@@ -46,7 +43,7 @@ $(document).ready(function() {
   }
 
   function resizeListener() {
-    var mql = window.matchMedia('(min-width: 991px)');
+    var mql = window.matchMedia('(min-width: 992px)');
     mql.addListener(function(e) {
       if (e.matches) {
         recalculateAffixPosition();
@@ -56,5 +53,4 @@ $(document).ready(function() {
 
   initAffix();
   resizeListener();
-
 });
