@@ -1,13 +1,13 @@
 ---
 title: hot, warm and cold data 热数据, 温数据, 冷数据
+categories:
+- DataScience
 tags:
 - 大数据
 - 数据科学
 - 数据仓库
 - data warehouse
 - Data Science and Big Data Technology
-categories:
-- DataScience
 date: 2022-05-04T09:16:12+08:00
 year: 2022
 week: 18
@@ -21,7 +21,7 @@ updated: 2022-05-04T09:16:12+08:00
 * 分类依据 classification criteria
   * data access frequency 数据访问频率
 
-### 热数据
+## 热数据
 
 * 指频繁访问的在线类数据
 * 对存储性能要求高
@@ -33,7 +33,7 @@ updated: 2022-05-04T09:16:12+08:00
 
 部分热数据是需要通过 redis memcache 等 cache (缓冲) 非持久化内存数据库进行访问， 数据的实际存储还是放在持久化数据库中
 
-### 温数据
+## 温数据
 
 * 访问频率和存储性能要求介于冷热数据之间
 
@@ -43,7 +43,7 @@ updated: 2022-05-04T09:16:12+08:00
 
 如果整体数据量不大, 不区分温数据和热数据。
 
-### 冷数据
+## 冷数据
 
 * 不经常访问的离线类数据
   * 备份数据

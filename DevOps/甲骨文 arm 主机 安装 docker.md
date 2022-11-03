@@ -1,11 +1,11 @@
 ---
 title: 甲骨文 arm 主机 安装 docker
+categories:
+- DevOps
 tags:
 - 甲骨文
 - arm64
 - docker
-categories:
-- DevOps
 date: 2022-03-03T15:10:01+08:00
 year: 2022
 week: 9
@@ -25,7 +25,7 @@ updated: 2022-03-04T15:15:43+08:00
   * chromium 得自行编译
   * vmware virtualbox 都不行
 
-### 部署 docker docker-compose
+## 部署 docker docker-compose
 
 ```bash
 
@@ -47,7 +47,7 @@ pip3 install --upgrade pip && pip3 install docker-compose && \
 docker --version & docker-compose --version
 ```
 
-### 开机自动获取 IPv6 
+## 开机自动获取 IPv6 
 > 目前在 arm 主机上 `nmtui` 命令使用异常， 依赖的 NetworkManager 系统服务也没有打开  
 > 使用启动脚本解决 IPv6 地址分配问题
 
@@ -60,7 +60,7 @@ echo "dhclient -6 enp0s3" >> /etc/rc.d/rc.local
 * 通过 命令 `ip a` 查看公网出口适配器的名称
 * 一般情况需要在服务提供商面板那里打开相应子网的 IPv6 开关
 
-### 开启 GUI
+## 开启 GUI
 
 两台主机， 一台被控一台主控
 主控生成公私钥， 被控授权主控连接（通过公钥）

@@ -1,11 +1,11 @@
 ---
 title: Flutter 基础学习的思路和总结
 description: Flutter 基础学习的思路和总结
+categories:
+- Framework
 tags:
 - Flutter
 - 学习笔记
-categories:
-- Framework
 date: 2019-12-15T14:29:37+08:00
 year: 2019
 week: 50

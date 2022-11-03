@@ -1,11 +1,11 @@
 ---
 title: APPLE silicon 安装 homebrew 踩坑细节
 description: APPLE silicon 安装 homebrew 踩坑细节
+categories:
+- DevOps
 tags:
 - Apple silicon
 - homebrew
-categories:
-- DevOps
 date: 2021-12-09T06:12:43+08:00
 year: 2021
 week: 49
@@ -18,7 +18,7 @@ updated: 2021-12-09T06:12:43+08:00
 
 <!-- more -->
 
-### 关键点
+## 关键点
 * 一般来说, x86 程序可直接运行（Rosetta 自动介入） 
 * 可以右击应用，在应用详情里强制要求使用Rosetta 打开
 * 通过 `arch -x86_64`, 如 `arch -x86_64 go` 强制要求命令行 app 使用 Rosetta
@@ -26,7 +26,7 @@ updated: 2021-12-09T06:12:43+08:00
 * nodejs 和 golang 开发者都会遇到部分库在 arm 原生模式下不好用，建议同时安装两种 homebrew
 
 
-### Homebrew 现状
+## Homebrew 现状
 
 即使是现在（2021-12-09T05:53:31）不是所有工具链或者依赖库能正常的支持 m1 max arm 芯片架构
 
@@ -64,20 +64,20 @@ arch -x86_64 brew install go
 arch -x86_64 /usr/local/bin/brew install go
 ```
 
-### Tips 技巧，细节
+## Tips 技巧，细节
 
-#### Terminal Trick
+### Terminal Trick
 
 直接复制 Terminal.app, 然后设置其中一个通过 Rosetta 打开，简单快捷不少
 
 Thanks for the tip [@tmc](https://github.com/tmc)
 
-#### Golang 交叉编译 cross compiling
+### Golang 交叉编译 cross compiling
 
 虽然 arm64 版本的 Go 编译器也可以通过制定 GOARCH 交叉编译 x86_64 原生 app，但是 CGO 就复杂多了。
 这也是为什么 GO 也需要安装两个版本。
 
 
-#### 应用 CPU 架构检查
+### 应用 CPU 架构检查
 
 通过 `file` 命令检查可执行程序(binary)的目标编译架构

@@ -1,9 +1,9 @@
 ---
 title: 执行 hexo 命令报错，找不到模块 DTraceProviderBindings
-tags:
-- hexo
 categories:
 - DevOps
+tags:
+- hexo
 date: 2017-09-19T14:22:03+08:00
 year: 2017
 week: 38

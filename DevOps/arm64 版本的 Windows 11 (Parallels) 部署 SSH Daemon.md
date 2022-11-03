@@ -1,6 +1,8 @@
 ---
 title: arm64 版本的 Windows 11 (Parallels) 部署 SSH Daemon
 description: arm64 版本的 Windows 11 (Parallels) 部署 SSH Daemon
+categories:
+- DevOps
 tags:
 - Windows 11
 - windows
@@ -8,8 +10,6 @@ tags:
 - arm64
 - apple silicon
 - apple
-categories:
-- DevOps
 date: 2022-03-02T19:11:42+08:00
 year: 2022
 week: 9
@@ -22,7 +22,7 @@ updated: 2022-03-03T19:26:53+08:00
 
 <!-- more -->
 
-### 1. 安装 ssh server (sshd)
+## 1. 安装 ssh server (sshd)
 
 
 先贴上官方文档, 按步骤安装 OpenSSH Server
@@ -34,7 +34,7 @@ updated: 2022-03-03T19:26:53+08:00
 
 ![](https://cdn.jsdelivr.net/gh/HaoweiCh/imgs/DF70B2A966E28739D2E6A3759A31CA87C820DCF0.webp)
 
-### 2. 配置服务
+## 2. 配置服务
 
 ```shell
 # Start the sshd service 启动服务
@@ -53,14 +53,14 @@ if (!(Get-NetFirewallRule -Name "OpenSSH-Server-In-TCP" -ErrorAction SilentlyCon
 ```
 
 
-### 3. 添加公钥到信任
+## 3. 添加公钥到信任
 
 https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_server_configuration#authorizedkeysfile
 
 
 !!! 管理员配置文件位置在 %programdata%
 
-#### !!!密钥文件属性
+### !!!密钥文件属性
 > 无法使用密钥免密登陆看这里
 
 
@@ -81,7 +81,7 @@ https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_s
 
 重启服务了事，visual studio code 远程修改舒服多了，终于不用所有操作都点点点了
 
-### 最后效果
+## 最后效果
 
 如首页图
 

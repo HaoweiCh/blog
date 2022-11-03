@@ -1,11 +1,11 @@
 ---
 title: k8s 部署笔记
 description: k8s 部署笔记
+categories:
+- DevOps
 tags:
 - Kubernetes
 - K8s
-categories:
-- DevOps
 date: 2022-01-01T10:54:14+08:00
 year: 2021
 week: 52
@@ -33,13 +33,13 @@ updated: 2022-01-01T11:11:03+08:00
     1. helm 安装 calico
 5. helm 安装 dashboard
 
-### 部署
+## 部署
 
 > (Recommended) If you have plans to upgrade this single control-plane kubeadm cluster to high availability you should specify the --control-plane-endpoint to set the shared endpoint for all control-plane nodes.
 ---
 > 建议：如果有计划为可用性升级该单节点部署，应该通过参数 `--control-plane-endpoint` 指定端点给控制平面
 
-#### 国内部署环境问题
+### 国内部署环境问题
 
 镜像站
 
@@ -69,14 +69,14 @@ docker pull coredns/coredns:1.8.4
 docker tag docker.io/coredns/coredns:1.8.4 k8s.gcr.io/coredns/coredns:v1.8.4
 ```
 
-#### 端口开放列表
+### 端口开放列表
 
 6443
 30000-32767
 
 ![](media/16315233000811/16315262333003.jpg)
 
-#### 基础工具安装 kubeadm kubelet
+### 基础工具安装 kubeadm kubelet
 * kubeadm
     * https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
 * kubelet
@@ -121,14 +121,14 @@ yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
 systemctl enable --now kubelet
 ```
 
-##### `kubeadm`
+#### `kubeadm`
 
 kubeadm is network provider-agnostic
 `kubeadm` 网络组件不定提供
 
 kubeadm.yaml
 
-##### kubelet
+#### kubelet
 > 会在 join 后才能正常启动
 > 
 > The kubelet is now restarting every few seconds, as it waits in a crashloop for kubeadm to tell it what to do. This crashloop is expected and normal, please proceed with the next step and the kubelet will start running normally.
@@ -142,7 +142,7 @@ systemctl show --property=Environment kubelet |cat
 
 systemctl enable --now kubelet
 
-###### 处理启动失败的情况
+##### 处理启动失败的情况
 
 
 
@@ -150,7 +150,7 @@ systemctl enable --now kubelet
 journalctl -xefu kubelet
 ```
 
-#### 平台组件
+### 平台组件
 
 * https://kubernetes.io/docs/concepts/cluster-administration/addons/
 
@@ -163,7 +163,7 @@ Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
 
 ```
 
-##### 网络组件
+#### 网络组件
 > 使每一个 pod 都有全集群唯一的虚拟IP地址
 
 coredns (or kube-dns) should be in the Pending state until you have deployed the network add-on.
@@ -193,7 +193,7 @@ coredns (or kube-dns) should be in the Pending state until you have deployed the
     * 相对 calico 性价比比较高
     * 相对 calico 稳定性更好
 
-###### Falnnel
+##### Falnnel
 
 https://github.com/flannel-io/flannel#deploying-flannel-manually
 
@@ -223,13 +223,13 @@ kubectl apply -f kube-flannel.yml
 kubectl get pods -n kube-system ｜grep flannel
 ```
 
-####### kube-flannel.yml
+###### kube-flannel.yml
 
 ```
 
 ```
 
-###### Calico
+##### Calico
 > Calico is a networking and network policy provider. 
 > Calico supports a flexible set of networking options so you can choose the most efficient option for your situation, including non-overlay and overlay networks, with or without BGP. 
 > Calico uses the same engine to enforce network policy for hosts, pods, and (if using Istio & Envoy) applications at the service mesh layer
@@ -248,7 +248,7 @@ https://docs.projectcalico.org/getting-started/kubernetes/quickstart
 kubectl edit configmap/coredns -n kube-system
 ```
 
-####### 卸载
+###### 卸载
 
 ```
 kubectl delete --grace-period=0 --force -f https://docs.projectcalico.org/manifests/tigera-operator.yaml
@@ -258,7 +258,7 @@ rm -f /etc/cni/net.d/calico-kubeconfig
 
 ```
 
-####### 通过 helm 安装
+###### 通过 helm 安装
 
 https://docs.projectcalico.org/getting-started/kubernetes/helm
 
@@ -275,7 +275,7 @@ watch kubectl get pods -n calico-system
 
 
 
-##### Dashboard 控制台
+#### Dashboard 控制台
 
 https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
 
@@ -307,7 +307,7 @@ http://127.0.0.1:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kube
 ```
 
 
-###### helm 安装
+##### helm 安装
 
 ```
 helm repo add kubernetes-dashboard https://kubernetes.github.io/dashboard/
@@ -321,7 +321,7 @@ open url
     http://127.0.0.1:8001/api/v1/namespaces/default/services/https:dashboard-kubernetes-dashboard:443/proxy/#/login
 
 
-##### Descheduler 重平衡工具
+#### Descheduler 重平衡工具
 
 * 已实现的调度策略
     * RemoveDuplicates 移除重复 pod
@@ -329,12 +329,12 @@ open url
     * RemovePodsViolatingInterPodAntiAffinity 移除违反pod反亲和性的 pod
     * RemovePodsViolatingNodeAffinity
 
-#### 多集群联邦
+### 多集群联邦
 
 * [Kubernetes 多集群管理](https://mp.weixin.qq.com/s?__biz=MzIzNTU1MjIxMQ==&mid=2247483886&idx=1&sn=d397c17088a6a5c2516d7a77acb961e6&chksm=e8e42d52df93a44416c4f250c581158e15d44ba17bc11f5abcd310d59bf9c9fe5fef5aa0e4b8&scene=21#wechat_redirect)
 * https://github.com/kubernetes-sigs/kubefed
 
-#### 日志聚合
+### 日志聚合
 
 https://kubernetes.io/zh/docs/concepts/cluster-administration/logging/
 
@@ -342,7 +342,7 @@ https://kubernetes.io/zh/docs/concepts/cluster-administration/logging/
 
 filebreat => logstash => graylog => elasticsearch
 
-##### rotate
+#### rotate
 
 需要 rotate 日志
 
@@ -350,11 +350,11 @@ k8s 默认脚本部署的话,存在一个 logrotate，每小时运行一次。 k
 
 https://www.elastic.co/guide/en/beats/filebeat/7.14/_log_rotation.html
 
-### 维护
+## 维护
 
 https://kubernetes.io/docs/tasks/administer-cluster/
 
-#### 节点动态加入
+### 节点动态加入
 
 ```
 Then you can join any number of worker nodes by running the following on each as root:
@@ -363,9 +363,9 @@ kubeadm join 139.9.33.44:6443 --token n6t4er.xtc9vaop9evvdqca \
 	--discovery-token-ca-cert-hash sha256:2a2c106c94414a23a43f8cd4a4c96120c91792c0837a90f36655f8f56e96aff4
 ```
 
-#### CLI 工具
+### CLI 工具
 
-##### `kubectx` `kubens`
+#### `kubectx` `kubens`
 
 * https://github.com//ahmetb/kubectx
 
@@ -374,24 +374,24 @@ kubectx + kubens: Power tools for kubectl
 命令行切换 ctx 或 namespace 
            上下文（集群） 或 命名空间
 
-#### 证书管理
+### 证书管理
 https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-certs/
 
 ```
 kubeadm certs check-expiration
 ```
 
-#### 升级集群
+### 升级集群
 
 https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/
 
-#### 配置修改
+### 配置修改
 
 ```
 kubectl -n kube-system get configmap kubeadm-config -o jsonpath='{.data.ClusterConfiguration}' > kubeadm.cfg.yaml
 ```
 
-##### 添加证书许可DNS
+#### 添加证书许可DNS
 > https://blog.scottlowe.org/2019/07/30/adding-a-name-to-kubernetes-api-server-certificate/
 
 
@@ -415,9 +415,9 @@ apiServer:
 
 docker stop {ID}
 
-### 使用
+## 使用
 
-#### 合并 kube config
+### 合并 kube config
 
 ```
 KUBECONFIG=file1:file2:file3 kubectl config view --merge --flatten > out.txt
