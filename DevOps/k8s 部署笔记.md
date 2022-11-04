@@ -1,6 +1,5 @@
 ---
 title: k8s 部署笔记
-description: k8s 部署笔记
 categories:
 - DevOps
 tags:

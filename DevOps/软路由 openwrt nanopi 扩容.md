@@ -1,6 +1,5 @@
 ---
 title: 软路由 openwrt nanopi 扩容
-description: 软路由 openwrt nanopi 扩容
 categories:
 - DevOps
 tags:

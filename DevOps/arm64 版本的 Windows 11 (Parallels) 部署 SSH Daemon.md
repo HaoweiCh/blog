@@ -1,6 +1,5 @@
 ---
 title: arm64 版本的 Windows 11 (Parallels) 部署 SSH Daemon
-description: arm64 版本的 Windows 11 (Parallels) 部署 SSH Daemon
 categories:
 - DevOps
 tags:

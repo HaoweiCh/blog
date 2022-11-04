@@ -1,6 +1,5 @@
 ---
 title: APPLE silicon 安装 homebrew 踩坑细节
-description: APPLE silicon 安装 homebrew 踩坑细节
 categories:
 - DevOps
 tags:

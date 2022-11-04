@@ -1,6 +1,5 @@
 ---
 title: Flutter 基础学习的思路和总结
-description: Flutter 基础学习的思路和总结
 categories:
 - Framework
 tags:

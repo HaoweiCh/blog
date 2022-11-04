@@ -1,6 +1,5 @@
 ---
 title: RMBP 使用问题各项总结
-description: RMBP 使用问题各项总结
 categories:
 - DevOps
 tags:

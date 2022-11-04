@@ -1,6 +1,5 @@
 ---
 title: Python的观察者模式，PyQt 信号和插槽 机制的理解和应用
-description: Python的观察者模式，PyQt 信号和插槽 机制的理解和应用
 categories:
 - Languages
 tags:

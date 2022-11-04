@@ -1,6 +1,5 @@
 ---
 title: PyQT5 与 PyQT4 的思考和应用
-description: PyQT5 与 PyQT4 的思考和应用
 categories:
 - Languages
 tags:
@@ -13,7 +12,7 @@ week: 24
 updated: 2017-06-14T07:06:03+08:00
 ---
 
-文章大部分为官网原文的翻译和整理
+记录翻译官网文章的积累
 
  <!-- more --> 
 
