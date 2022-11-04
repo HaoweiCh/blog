@@ -43,5 +43,5 @@
 
 ## SocialScience
 * [**<人月神话> - 第二章 “人月神话”**](SocialScience/%3C%E4%BA%BA%E6%9C%88%E7%A5%9E%E8%AF%9D%3E%20-%20%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E2%80%9C%E4%BA%BA%E6%9C%88%E7%A5%9E%E8%AF%9D%E2%80%9D.md) &nbsp;&nbsp;&nbsp; 写于 2021 年第 49 周
-* [**《人月神话》 - 为什么巴比伦塔会失败**](SocialScience/%E3%80%8A%E4%BA%BA%E6%9C%88%E7%A5%9E%E8%AF%9D%E3%80%8B%20-%20%E4%B8%BA%E4%BB%80%E4%B9%88%E5%B7%B4%E6%AF%94%E4%BC%A6%E5%A1%94%E4%BC%9A%E5%A4%B1%E8%B4%A5.md) &nbsp;&nbsp;&nbsp; 写于 2021 年第 49 周
+* [**<人月神话> - 为什么巴比伦塔会失败**](SocialScience/%3C%E4%BA%BA%E6%9C%88%E7%A5%9E%E8%AF%9D%3E%20-%20%E4%B8%BA%E4%BB%80%E4%B9%88%E5%B7%B4%E6%AF%94%E4%BC%A6%E5%A1%94%E4%BC%9A%E5%A4%B1%E8%B4%A5.md) &nbsp;&nbsp;&nbsp; 写于 2021 年第 49 周
 * [**鲁迅 聪明人，傻子和奴才**](SocialScience/%E9%B2%81%E8%BF%85%20%E8%81%AA%E6%98%8E%E4%BA%BA%EF%BC%8C%E5%82%BB%E5%AD%90%E5%92%8C%E5%A5%B4%E6%89%8D.md) &nbsp;&nbsp;&nbsp; 写于 2021 年第 49 周

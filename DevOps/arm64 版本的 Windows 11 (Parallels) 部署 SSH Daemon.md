@@ -1,4 +1,4 @@
----
+```yaml
 title: arm64 版本的 Windows 11 (Parallels) 部署 SSH Daemon
 categories:
 - DevOps
@@ -13,7 +13,7 @@ date: 2022-03-02T19:11:42+08:00
 year: 2022
 week: 9
 updated: 2022-03-03T19:26:53+08:00
----
+```
 
 背景：不想浪费时间在界面点击上面，终端连接 windows 虚拟机实现命令行自动化操作
 

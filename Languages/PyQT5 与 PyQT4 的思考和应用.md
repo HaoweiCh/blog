@@ -1,4 +1,4 @@
----
+```yaml
 title: PyQT5 与 PyQT4 的思考和应用
 categories:
 - Languages
@@ -10,7 +10,7 @@ date: 2017-06-14T07:06:03+08:00
 year: 2017
 week: 24
 updated: 2017-06-14T07:06:03+08:00
----
+```
 
 记录翻译官网文章的积累
 

@@ -1,4 +1,4 @@
----
+```yaml
 title: hot, warm and cold data 热数据, 温数据, 冷数据
 categories:
 - DataScience
@@ -12,7 +12,7 @@ date: 2022-05-04T09:16:12+08:00
 year: 2022
 week: 18
 updated: 2022-05-04T09:16:12+08:00
----
+```
 
 ![](https://cdn.jsdelivr.net/gh/HaoweiCh/imgs/C6A8224158E488BE8A58B933BDD1F104985501DB.webp)
 

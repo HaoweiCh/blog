@@ -1,4 +1,4 @@
----
+```yaml
 title: APPLE silicon 安装 homebrew 踩坑细节
 categories:
 - DevOps
@@ -9,7 +9,7 @@ date: 2021-12-09T06:12:43+08:00
 year: 2021
 week: 49
 updated: 2021-12-09T06:12:43+08:00
----
+```
 
 我在写玩具项目是用到一些依赖库， 如 macdriver 出现编译报错。
 

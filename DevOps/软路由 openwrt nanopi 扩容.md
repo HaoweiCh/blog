@@ -1,4 +1,4 @@
----
+```yaml
 title: 软路由 openwrt nanopi 扩容
 categories:
 - DevOps
@@ -11,7 +11,7 @@ date: 2022-03-01T20:26:44+08:00
 year: 2022
 week: 9
 updated: 2022-03-01T20:26:44+08:00
----
+```
 
 ![](https://cdn.jsdelivr.net/gh/HaoweiCh/imgs/CA519FBD6EE41EFF0669B55E35321D30CD894BB3.webp)
 

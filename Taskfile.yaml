@@ -1,0 +1,22 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  default:
+    cmds:
+      - echo "{{.GREETING}}"
+      - rm -rf MachineLearning
+      - rm -rf Languages
+      - rm -rf Framework
+      - rm -rf Middleware
+      - rm -rf ComputerNetworks
+      - rm -rf DevOps
+      - rm -rf DataScience
+      - rm -rf SocialScience
+      - rm -rf ReverseEngineering
+      - rm -rf README.md
+    silent: true

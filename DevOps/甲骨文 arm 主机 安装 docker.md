@@ -1,4 +1,4 @@
----
+```yaml
 title: 甲骨文 arm 主机 安装 docker
 categories:
 - DevOps
@@ -10,7 +10,7 @@ date: 2022-03-03T15:10:01+08:00
 year: 2022
 week: 9
 updated: 2022-03-04T15:15:43+08:00
----
+```
 
 背景: 甲骨文 ARM 主机真香， 
 

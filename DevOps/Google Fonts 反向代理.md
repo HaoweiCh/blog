@@ -1,4 +1,4 @@
----
+```yaml
 title: Google Fonts 反向代理
 categories:
 - DevOps
@@ -9,7 +9,7 @@ date: 2022-02-28T13:00:39+08:00
 year: 2022
 week: 9
 updated: 2022-02-28T13:00:39+08:00
----
+```
 
 解决需求痛点：
 

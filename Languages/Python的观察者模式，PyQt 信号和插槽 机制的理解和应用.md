@@ -1,4 +1,4 @@
----
+```yaml
 title: Python的观察者模式，PyQt 信号和插槽 机制的理解和应用
 categories:
 - Languages
@@ -12,7 +12,7 @@ date: 2017-05-18T08:06:03+08:00
 year: 2017
 week: 20
 updated: 2017-06-22T16:04:03+08:00
----
+```
 
 介绍一下Python语言下的观察者模式和其在PyQt运用
  <!-- more --> 

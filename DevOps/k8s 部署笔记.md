@@ -1,4 +1,4 @@
----
+```yaml
 title: k8s 部署笔记
 categories:
 - DevOps
@@ -9,7 +9,7 @@ date: 2022-01-01T10:54:14+08:00
 year: 2021
 week: 52
 updated: 2022-01-01T11:11:03+08:00
----
+```
 
 ![](https://cdn.jsdelivr.net/gh/HaoweiCh/imgs/C88D2A8823D636B887A391D4DDB2C5B5FD866425.webp)
 
