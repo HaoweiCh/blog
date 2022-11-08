@@ -6,8 +6,8 @@ tags:
 - 大数据
 - 数据科学
 - 数据仓库
-- data warehouse
-- Data Science and Big Data Technology
+- Data Warehouse
+- Big Data Technology
 date: 2022-05-04T09:16:12+08:00
 year: 2022
 week: 18

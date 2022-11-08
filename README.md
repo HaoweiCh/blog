@@ -31,15 +31,21 @@
 
 ## Languages
 * [**简单聊聊值类型引用类型**](Languages/%E7%AE%80%E5%8D%95%E8%81%8A%E8%81%8A%E5%80%BC%E7%B1%BB%E5%9E%8B%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B.md) &nbsp;&nbsp;&nbsp; 写于 2022 年第 14 周
+* [**各种环境下 Golang 编译 android 动态库(so 文件)**](Languages/%E5%90%84%E7%A7%8D%E7%8E%AF%E5%A2%83%E4%B8%8B%20Golang%20%E7%BC%96%E8%AF%91%20android%20%E5%8A%A8%E6%80%81%E5%BA%93%28so%20%E6%96%87%E4%BB%B6%29.md) &nbsp;&nbsp;&nbsp; 写于 2022 年第 43 周
 * [**PyQT5 与 PyQT4 的思考和应用**](Languages/PyQT5%20%E4%B8%8E%20PyQT4%20%E7%9A%84%E6%80%9D%E8%80%83%E5%92%8C%E5%BA%94%E7%94%A8.md) &nbsp;&nbsp;&nbsp; 写于 2017 年第 24 周
 * [**时间相关的类型转换**](Languages/%E6%97%B6%E9%97%B4%E7%9B%B8%E5%85%B3%E7%9A%84%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2.md) &nbsp;&nbsp;&nbsp; 写于 2017 年第 24 周
 * [**Python的观察者模式，PyQt 信号和插槽 机制的理解和应用**](Languages/Python%E7%9A%84%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F%EF%BC%8CPyQt%20%E4%BF%A1%E5%8F%B7%E5%92%8C%E6%8F%92%E6%A7%BD%20%E6%9C%BA%E5%88%B6%E7%9A%84%E7%90%86%E8%A7%A3%E5%92%8C%E5%BA%94%E7%94%A8.md) &nbsp;&nbsp;&nbsp; 写于 2017 年第 20 周
 
 ## MachineLearning
+* [**随聊一下 AI 前沿技术 Diffusion**](MachineLearning/%E9%9A%8F%E8%81%8A%E4%B8%80%E4%B8%8B%20AI%20%E5%89%8D%E6%B2%BF%E6%8A%80%E6%9C%AF%20Diffusion.md) &nbsp;&nbsp;&nbsp; 写于 2022 年第 45 周
 * [**记录一次机器学习之 CNN 验证码识别的尝试**](MachineLearning/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B9%8B%20CNN%20%E9%AA%8C%E8%AF%81%E7%A0%81%E8%AF%86%E5%88%AB%E7%9A%84%E5%B0%9D%E8%AF%95.md) &nbsp;&nbsp;&nbsp; 写于 2021 年第 50 周
 
 ## Middleware
 * [**关于消息队列的一些想法和积累**](Middleware/%E5%85%B3%E4%BA%8E%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95%E5%92%8C%E7%A7%AF%E7%B4%AF.md) &nbsp;&nbsp;&nbsp; 写于 2018 年第 35 周
+
+## ReverseEngineering
+* [**记从某猫拿公开的工商数据**](ReverseEngineering/%E8%AE%B0%E4%BB%8E%E6%9F%90%E7%8C%AB%E6%8B%BF%E5%85%AC%E5%BC%80%E7%9A%84%E5%B7%A5%E5%95%86%E6%95%B0%E6%8D%AE.md) &nbsp;&nbsp;&nbsp; 写于 2020 年第 38 周
+* [**解压 iOS app 中 Assets.car 的资源(图标等)**](ReverseEngineering/%E8%A7%A3%E5%8E%8B%20iOS%20app%20%E4%B8%AD%20Assets.car%20%E7%9A%84%E8%B5%84%E6%BA%90%28%E5%9B%BE%E6%A0%87%E7%AD%89%29.md) &nbsp;&nbsp;&nbsp; 写于 2022 年第 44 周
 
 ## SocialScience
 * [**<人月神话> - 第二章 “人月神话”**](SocialScience/%3C%E4%BA%BA%E6%9C%88%E7%A5%9E%E8%AF%9D%3E%20-%20%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E2%80%9C%E4%BA%BA%E6%9C%88%E7%A5%9E%E8%AF%9D%E2%80%9D.md) &nbsp;&nbsp;&nbsp; 写于 2021 年第 49 周
